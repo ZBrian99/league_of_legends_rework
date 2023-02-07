@@ -1,0 +1,6 @@
+arreglar borde derecho gris
+cerrar al hacer click fuera
+hacer navbar center responsive con un boton mas
+arreglar animacion al cerrar menu nav
+arreglar animacion menu se abre solo al estar en mobile
+fondo campeones gris al cargar cambiar a negro o transparente
