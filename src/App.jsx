@@ -11,7 +11,7 @@ export const App = () => {
 				<NavBar />
 				<Routes>
 					{/* <Route path='/champion/:id' element={<Champion />} /> */}
-					{/* <Route path='*' element={<Navigate to='/champions' />} /> */}
+					<Route path='*' element={<Navigate to='/champions' />} />
 					<Route path='/champions' element={<Champions />} />
 					<Route path='/regiones' element={<Regiones />} />
 					<Route path='/universo' element={<Universo />} />
