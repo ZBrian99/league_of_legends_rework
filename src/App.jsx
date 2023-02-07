@@ -1,6 +1,6 @@
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import { NavBar } from './components/NavBar';
-// import { Champions, Regiones, Universo } from './pages';
+import { Champions, Regiones, Universo } from './pages';
 import { GlobalReset } from './styled-components';
 
 export const App = () => {
@@ -9,13 +9,13 @@ export const App = () => {
 			<GlobalReset />
 			<BrowserRouter>
 				<NavBar />
-				{/* <Routes> */}
+				<Routes>
 					{/* <Route path='/champion/:id' element={<Champion />} /> */}
 					{/* <Route path='*' element={<Navigate to='/champions' />} /> */}
-					{/* <Route path='/champions' element={<Champions />} />
+					<Route path='/champions' element={<Champions />} />
 					<Route path='/regiones' element={<Regiones />} />
-					<Route path='/universo' element={<Universo />} /> */}
-				{/* </Routes> */}
+					<Route path='/universo' element={<Universo />} />
+				</Routes>
 			</BrowserRouter>
 		</>
 	);
