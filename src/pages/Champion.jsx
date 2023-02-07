@@ -1,8 +1,23 @@
 import { useParams } from 'react-router-dom';
 import { useChampions } from '../hooks';
-import { ChamHeader, ChamHeaderContainer, ChamName, ChampionContainer, ChamSeparator, ChamSplash, ChamTitle } from '../styled-components';
-
-
+import {
+	ChamHeader,
+	ChamHeaderContainer,
+	ChamIconContainer,
+	ChamIconFrame,
+	ChamIconImage,
+	ChamName,
+	ChampionContainer,
+	ChamSeparator,
+	ChamSplash,
+	ChamTitle,
+	LoreContainer,
+	RolContainer,
+	RolImage,
+	RolImageContainer,
+	RolText,
+	RolTextContainer,
+} from '../styled-components';
 
 export const Champion = () => {
 	const { champions, isLoading } = useChampions();
@@ -29,23 +44,31 @@ export const Champion = () => {
 									></ChamSplash>
 								</ChamHeader>
 								<div>
-									<div>
-										<div>
-											<img src='' alt='champion image' />
-											<img src='' alt='champion border' />
-										</div>
+									<LoreContainer
+										image={`http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${id}_0.jpg`}
+									>
+										<ChamIconContainer>
+											<ChamIconImage
+												src={`http://ddragon.leagueoflegends.com/cdn/12.23.1/img/champion/${id}.png`}
+												alt='champion image'
+											/>
+										</ChamIconContainer>
+										<ChamIconFrame src='../../src/assets/ChampionIconFrame.png' alt='champion border' />
 										<p>
 											Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto porro vel unde
 											temporibus placeat tempora, blanditiis molestiae voluptatem eum sint esse eveniet eius
 											maiores similique neque ab adipisci. Officia, numquam?
 										</p>
-									</div>
-									<div>
-										rol
-										<img src='' alt='rol' />
-										<h5>Rol</h5>
-										<h6>"rol"</h6>
-									</div>
+									</LoreContainer>
+									<RolContainer>
+										<RolImageContainer>
+											<RolImage src='../../src/assets/assassin.png' alt='rol' />
+										</RolImageContainer>
+										<RolTextContainer>
+											<RolText>Rol</RolText>
+											<RolText rol>Assassin</RolText>
+										</RolTextContainer>
+									</RolContainer>
 									<div>
 										<img src='' alt='region' />
 										<div>
