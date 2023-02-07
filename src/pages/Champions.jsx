@@ -1,4 +1,4 @@
-import { ChampionsHeader} from "../components";
+import { ChampionsHeader, ChampionsList} from "../components";
 import { ChampionsContainer, ChampionsContainerBackground, Container } from "../styled-components";
 
 export const Champions = () => {
@@ -9,7 +9,7 @@ export const Champions = () => {
 
 			<Container>
 				<ChampionsContainer>
-					{/* <ChampionsList /> */}
+					<ChampionsList />
 				</ChampionsContainer>
 			</Container>
 		</>
