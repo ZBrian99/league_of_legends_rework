@@ -13,3 +13,6 @@ quitar babel
 hacer que el splash del campeon ocupe 100% de la pantalla responsive
 pasar cosas a grid
 cambiar div por action section h p span
+pasar fetch a axios
+cambiar presentacion de rol doble y que solo sea rol y abajo los roles en ves de rol duplicado
+completar region

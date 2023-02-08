@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom';
-import { useChampions } from '../hooks';
+import {useChampion } from '../hooks';
 import {
 	ChamHeader,
 	ChamHeaderContainer,
@@ -25,8 +25,9 @@ import {
 } from '../styled-components';
 
 export const Champion = () => {
-	const { champions, isLoading } = useChampions();
-	const { id } = useParams();
+  const { id } = useParams();
+	const { champion, isLoading } = useChampion(id);
+  
 
 	return (
 		<>
@@ -34,9 +35,9 @@ export const Champion = () => {
 				<div>Cargando...</div>
 			) : (
 				<>
-					{champions
+					{champion
 						.filter((e) => e.id === id)
-						.map(({ title, name }) => (
+						.map(({ title, name, lore, tags }) => (
 							<ChampionContainer key={id}>
 								<ChamHeader>
 									<ChamHeaderContainer>
@@ -56,7 +57,7 @@ export const Champion = () => {
 											</SimpleBoxImageContainer>
 											<SimpleBoxTextContainer>
 												<SimpleBoxText>Rol</SimpleBoxText>
-												<SimpleBoxText variant>Assassin</SimpleBoxText>
+												<SimpleBoxText variant>{tags[0]}</SimpleBoxText>
 											</SimpleBoxTextContainer>
 										</SimpleBoxContainer>
 										<SimpleBoxContainer>
@@ -65,7 +66,7 @@ export const Champion = () => {
 											</SimpleBoxImageContainer>
 											<SimpleBoxTextContainer>
 												<SimpleBoxText>Rol</SimpleBoxText>
-												<SimpleBoxText variant>Assassin</SimpleBoxText>
+												<SimpleBoxText variant>{tags[1]}</SimpleBoxText>
 											</SimpleBoxTextContainer>
 										</SimpleBoxContainer>
 									</LargeRolContainer>
@@ -79,15 +80,7 @@ export const Champion = () => {
 											/>
 										</ChamIconContainer>
 										<ChamIconFrame src='../../src/assets/ChampionIconFrame.png' alt='champion border' />
-										<LoreText>
-											Dentro de las oscuras vetas de Runaterra, la demonio Evelynn acecha a su siguiente
-											víctima. Seduce a su presa con la apariencia voluptuosa de una mujer humana, pero una
-											vez que alguien sucumbe ante sus encantos, Evelynn revela su verdadera forma. Es en ese
-											momento somete a su víctima a un inimaginable tormento y se deleita con su dolor. Para
-											el demonio, estos encuentros son amoríos inocentes. Para el resto de Runaterra, son
-											historias macabras de lujuria que terminaron mal y atroces recordatorios del costo que
-											tiene el deseo lascivo.
-										</LoreText>
+										<LoreText>{lore}</LoreText>
 									</LoreContainer>
 									<LargeBoxContainer>
 										<LargeBoxImage src='../../src/assets/runaterra.png' alt='region' />
