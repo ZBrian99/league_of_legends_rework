@@ -35,10 +35,6 @@ export const GlobalReset = () => {
 					/* opcional */
 					line-height: 1.4em;
 					/* opcional */
-					-webkit-hyphens: auto;
-					-ms-hyphens: auto;
-					hyphens: auto;
-					/* opcional */
 					font-smooth: always;
 					/* opcional */
 					-webkit-font-smoothing: antialiased;
@@ -117,9 +113,6 @@ export const GlobalReset = () => {
 				label {
 					font-family: inherit;
 					font-size: inherit;
-					-webkit-hyphens: auto;
-					-ms-hyphens: auto;
-					hyphens: auto;
 					background-color: transparent;
 					color: inherit;
 					display: block;

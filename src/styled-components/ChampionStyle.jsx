@@ -3,8 +3,8 @@ import styled from '@emotion/styled';
 export const ChamName = styled.h2`
 	text-transform: uppercase;
 	font-weight: 500;
-	font-size: 112px;
-	line-height: 144px;
+	font-size: 7rem;
+	line-height: 9rem;
 	letter-spacing: 0.2em;
 	background: linear-gradient(to top, #67471f 0%, #937341 50%);
 	background-clip: text;
@@ -13,10 +13,10 @@ export const ChamName = styled.h2`
 export const ChamTitle = styled.p`
 	text-transform: uppercase;
 	font-weight: 700;
-	font-size: 16px;
+	font-size: 1rem;
 	color: #c4b998;
-	letter-spacing: 4px;
-	padding: 16px 0 16px 4px;
+	letter-spacing: 0.25rem;
+	padding: 1rem 0 1rem 0.25rem;
 `;
 export const ChamSeparator = styled.img`
 	width: 100%;
@@ -44,12 +44,13 @@ export const ChamHeaderContainer = styled.div`
 `;
 
 export const ChampionContainer = styled.div`
+	margin: 0 1rem;
 	min-height: 1500vh;
 	color: white;
 `;
 export const ChamIconFrame = styled.img`
-	width: 112px;
-	top: -56px;
+	width: 7rem;
+	top: -3.5rem;
 	position: absolute;
 `;
 
@@ -58,21 +59,29 @@ export const ChamIconImage = styled.img`
 `;
 export const ChamIconContainer = styled.div`
 	position: absolute;
-	top: -48px;
-	width: 96px;
+	top: -3rem;
+	width: 6rem;
 	border-radius: 50%;
 	overflow: hidden;
 `;
 
+export const LoreText = styled.p`
+	text-align: justify;
+	text-align-last: center;
+	letter-spacing: 0;
+	font-size: 0.8em;
+`;
+
 export const LoreContainer = styled.div`
 	display: flex;
+	max-height: 20rem;
 	flex-direction: column;
 	align-items: center;
+	justify-content: center;
 	position: relative;
 	border: 0.0625rem solid #31271e;
 	color: #c4b998;
-	text-align: center;
-	padding: 80px 48px;
+	padding: 5rem 3rem;
 	&::before {
 		content: ' ';
 		z-index: -1;
@@ -85,40 +94,70 @@ export const LoreContainer = styled.div`
 		-webkit-filter: brightness(0.3) grayscale(100%);
 		filter: brightness(0.3) grayscale(100%);
 		opacity: 0.3;
-
 		background-position: top center;
 		background-size: cover;
 	}
 `;
 
-export const RolImage = styled.img`
-	height: 80%;
-	width: auto;
+export const SimpleBoxImage = styled.img`
+	width: 5rem;
+`;
+export const LargeBoxImage = styled.img`
+	width: 10rem;
+	margin: 6rem 0;
 `;
 
-export const RolText = styled.p`
+export const SimpleBoxText = styled.p`
+	font-size: 0.9em;
 	text-transform: uppercase;
 	letter-spacing: 0.1rem;
 	text-align: center;
-	color: ${({ rol }) => (rol ? `#c4b998` : `#937341`)};
+	color: ${({ variant }) => (variant ? `#c4b998` : `#937341`)};
 `;
 
-export const RolImageContainer = styled.div`
-	display: flex;
+export const SimpleBoxImageContainer = styled.div`
+	${({ none }) => (none ? 'display: none;' : 'display: flex;')}
 	justify-content: center;
 	align-items: center;
-	border-right: 1px solid #31271e;
-  padding: .5rem;
+	${({ reverse }) => (reverse ? 'border-left: 1px solid #31271e;' : 'border-right: 1px solid #31271e;')}
+
+	padding: 0.5rem;
 `;
 
-export const RolTextContainer = styled.div`
+export const SimpleBoxTextContainer = styled.div`
 	display: flex;
 	width: 100%;
 	justify-content: center;
 	flex-flow: column nowrap;
 `;
-export const RolContainer = styled.div`
-	display: flex;
+export const SimpleBoxContainer = styled.div`
 	width: 20rem;
+	display: flex;
+	${({ reverse }) => (reverse ? 'flex-direction: row-reverse;' : 'flex-direction: row;')}
+	height: 5rem;
 	border: 1px solid #31271e;
+	background-color: #111318;
+`;
+export const LargeBoxContainer = styled.div`
+	width: 20rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-left: 1px solid #31271e;
+	border-top: 1px solid #31271e;
+	border-right: 1px solid #31271e;
+	background-color: #111318;
+	background-image: url('../../src/assets/regionbg.png');
+	background-position: center;
+	background-size: cover;
+`;
+
+export const ChamInfoContainer = styled.div`
+	display: flex;
+	flex-wrap: wrap;
+	display: grid;
+	gap: 1rem;
+	grid-auto-flow: dense;
+	grid-template-columns: 20rem 1fr 20rem;
 `;

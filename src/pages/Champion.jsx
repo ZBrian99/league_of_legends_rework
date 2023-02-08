@@ -6,17 +6,21 @@ import {
 	ChamIconContainer,
 	ChamIconFrame,
 	ChamIconImage,
+	ChamInfoContainer,
 	ChamName,
 	ChampionContainer,
 	ChamSeparator,
 	ChamSplash,
 	ChamTitle,
+	LargeBoxContainer,
+	LargeBoxImage,
 	LoreContainer,
-	RolContainer,
-	RolImage,
-	RolImageContainer,
-	RolText,
-	RolTextContainer,
+	LoreText,
+	SimpleBoxContainer,
+	SimpleBoxImage,
+	SimpleBoxImageContainer,
+	SimpleBoxText,
+	SimpleBoxTextContainer,
 } from '../styled-components';
 
 export const Champion = () => {
@@ -43,7 +47,16 @@ export const Champion = () => {
 										src={`http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${id}_0.jpg`}
 									></ChamSplash>
 								</ChamHeader>
-								<div>
+								<ChamInfoContainer>
+									<SimpleBoxContainer>
+										<SimpleBoxImageContainer>
+											<SimpleBoxImage src='../../src/assets/assassin.png' alt='rol' />
+										</SimpleBoxImageContainer>
+										<SimpleBoxTextContainer>
+											<SimpleBoxText>Rol</SimpleBoxText>
+											<SimpleBoxText variant>Assassin</SimpleBoxText>
+										</SimpleBoxTextContainer>
+									</SimpleBoxContainer>
 									<LoreContainer
 										image={`http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${id}_0.jpg`}
 									>
@@ -54,33 +67,33 @@ export const Champion = () => {
 											/>
 										</ChamIconContainer>
 										<ChamIconFrame src='../../src/assets/ChampionIconFrame.png' alt='champion border' />
-										<p>
-											Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto porro vel unde
-											temporibus placeat tempora, blanditiis molestiae voluptatem eum sint esse eveniet eius
-											maiores similique neque ab adipisci. Officia, numquam?
-										</p>
+										<LoreText>
+											Dentro de las oscuras vetas de Runaterra, la demonio Evelynn acecha a su siguiente
+											víctima. Seduce a su presa con la apariencia voluptuosa de una mujer humana, pero una
+											vez que alguien sucumbe ante sus encantos, Evelynn revela su verdadera forma. Es en ese
+											momento somete a su víctima a un inimaginable tormento y se deleita con su dolor. Para
+											el demonio, estos encuentros son amoríos inocentes. Para el resto de Runaterra, son
+											historias macabras de lujuria que terminaron mal y atroces recordatorios del costo que
+											tiene el deseo lascivo.
+										</LoreText>
 									</LoreContainer>
-									<RolContainer>
-										<RolImageContainer>
-											<RolImage src='../../src/assets/assassin.png' alt='rol' />
-										</RolImageContainer>
-										<RolTextContainer>
-											<RolText>Rol</RolText>
-											<RolText rol>Assassin</RolText>
-										</RolTextContainer>
-									</RolContainer>
-									<div>
-										<img src='' alt='region' />
-										<div>
-											<h5>Region</h5>
-											<h6>"region"</h6>
-											<img src='' alt='region' />
-										</div>
-									</div>
+
+									<LargeBoxContainer>
+										<LargeBoxImage src='../../src/assets/runaterra.png' alt='region' />
+										<SimpleBoxContainer reverse>
+											<SimpleBoxImageContainer reverse none>
+												<SimpleBoxImage src='../../src/assets/runaterra.png' alt='region' />
+											</SimpleBoxImageContainer>
+											<SimpleBoxTextContainer>
+												<SimpleBoxText>Region</SimpleBoxText>
+												<SimpleBoxText variant>Runaterra</SimpleBoxText>
+											</SimpleBoxTextContainer>
+										</SimpleBoxContainer>
+									</LargeBoxContainer>
 									{/* <div>difficulty</div> */}
 									{/* <div>attack, defense, magic</div> */}
 									{/* <div>recurso</div> */}
-								</div>
+								</ChamInfoContainer>
 							</ChampionContainer>
 						))}
 				</>

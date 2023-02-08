@@ -6,3 +6,10 @@ arreglar animacion menu se abre solo al estar en mobile
 fondo campeones gris al cargar cambiar a negro o transparente
 fuente responsive
 no mostrar contenido hasta que la imagen cargue
+pasar text a em
+crear grid
+gradient iniciar agregar desde arriba tambien
+quitar babel
+hacer que el splash del campeon ocupe 100% de la pantalla responsive
+pasar cosas a grid
+cambiar div por action section h p span
