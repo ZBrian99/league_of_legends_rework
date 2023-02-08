@@ -24,7 +24,7 @@ export const ChampionsContainer = styled.div`
 		grid-auto-rows: 323px;
 		grid-template-columns: repeat(auto-fill, 223px);
 	}
-	@media (max-width: 768px) {
+	@media (max-width: 48rem) {
 		grid-auto-rows: 280px;
 		grid-template-columns: repeat(auto-fill, 180px);
 	}

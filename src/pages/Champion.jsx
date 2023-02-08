@@ -14,6 +14,7 @@ import {
 	ChamTitle,
 	LargeBoxContainer,
 	LargeBoxImage,
+	LargeRolContainer,
 	LoreContainer,
 	LoreText,
 	SimpleBoxContainer,
@@ -48,15 +49,26 @@ export const Champion = () => {
 									></ChamSplash>
 								</ChamHeader>
 								<ChamInfoContainer>
-									<SimpleBoxContainer>
-										<SimpleBoxImageContainer>
-											<SimpleBoxImage src='../../src/assets/assassin.png' alt='rol' />
-										</SimpleBoxImageContainer>
-										<SimpleBoxTextContainer>
-											<SimpleBoxText>Rol</SimpleBoxText>
-											<SimpleBoxText variant>Assassin</SimpleBoxText>
-										</SimpleBoxTextContainer>
-									</SimpleBoxContainer>
+									<LargeRolContainer>
+										<SimpleBoxContainer>
+											<SimpleBoxImageContainer>
+												<SimpleBoxImage src='../../src/assets/assassin.png' alt='rol' />
+											</SimpleBoxImageContainer>
+											<SimpleBoxTextContainer>
+												<SimpleBoxText>Rol</SimpleBoxText>
+												<SimpleBoxText variant>Assassin</SimpleBoxText>
+											</SimpleBoxTextContainer>
+										</SimpleBoxContainer>
+										<SimpleBoxContainer>
+											<SimpleBoxImageContainer>
+												<SimpleBoxImage src='../../src/assets/assassin.png' alt='rol' />
+											</SimpleBoxImageContainer>
+											<SimpleBoxTextContainer>
+												<SimpleBoxText>Rol</SimpleBoxText>
+												<SimpleBoxText variant>Assassin</SimpleBoxText>
+											</SimpleBoxTextContainer>
+										</SimpleBoxContainer>
+									</LargeRolContainer>
 									<LoreContainer
 										image={`http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${id}_0.jpg`}
 									>
@@ -77,10 +89,9 @@ export const Champion = () => {
 											tiene el deseo lascivo.
 										</LoreText>
 									</LoreContainer>
-
 									<LargeBoxContainer>
 										<LargeBoxImage src='../../src/assets/runaterra.png' alt='region' />
-										<SimpleBoxContainer reverse>
+										<SimpleBoxContainer variant>
 											<SimpleBoxImageContainer reverse none>
 												<SimpleBoxImage src='../../src/assets/runaterra.png' alt='region' />
 											</SimpleBoxImageContainer>

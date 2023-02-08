@@ -44,7 +44,7 @@ export const ChampionCard = styled.figure`
 	background-repeat: no-repeat;
 	background-size: 110% auto;
 	background-position: center 30%;
-	@media (max-width: 1280px) {
+	@media (max-width: 80rem) {
 		background-position: center 15%;
 	}
 	margin: 2rem auto;

@@ -9,6 +9,14 @@ export const ChamName = styled.h2`
 	background: linear-gradient(to top, #67471f 0%, #937341 50%);
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
+	@media (max-width: 64rem) {
+		font-size: 5rem;
+		line-height: 7rem;
+	}
+	@media (max-width: 45rem) {
+		font-size: 3rem;
+		line-height: 5rem;
+	}
 `;
 export const ChamTitle = styled.p`
 	text-transform: uppercase;
@@ -44,7 +52,6 @@ export const ChamHeaderContainer = styled.div`
 `;
 
 export const ChampionContainer = styled.div`
-	margin: 0 1rem;
 	min-height: 1500vh;
 	color: white;
 `;
@@ -74,7 +81,8 @@ export const LoreText = styled.p`
 
 export const LoreContainer = styled.div`
 	display: flex;
-	max-height: 20rem;
+	width: 50%;
+	height: min-content;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
@@ -82,6 +90,11 @@ export const LoreContainer = styled.div`
 	border: 0.0625rem solid #31271e;
 	color: #c4b998;
 	padding: 5rem 3rem;
+	@media (max-width: 60rem) {
+		margin-top: 2rem;
+		width: 100%;
+		padding: 5rem 2rem;
+	}
 	&::before {
 		content: ' ';
 		z-index: -1;
@@ -105,6 +118,9 @@ export const SimpleBoxImage = styled.img`
 export const LargeBoxImage = styled.img`
 	width: 10rem;
 	margin: 6rem 0;
+	@media (max-width: 64rem) {
+		margin: 3rem 0;
+	}
 `;
 
 export const SimpleBoxText = styled.p`
@@ -131,15 +147,43 @@ export const SimpleBoxTextContainer = styled.div`
 	flex-flow: column nowrap;
 `;
 export const SimpleBoxContainer = styled.div`
-	width: 20rem;
+	width: 100%;
+
 	display: flex;
-	${({ reverse }) => (reverse ? 'flex-direction: row-reverse;' : 'flex-direction: row;')}
-	height: 5rem;
+	${({ variant }) =>
+		variant
+			? `
+  flex-direction: row-reverse;
+	border-top: 1px solid #31271e;
+	border-bottom: 1px solid #31271e;
+  `
+			: `
+  flex-direction: row;
 	border: 1px solid #31271e;
+  `}
+	height: 5rem;
 	background-color: #111318;
 `;
+
+export const LargeRolContainer = styled.div`
+	width: 23%;
+	display: flex;
+  flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+	@media (max-width: 60rem) {
+    order: 2;
+		width: 100%;
+    flex-direction: row;
+	}
+	@media (max-width: 45rem) {
+    flex-direction: column;
+	}
+`;
+
 export const LargeBoxContainer = styled.div`
-	width: 20rem;
+	width: 23%;
+	height: min-content;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -151,13 +195,20 @@ export const LargeBoxContainer = styled.div`
 	background-image: url('../../src/assets/regionbg.png');
 	background-position: center;
 	background-size: cover;
+  order: 3;
+	@media (max-width: 60rem) {
+    width: 100%;
+	}
 `;
 
 export const ChamInfoContainer = styled.div`
 	display: flex;
 	flex-wrap: wrap;
-	display: grid;
+	justify-content: center;
 	gap: 1rem;
-	grid-auto-flow: dense;
-	grid-template-columns: 20rem 1fr 20rem;
+	padding: 1rem;
+	@media (max-width: 60rem) {
+		flex-direction: column;
+    align-items: center;
+	}
 `;
