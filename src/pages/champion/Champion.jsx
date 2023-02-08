@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom';
-import {useChampion } from '../hooks';
+import { useChampion } from '../../hooks';
 import {
 	ChamHeader,
 	ChamHeaderContainer,
@@ -22,12 +22,11 @@ import {
 	SimpleBoxImageContainer,
 	SimpleBoxText,
 	SimpleBoxTextContainer,
-} from '../styled-components';
+} from '../../styled-components';
 
 export const Champion = () => {
-  const { id } = useParams();
+	const { id } = useParams();
 	const { champion, isLoading } = useChampion(id);
-  
 
 	return (
 		<>
@@ -42,7 +41,7 @@ export const Champion = () => {
 								<ChamHeader>
 									<ChamHeaderContainer>
 										<ChamName>{name}</ChamName>
-										<ChamSeparator src='../../src/assets/t1HeaderDivider.png' alt='Header Divider' />
+										<ChamSeparator src='../../../src/assets/t1HeaderDivider.png' alt='Header Divider' />
 										<ChamTitle>{title}</ChamTitle>
 									</ChamHeaderContainer>
 									<ChamSplash
@@ -53,22 +52,26 @@ export const Champion = () => {
 									<LargeRolContainer>
 										<SimpleBoxContainer>
 											<SimpleBoxImageContainer>
-												<SimpleBoxImage src='../../src/assets/assassin.png' alt='rol' />
+												<SimpleBoxImage src={`../../../src/assets/${tags[0]}.png`} alt='rol' />
 											</SimpleBoxImageContainer>
 											<SimpleBoxTextContainer>
 												<SimpleBoxText>Rol</SimpleBoxText>
 												<SimpleBoxText variant>{tags[0]}</SimpleBoxText>
 											</SimpleBoxTextContainer>
 										</SimpleBoxContainer>
-										<SimpleBoxContainer>
-											<SimpleBoxImageContainer>
-												<SimpleBoxImage src='../../src/assets/assassin.png' alt='rol' />
-											</SimpleBoxImageContainer>
-											<SimpleBoxTextContainer>
-												<SimpleBoxText>Rol</SimpleBoxText>
-												<SimpleBoxText variant>{tags[1]}</SimpleBoxText>
-											</SimpleBoxTextContainer>
-										</SimpleBoxContainer>
+										{tags[1] ? (
+											<SimpleBoxContainer>
+												<SimpleBoxImageContainer>
+													<SimpleBoxImage src={`../../../src/assets/${tags[1]}.png`} alt='rol' />
+												</SimpleBoxImageContainer>
+												<SimpleBoxTextContainer>
+													<SimpleBoxText>Rol</SimpleBoxText>
+													<SimpleBoxText variant>{tags[1]}</SimpleBoxText>
+												</SimpleBoxTextContainer>
+											</SimpleBoxContainer>
+										) : (
+											''
+										)}
 									</LargeRolContainer>
 									<LoreContainer
 										image={`http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${id}_0.jpg`}
@@ -79,14 +82,14 @@ export const Champion = () => {
 												alt='champion image'
 											/>
 										</ChamIconContainer>
-										<ChamIconFrame src='../../src/assets/ChampionIconFrame.png' alt='champion border' />
+										<ChamIconFrame src='../../../src/assets/ChampionIconFrame.png' alt='champion border' />
 										<LoreText>{lore}</LoreText>
 									</LoreContainer>
 									<LargeBoxContainer>
-										<LargeBoxImage src='../../src/assets/runaterra.png' alt='region' />
+										<LargeBoxImage src='../../../src/assets/runaterra.png' alt='region' />
 										<SimpleBoxContainer variant>
 											<SimpleBoxImageContainer reverse none>
-												<SimpleBoxImage src='../../src/assets/runaterra.png' alt='region' />
+												<SimpleBoxImage src='../../../src/assets/runaterra.png' alt='region' />
 											</SimpleBoxImageContainer>
 											<SimpleBoxTextContainer>
 												<SimpleBoxText>Region</SimpleBoxText>

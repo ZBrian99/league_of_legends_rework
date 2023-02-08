@@ -327,18 +327,18 @@ export const NavBar = () => {
 				</MobileTopContent>
 				<NavCenterContent>
 					<NavLink to='universo'>
-						<NavText>Universo</NavText>
+						<NavText>Universe</NavText>
 					</NavLink>
 					<NavLink to='champions'>
-						<NavText>Campeones</NavText>
+						<NavText>Champions</NavText>
 					</NavLink>
 					<NavLink to='regiones'>
-						<NavText>Regiones</NavText>
+						<NavText>Regions</NavText>
 					</NavLink>
 				</NavCenterContent>
 				<NavRightContent>
-					<NavButton>Iniciar Sesión</NavButton>
-					<NavButton variant>Juega Ahora</NavButton>
+					<NavButton>Sign in</NavButton>
+					<NavButton variant>Play Now</NavButton>
 				</NavRightContent>
 			</MobileMenuContent>
 			<NavMobileButton onClick={NavMenuOpen}>

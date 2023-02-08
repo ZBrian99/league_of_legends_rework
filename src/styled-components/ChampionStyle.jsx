@@ -113,7 +113,8 @@ export const LoreContainer = styled.div`
 `;
 
 export const SimpleBoxImage = styled.img`
-	width: 5rem;
+	width: 3rem;
+	height: 3rem;
 `;
 export const LargeBoxImage = styled.img`
 	width: 10rem;
@@ -122,6 +123,8 @@ export const LargeBoxImage = styled.img`
 		margin: 3rem 0;
 	}
 `;
+
+
 
 export const SimpleBoxText = styled.p`
 	font-size: 0.9em;
@@ -137,7 +140,7 @@ export const SimpleBoxImageContainer = styled.div`
 	align-items: center;
 	${({ reverse }) => (reverse ? 'border-left: 1px solid #31271e;' : 'border-right: 1px solid #31271e;')}
 
-	padding: 0.5rem;
+	padding: .75rem;
 `;
 
 export const SimpleBoxTextContainer = styled.div`
@@ -161,23 +164,23 @@ export const SimpleBoxContainer = styled.div`
   flex-direction: row;
 	border: 1px solid #31271e;
   `}
-	height: 5rem;
+	height: 4.5rem;
 	background-color: #111318;
 `;
 
 export const LargeRolContainer = styled.div`
 	width: 23%;
 	display: flex;
-  flex-direction: column;
+	flex-direction: column;
 	align-items: center;
 	gap: 1rem;
 	@media (max-width: 60rem) {
-    order: 2;
+		order: 2;
 		width: 100%;
-    flex-direction: row;
+		flex-direction: row;
 	}
 	@media (max-width: 45rem) {
-    flex-direction: column;
+		flex-direction: column;
 	}
 `;
 
@@ -195,9 +198,9 @@ export const LargeBoxContainer = styled.div`
 	background-image: url('../../src/assets/regionbg.png');
 	background-position: center;
 	background-size: cover;
-  order: 3;
+	order: 3;
 	@media (max-width: 60rem) {
-    width: 100%;
+		width: 100%;
 	}
 `;
 
@@ -209,6 +212,6 @@ export const ChamInfoContainer = styled.div`
 	padding: 1rem;
 	@media (max-width: 60rem) {
 		flex-direction: column;
-    align-items: center;
+		align-items: center;
 	}
 `;

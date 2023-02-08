@@ -47,7 +47,6 @@ export const GlobalReset = () => {
 				video,
 				iframe,
 				figure {
-					max-width: 100%;
 					width: 100%;
 					display: block;
 					/* -o-object-fit: cover;

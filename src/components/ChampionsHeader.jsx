@@ -54,7 +54,7 @@ export const ChampionsHeader = () => {
 	return (
 		<CampionsHeader>
 			<CampionsHeaderLine rotate={180} />
-			<CampionsHeaderText>Campeones</CampionsHeaderText>
+			<CampionsHeaderText>Champions</CampionsHeaderText>
 			<CampionsHeaderLine />
 		</CampionsHeader>
 	);
