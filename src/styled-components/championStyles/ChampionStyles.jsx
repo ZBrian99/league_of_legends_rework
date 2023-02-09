@@ -206,8 +206,10 @@ export const ChamInfoContainer = styled.div`
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+  margin: auto;
 	gap: 1rem;
   padding: 0 1rem;
+  max-width: 100rem;
 	@media (max-width: 64rem) {
 		flex-direction: column;
 		align-items: center;

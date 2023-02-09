@@ -10,15 +10,15 @@ import {
 	ChamAbilityInfo,
 	ChamAbilityInfoContainer,
 	ChamAbilityName,
+	ChamAbilityVideo,
 	ChamAbilityVideoContainer,
-	ChamBilityVide,
 	ChampionAbilityContainer,
 } from '../../styled-components';
 
 export const ChampionAbilities = ({ spells, passive, keyNumber }) => {
 	const [ability, setAbility] = useState();
 
-	const handleClick = ({ currentTarget }) => {
+  const handleClick = ({ currentTarget }) => {
 		currentTarget.id === 'passive'
 			? setAbility({
 					ability: 'Passive',
@@ -40,12 +40,13 @@ export const ChampionAbilities = ({ spells, passive, keyNumber }) => {
 			  );
 	};
 
+
+
 	return (
 		<ChampionAbilityContainer>
 			<ChamAbilityInfoContainer>
 				<ChamAbilitiesContainer>
 					<ChamAbilityHeader>Abilities</ChamAbilityHeader>
-
 					<ChamAbilitiesImageContainer>
 						<ChamAbilityButton id={'passive'} keyNumber={keyNumber} onClick={handleClick}>
 							<ChamAbilityImage
@@ -78,8 +79,11 @@ export const ChampionAbilities = ({ spells, passive, keyNumber }) => {
 				</ChamAbilityInfo>
 			</ChamAbilityInfoContainer>
 			<ChamAbilityVideoContainer>
-				<ChamBilityVide muted autoPlay loop
-					// 'https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0005/ability_0005_P1.webm'
+				<ChamAbilityVideo
+					poster={'../../../src/assets/preVideo.png'}
+					muted
+					autoPlay
+					loop
 					src={
 						ability
 							? ability.ability.includes('Passive')
@@ -93,12 +97,6 @@ export const ChampionAbilities = ({ spells, passive, keyNumber }) => {
 								  )}/ability_${ability.key.padStart(4, '0')}_${ability.ability}1.webm`
 							: ''
 					}
-					//
-					//
-					//
-					//
-					//
-					//
 				/>
 			</ChamAbilityVideoContainer>
 		</ChampionAbilityContainer>

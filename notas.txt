@@ -19,6 +19,7 @@ completar region
 focus ability
 default passive selected
 arreglar responsive
+añadir filtros de busqueda
 tipografia responsive
 habilidades responsive
 video cortar formato standard
@@ -26,6 +27,7 @@ botones skill todo es un boton click area mas grande
 agregar textshadow al nombre del campeon en grande
 hacer algo para tener controles en los videos de habilidades
 cambiar box de habilidades separlas
+añadir efecto de respiracion las habilidades con base
 
 ZeriP es solo pasiva sin el nombre
 
