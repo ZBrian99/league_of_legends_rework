@@ -16,3 +16,17 @@ cambiar div por action section h p span
 pasar fetch a axios
 cambiar presentacion de rol doble y que solo sea rol y abajo los roles en ves de rol duplicado
 completar region
+focus ability
+default passive selected
+arreglar responsive
+tipografia responsive
+habilidades responsive
+video cortar formato standard
+botones skill todo es un boton click area mas grande
+agregar textshadow al nombre del campeon en grande
+hacer algo para tener controles en los videos de habilidades
+cambiar box de habilidades separlas
+
+ZeriP es solo pasiva sin el nombre
+
+arreglar skill campeones q w e r

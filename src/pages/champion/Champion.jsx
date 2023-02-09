@@ -23,6 +23,7 @@ import {
 	SimpleBoxText,
 	SimpleBoxTextContainer,
 } from '../../styled-components';
+import { ChampionAbilities } from './ChampionAbilities';
 
 export const Champion = () => {
 	const { id } = useParams();
@@ -36,7 +37,7 @@ export const Champion = () => {
 				<>
 					{champion
 						.filter((e) => e.id === id)
-						.map(({ title, name, lore, tags }) => (
+						.map(({ title, name, lore, tags, spells, passive, key }) => (
 							<ChampionContainer key={id}>
 								<ChamHeader>
 									<ChamHeaderContainer>
@@ -100,6 +101,8 @@ export const Champion = () => {
 									{/* <div>difficulty</div> */}
 									{/* <div>attack, defense, magic</div> */}
 									{/* <div>recurso</div> */}
+                  
+									<ChampionAbilities spells={spells} passive={passive} keyNumber={key} />
 								</ChamInfoContainer>
 							</ChampionContainer>
 						))}

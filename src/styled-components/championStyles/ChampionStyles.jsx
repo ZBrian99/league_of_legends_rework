@@ -90,10 +90,11 @@ export const LoreContainer = styled.div`
 	border: 0.0625rem solid #31271e;
 	color: #c4b998;
 	padding: 5rem 3rem;
-	@media (max-width: 60rem) {
+	@media (max-width: 64rem) {
 		margin-top: 2rem;
 		width: 100%;
 		padding: 5rem 2rem;
+    order: -1;
 	}
 	&::before {
 		content: ' ';
@@ -104,7 +105,6 @@ export const LoreContainer = styled.div`
 		width: 100%;
 		height: 100%;
 		background-image: url('http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Evelynn_0.jpg');
-		-webkit-filter: brightness(0.3) grayscale(100%);
 		filter: brightness(0.3) grayscale(100%);
 		opacity: 0.3;
 		background-position: top center;
@@ -169,13 +169,12 @@ export const SimpleBoxContainer = styled.div`
 `;
 
 export const LargeRolContainer = styled.div`
-	width: 23%;
+	width: calc(25% - 1rem);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	gap: 1rem;
-	@media (max-width: 60rem) {
-		order: 2;
+	@media (max-width: 64rem) {
 		width: 100%;
 		flex-direction: row;
 	}
@@ -185,7 +184,7 @@ export const LargeRolContainer = styled.div`
 `;
 
 export const LargeBoxContainer = styled.div`
-	width: 23%;
+	width: calc(25% - 1rem);
 	height: min-content;
 	display: flex;
 	flex-direction: column;
@@ -198,8 +197,7 @@ export const LargeBoxContainer = styled.div`
 	background-image: url('../../src/assets/regionbg.png');
 	background-position: center;
 	background-size: cover;
-	order: 3;
-	@media (max-width: 60rem) {
+	@media (max-width: 64rem) {
 		width: 100%;
 	}
 `;
@@ -209,8 +207,8 @@ export const ChamInfoContainer = styled.div`
 	flex-wrap: wrap;
 	justify-content: center;
 	gap: 1rem;
-	padding: 1rem;
-	@media (max-width: 60rem) {
+  padding: 0 1rem;
+	@media (max-width: 64rem) {
 		flex-direction: column;
 		align-items: center;
 	}
