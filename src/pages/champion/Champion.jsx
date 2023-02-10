@@ -7,6 +7,7 @@ import {
 	ChamIconFrame,
 	ChamIconImage,
 	ChamInfoContainer,
+	ChamLogoContainer,
 	ChamName,
 	ChampionContainer,
 	ChamSeparator,
@@ -24,6 +25,7 @@ import {
 	SimpleBoxTextContainer,
 } from '../../styled-components';
 import { ChampionAbilities } from './ChampionAbilities';
+import { ChampionSkins } from './ChampionSkins';
 
 export const Champion = () => {
 	const { id } = useParams();
@@ -77,13 +79,24 @@ export const Champion = () => {
 									<LoreContainer
 										image={`http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${id}_0.jpg`}
 									>
-										<ChamIconContainer>
-											<ChamIconImage
-												src={`http://ddragon.leagueoflegends.com/cdn/12.23.1/img/champion/${id}.png`}
-												alt='champion image'
-											/>
-										</ChamIconContainer>
-										<ChamIconFrame src='../../../src/assets/ChampionIconFrame.png' alt='champion border' />
+										<ChamLogoContainer>
+											<ChamIconContainer>
+												<div
+													style={{
+														width: '5rem',
+														overflow: 'hidden',
+														borderRadius: '50%',
+													}}
+												>
+													<ChamIconImage
+														src={`http://ddragon.leagueoflegends.com/cdn/12.23.1/img/champion/${id}.png`}
+														alt='champion image'
+													/>
+												</div>
+											</ChamIconContainer>
+											<ChamIconFrame src='../../../src/assets/ChampionIconFrame.png' alt='champion border' />
+										</ChamLogoContainer>
+
 										<LoreText>{lore}</LoreText>
 									</LoreContainer>
 									<LargeBoxContainer>
@@ -101,8 +114,8 @@ export const Champion = () => {
 									{/* <div>difficulty</div> */}
 									{/* <div>attack, defense, magic</div> */}
 									{/* <div>recurso</div> */}
-                  
 									<ChampionAbilities spells={spells} passive={passive} keyNumber={key} />
+									<ChampionSkins />
 								</ChamInfoContainer>
 							</ChampionContainer>
 						))}

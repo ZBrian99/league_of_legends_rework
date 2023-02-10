@@ -56,20 +56,45 @@ export const ChampionContainer = styled.div`
 	color: white;
 `;
 export const ChamIconFrame = styled.img`
-	width: 7rem;
-	top: -3.5rem;
+	width: 7.5rem;
 	position: absolute;
+	z-index: -1;
 `;
 
 export const ChamIconImage = styled.img`
-	transform: scale(1.1);
+	border-radius: 50%;
+	transform: scale(1.17);
 `;
 export const ChamIconContainer = styled.div`
+	width: 5rem;
+  position: relative;
+	&::before {
+    content: '';
+		position: absolute;
+		top: -.2rem;
+    right: -.2rem;
+    bottom: -.2rem;
+    left: -.2rem;
+    z-index: -1;
+		background-image: linear-gradient(180deg, #3e3310, #c6b98b, #3e3310);
+		border-radius: 50%;
+	}
+`;
+
+export const ChamLogoContainer = styled.div`
 	position: absolute;
-	top: -3rem;
-	width: 6rem;
+	width: 7.5rem;
+	height: 7.5rem;
+	top: -3.75rem;
 	border-radius: 50%;
-	overflow: hidden;
+	box-sizing: content-box;
+	border: 1px solid #31271e;
+	z-index: 1;
+	padding: 0.2rem;
+	background-color: #111318;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 `;
 
 export const LoreText = styled.p`
@@ -94,7 +119,7 @@ export const LoreContainer = styled.div`
 		margin-top: 2rem;
 		width: 100%;
 		padding: 5rem 2rem;
-    order: -1;
+		order: -1;
 	}
 	&::before {
 		content: ' ';
@@ -123,8 +148,6 @@ export const LargeBoxImage = styled.img`
 		margin: 3rem 0;
 	}
 `;
-
-
 
 export const SimpleBoxText = styled.p`
 	font-size: 0.9em;
@@ -206,10 +229,10 @@ export const ChamInfoContainer = styled.div`
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-  margin: auto;
+	margin: auto;
 	gap: 1rem;
-  padding: 0 1rem;
-  max-width: 100rem;
+	padding: 0 1rem;
+	max-width: 100rem;
 	@media (max-width: 64rem) {
 		flex-direction: column;
 		align-items: center;
