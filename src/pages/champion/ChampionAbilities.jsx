@@ -16,9 +16,9 @@ import {
 } from '../../styled-components';
 
 export const ChampionAbilities = ({ spells, passive, keyNumber }) => {
-	const [ability, setAbility] = useState();
+  const [ability, setAbility] = useState();
 
-  const handleClick = ({ currentTarget }) => {
+	const handleClick = ({ currentTarget }) => {
 		currentTarget.id === 'passive'
 			? setAbility({
 					ability: 'Passive',
@@ -39,16 +39,17 @@ export const ChampionAbilities = ({ spells, passive, keyNumber }) => {
 						})[0]
 			  );
 	};
-
-
-
 	return (
 		<ChampionAbilityContainer>
 			<ChamAbilityInfoContainer>
 				<ChamAbilitiesContainer>
 					<ChamAbilityHeader>Abilities</ChamAbilityHeader>
 					<ChamAbilitiesImageContainer>
-						<ChamAbilityButton id={'passive'} keyNumber={keyNumber} onClick={handleClick}>
+						<ChamAbilityButton
+							id={'passive'}
+							keyNumber={keyNumber}
+              onClick={handleClick}
+						>
 							<ChamAbilityImage
 								src={`https://ddragon.leagueoflegends.com/cdn/13.1.1/img/passive/${passive.image.full}`}
 								alt='passive'

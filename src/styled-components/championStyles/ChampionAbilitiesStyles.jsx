@@ -29,9 +29,9 @@ export const ChamAbilityInfo = styled.div`
 	@media (max-width: 64rem) {
 		width: 80%;
 	}
-  @media (max-width: 30rem) {
-    width: 90%;
-  }
+	@media (max-width: 30rem) {
+		width: 90%;
+	}
 	/* padding: 2rem 2rem 0; */
 `;
 
@@ -48,6 +48,7 @@ export const ChamAbilityButton = styled.button`
 	/* padding-right: 1rem; */
 	/* padding: .5rem; */
 	transition: transform 0.4s ease-in-out;
+
 	&:hover {
 		transition: transform 0.1s ease-in-out;
 		transform: translateY(-0.3rem);
@@ -62,16 +63,16 @@ export const ChamAbilityButton = styled.button`
 
 export const ChamAbilitiesImageContainer = styled.div`
 	display: flex;
-  justify-content: space-between;
+	justify-content: space-between;
 	align-items: flex-end;
 	gap: 1rem;
 	width: 100%;
 	@media (max-width: 64rem) {
-    width: 80%;
+		width: 80%;
 	}
-  @media (max-width: 30rem) {
-    width: 90%;
-  }
+	@media (max-width: 30rem) {
+		width: 90%;
+	}
 `;
 export const ChamAbilitiesContainer = styled.div`
 	display: flex;
@@ -80,9 +81,9 @@ export const ChamAbilitiesContainer = styled.div`
 	height: 50%;
 	gap: 4rem;
 	width: 100%;
-  
+
 	@media (max-width: 64rem) {
-    width: 100%;
+		width: 100%;
 		align-items: center;
 	}
 `;
@@ -100,7 +101,7 @@ export const ChamAbilityVideo = styled.video`
 	max-height: 32rem;
 	width: 100%;
 	@media (max-width: 64rem) {
-    object-fit: cover;
+		object-fit: cover;
 	}
 `;
 
@@ -108,13 +109,13 @@ export const ChamAbilityVideoContainer = styled.div`
 	/* width: 100%; */
 	/* width: 50%; */
 	display: flex;
-  margin: auto;
+	margin: auto;
 	@media (max-width: 64rem) {
-    width: 80%;
+		width: 80%;
 		/* padding-bottom: 3rem; */
 	}
 	@media (max-width: 30rem) {
-    width: 90%;
+		width: 90%;
 		/* padding-bottom: 3rem; */
 	}
 `;
@@ -134,11 +135,11 @@ export const ChamAbilityInfoContainer = styled.div`
 export const ChampionAbilityContainer = styled.div`
 	/* display: flex; */
 	display: grid;
-  grid-template-columns: repeat(2,  1fr);
+	grid-template-columns: repeat(2, 1fr);
 	width: 100%;
 	padding: 3rem 3rem;
-  gap: 3rem;
-  
+	gap: 3rem;
+
 	background-color: #111318;
 	border: 1px solid #31271e;
 	background-image: url('../../../src/assets/rol (1).svg');
@@ -147,11 +148,10 @@ export const ChampionAbilityContainer = styled.div`
 	background-position: center;
 	color: #0000004c;
 	@media (max-width: 64rem) {
-    /* flex-direction: column; */
-    grid-template-columns: 1fr;
-    align-items: center;
-	  padding: 3rem 0;
-    gap: 0;
-    
+		/* flex-direction: column; */
+		grid-template-columns: 1fr;
+		align-items: center;
+		padding: 3rem 0;
+		gap: 0;
 	}
 `;
