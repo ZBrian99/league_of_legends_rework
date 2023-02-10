@@ -1,6 +1,4 @@
-import { keyframes } from '@emotion/react';
 import styled from '@emotion/styled';
-import { formToJSON } from 'axios';
 /* #c4b998` : `#937341 */
 
 export const ChamAbility = styled.h6`
@@ -22,10 +20,17 @@ export const ChamAbilityDescription = styled.p`
 export const ChamAbilityInfo = styled.div`
 	display: flex;
 	flex-direction: column;
+  width: 100%;
 	gap: 0.5rem;
 	/* width: 24rem; */
-	margin-top: 3rem;
+	margin: 3rem 0;
 	height: 12rem;
+	overflow: auto;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+	&::-webkit-scrollbar {
+		display: none;
+	}
 	@media (max-width: 64rem) {
 		width: 80%;
 	}
@@ -38,6 +43,7 @@ export const ChamAbilityInfo = styled.div`
 export const ChamAbilityImage = styled.img`
 	width: 4rem;
 	height: 4rem;
+	
 	@media (max-width: 30rem) {
 		width: 3rem;
 		height: 3rem;
@@ -45,19 +51,17 @@ export const ChamAbilityImage = styled.img`
 `;
 
 export const ChamAbilityButton = styled.button`
-	/* padding-right: 1rem; */
-	/* padding: .5rem; */
 	transition: transform 0.4s ease-in-out;
 
-	&:hover {
-		transition: transform 0.1s ease-in-out;
+	${({ variant }) =>
+		variant
+			? `transform: translateY(-1.5rem)`
+			: `&:hover {
+    transition: transform 0.1s ease-in-out;
 		transform: translateY(-0.3rem);
+	}`};
+	&:hover {
 		cursor: pointer;
-	}
-
-	&:focus {
-		transition: transform 0.4s ease-in-out;
-		transform: translateY(-1.5rem);
 	}
 `;
 
@@ -83,6 +87,7 @@ export const ChamAbilitiesContainer = styled.div`
 	width: 100%;
 
 	@media (max-width: 64rem) {
+    margin-top:3rem;
 		width: 100%;
 		align-items: center;
 	}
@@ -112,6 +117,7 @@ export const ChamAbilityVideoContainer = styled.div`
 	margin: auto;
 	@media (max-width: 64rem) {
 		width: 80%;
+    order: -1;
 		/* padding-bottom: 3rem; */
 	}
 	@media (max-width: 30rem) {
@@ -148,10 +154,9 @@ export const ChampionAbilityContainer = styled.div`
 	background-position: center;
 	color: #0000004c;
 	@media (max-width: 64rem) {
-		/* flex-direction: column; */
 		grid-template-columns: 1fr;
 		align-items: center;
-		padding: 3rem 0;
+		padding: 5rem 0 1rem;
 		gap: 0;
 	}
 `;

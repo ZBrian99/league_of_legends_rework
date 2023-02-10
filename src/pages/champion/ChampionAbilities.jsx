@@ -15,25 +15,32 @@ import {
 	ChampionAbilityContainer,
 } from '../../styled-components';
 
+const abilities = ['Q', 'W', 'E', 'R'];
+
 export const ChampionAbilities = ({ spells, passive, keyNumber }) => {
-  const [ability, setAbility] = useState();
+	const [ability, setAbility] = useState({
+		ability: 'Passive',
+		name: passive.name,
+		description: passive.description.replace(/ *\<[^>]*\> */g, ' '),
+		key: keyNumber,
+	});
 
 	const handleClick = ({ currentTarget }) => {
-		currentTarget.id === 'passive'
+		currentTarget.id === 'Passive'
 			? setAbility({
-					ability: 'Passive',
+					ability: currentTarget.id,
 					name: passive.name,
-					description: passive.description,
+					description: passive.description.replace(/ *\<[^>]*\> */g, ' '),
 					key: keyNumber,
 			  })
 			: setAbility(
 					spells
-						.filter((spell) => spell.id === currentTarget.id)
+						.filter((spell, i) => abilities[i] === currentTarget.id)
 						.map((spell) => {
 							return {
-								ability: spell.id.slice(-1),
+								ability: currentTarget.id,
 								name: spell.name,
-								description: spell.description,
+								description: spell.description.replace(/ *\<[^>]*\> */g, ' '),
 								key: keyNumber,
 							};
 						})[0]
@@ -46,23 +53,28 @@ export const ChampionAbilities = ({ spells, passive, keyNumber }) => {
 					<ChamAbilityHeader>Abilities</ChamAbilityHeader>
 					<ChamAbilitiesImageContainer>
 						<ChamAbilityButton
-							id={'passive'}
+							id={'Passive'}
 							keyNumber={keyNumber}
-              onClick={handleClick}
+							onClick={handleClick}
+							variant={'Passive'.includes(ability.ability) ?? variant}
 						>
 							<ChamAbilityImage
 								src={`https://ddragon.leagueoflegends.com/cdn/13.1.1/img/passive/${passive.image.full}`}
-								alt='passive'
+								alt={passive.name}
 							/>
-							{/* Passive */}
 						</ChamAbilityButton>
-						{spells.map(({ id, name, image }) => (
-							<ChamAbilityButton key={id} id={id} keyNumber={keyNumber} onClick={handleClick}>
+						{spells.map(({ id, name, image }, i) => (
+							<ChamAbilityButton
+								key={id}
+								id={abilities[i]}
+								keyNumber={keyNumber}
+								onClick={handleClick}
+								variant={abilities[i].includes(ability.ability) ?? variant}
+							>
 								<ChamAbilityImage
 									src={`https://ddragon.leagueoflegends.com/cdn/13.1.1/img/spell/${image.full}`}
-									alt={image.full}
+									alt={name}
 								/>
-								{/* {id.slice(-1)} */}
 							</ChamAbilityButton>
 						))}
 					</ChamAbilitiesImageContainer>
