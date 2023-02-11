@@ -20,7 +20,7 @@ export const ChamAbilityDescription = styled.p`
 export const ChamAbilityInfo = styled.div`
 	display: flex;
 	flex-direction: column;
-  width: 100%;
+	width: 100%;
 	gap: 0.5rem;
 	/* width: 24rem; */
 	margin: 3rem 0;
@@ -43,7 +43,7 @@ export const ChamAbilityInfo = styled.div`
 export const ChamAbilityImage = styled.img`
 	width: 4rem;
 	height: 4rem;
-	
+
 	@media (max-width: 30rem) {
 		width: 3rem;
 		height: 3rem;
@@ -51,13 +51,15 @@ export const ChamAbilityImage = styled.img`
 `;
 
 export const ChamAbilityButton = styled.button`
-	transition: transform 0.4s ease-in-out;
+	transition: transform 0.5s ease-out;
 
 	${({ variant }) =>
 		variant
-			? `transform: translateY(-1.5rem)`
+			? `transform: translateY(-1.5rem);
+    transition: transform 0.4s ease;
+      `
 			: `&:hover {
-    transition: transform 0.1s ease-in-out;
+    transition: transform 0.1s ease;
 		transform: translateY(-0.3rem);
 	}`};
 	&:hover {
@@ -67,7 +69,7 @@ export const ChamAbilityButton = styled.button`
 
 export const ChamAbilitiesImageContainer = styled.div`
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: flex-end;
 	gap: 1rem;
 	width: 100%;
@@ -87,7 +89,7 @@ export const ChamAbilitiesContainer = styled.div`
 	width: 100%;
 
 	@media (max-width: 64rem) {
-    margin-top:3rem;
+		margin-top: 3rem;
 		width: 100%;
 		align-items: center;
 	}
@@ -117,7 +119,7 @@ export const ChamAbilityVideoContainer = styled.div`
 	margin: auto;
 	@media (max-width: 64rem) {
 		width: 80%;
-    order: -1;
+		order: -1;
 		/* padding-bottom: 3rem; */
 	}
 	@media (max-width: 30rem) {
