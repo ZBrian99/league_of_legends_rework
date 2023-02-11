@@ -39,7 +39,7 @@ export const Champion = () => {
 				<>
 					{champion
 						.filter((e) => e.id === id)
-						.map(({ title, name, lore, tags, spells, passive, key }) => (
+						.map(({ title, name, lore, tags, spells, passive, key, skins }) => (
 							<ChampionContainer key={id}>
 								<ChamHeader>
 									<ChamHeaderContainer>
@@ -115,7 +115,7 @@ export const Champion = () => {
 									{/* <div>attack, defense, magic</div> */}
 									{/* <div>recurso</div> */}
 									<ChampionAbilities spells={spells} passive={passive} keyNumber={key} />
-									<ChampionSkins />
+									<ChampionSkins skins={skins} chamName={name} />
 								</ChamInfoContainer>
 							</ChampionContainer>
 						))}

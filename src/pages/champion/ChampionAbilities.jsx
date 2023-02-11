@@ -50,7 +50,7 @@ export const ChampionAbilities = ({ spells, passive, keyNumber }) => {
 		<ChampionAbilityContainer>
 			<ChamAbilityInfoContainer>
 				<ChamAbilitiesContainer>
-					<ChamAbilityHeader>Abilities</ChamAbilityHeader>
+					<ChamAbilityHeader>ABILITIES</ChamAbilityHeader>
 					<ChamAbilitiesImageContainer>
 						<ChamAbilityButton
 							id={'Passive'}
