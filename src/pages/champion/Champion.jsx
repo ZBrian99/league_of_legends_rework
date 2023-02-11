@@ -115,7 +115,7 @@ export const Champion = () => {
 									{/* <div>attack, defense, magic</div> */}
 									{/* <div>recurso</div> */}
 									<ChampionAbilities spells={spells} passive={passive} keyNumber={key} />
-									<ChampionSkins skins={skins} chamName={name} />
+									<ChampionSkins skins={skins} chamName={name} chamId={id} />
 								</ChamInfoContainer>
 							</ChampionContainer>
 						))}

@@ -31,4 +31,3 @@ añadir efecto de respiracion las habilidades con base
 habilidades responsivas en tamaño de icono
 ZeriP es solo pasiva sin el nombre
 custom scroll
-arreglar skill campeones q w e r
