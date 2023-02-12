@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import {
 	ChamSkinImage,
 	ChamSkinsContainer,
@@ -13,35 +13,40 @@ import {
 export const ChampionSkins = ({ skins, chamName, chamId }) => {
 	const [skinNumber, setSkinNumber] = useState(0);
 	const [stopInterval, setStopInterval] = useState(false);
+	const selector = useRef();
 	useEffect(() => {
-		if (stopInterval) {
-			return () => {
-				clearInterval(skinsRotations);
-			};
-		}
-
 		const skinsRotations = setInterval(() => {
-			setSkinNumber((skinNumber) => (skins.length - 1 <= skinNumber ? (skinNumber = 0) : skinNumber + 1));
-		}, 4000);
+			if (!stopInterval) {
+				setSkinNumber((skinNumber) => (skins.length - 1 <= skinNumber ? (skinNumber = 0) : skinNumber + 1));
+			}
+		}, 1000);
 
 		return () => {
 			clearInterval(skinsRotations);
 		};
 	}, [stopInterval]);
-
 	const hamdleClick = (num) => {
-
-    setStopInterval(true);
-    setSkinNumber(num);
+		setStopInterval(true);
+		setSkinNumber(num);
 	};
+	useEffect(() => {
+		document.getElementById(skins[skinNumber].id).focus();
+		if (innerWidth > 1360) {
+			selector.current.scrollTo({ top: 96 * skinNumber, behavior: 'smooth' });
+		} else if (innerWidth <= 1360 && innerWidth > 720) {
+			selector.current.scrollTo({ left: 160 * skinNumber, behavior: 'smooth' });
+		} else if (innerWidth <= 720) {
+			selector.current.scrollTo({ left: 128 * skinNumber, behavior: 'smooth' });
+		}
+	}, [skinNumber]);
 
 	return (
 		<ChamSkinsContainer image={skins[skinNumber].num}>
 			<ChamSkinSidePanelTitle>AVAILABLE SKINS</ChamSkinSidePanelTitle>
 			<ChamSkinSidePanel>
-				<ChamSkinSidePanelSelector>
+				<ChamSkinSidePanelSelector ref={selector}>
 					{skins.map(({ name, num, id }, i) => (
-						<ChamSkinSidePanelContainer key={id} onClick={(e) => hamdleClick(i)}>
+						<ChamSkinSidePanelContainer key={id} id={id} onClick={() => hamdleClick(i)}>
 							<ChamSkinSidePanelImage
 								src={`http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${chamId}_${num}.jpg`}
 								alt={name === 'default' ? num : num}

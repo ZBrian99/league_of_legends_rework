@@ -142,6 +142,7 @@ export const ChamAbilityInfoContainer = styled.div`
 
 export const ChampionAbilityContainer = styled.div`
 	/* display: flex; */
+  margin-top: 5rem;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	width: 100%;

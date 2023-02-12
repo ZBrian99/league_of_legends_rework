@@ -31,3 +31,6 @@ añadir efecto de respiracion las habilidades con base
 habilidades responsivas en tamaño de icono
 ZeriP es solo pasiva sin el nombre
 custom scroll
+cambiar focus boton skin
+hacer efecto slider
+box shadow

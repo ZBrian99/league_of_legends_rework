@@ -4,15 +4,14 @@ export const ChamSkinSidePanelTitle = styled.p`
 	font-size: 2.25em;
 	line-height: 1.25em;
 	margin-left: 2rem;
-	margin-bottom: 2rem;
 	color: #937341;
 	letter-spacing: 0.1rem;
 	font-weight: 700;
 	font-style: italic;
-	padding: 3rem 0;
+	padding: 3rem 0 1rem;
 	text-align: center;
 	position: absolute;
-  
+
 	@media (max-width: 85rem) {
 		position: static;
 		margin: 0;
@@ -40,23 +39,30 @@ export const ChamSkinSidePanelImage = styled.img`
 		width: 5rem;
 		height: 5rem;
 	}
-	
 `;
 
 export const ChamSkinSidePanelContainer = styled.button`
 	display: flex;
 	align-items: center;
 	gap: 1rem;
-	transition: all 0.4s ease;
+	transition: all 0.5s ease-in-out;
 	margin-left: 3rem;
-	padding-bottom: 2rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+
 	&:hover {
 		cursor: pointer;
 		@media (min-width: 85rem) {
-			margin-left: 2rem;
 			${ChamSkinSidePanelImage} {
-				width: 6rem;
-				height: 6rem;
+				transform: scale(1.1);
+			}
+		}
+	}
+	&:focus {
+		outline: none;
+		@media (min-width: 85rem) {
+			${ChamSkinSidePanelImage} {
+				transform: scale(1.4);
 			}
 		}
 	}
@@ -76,13 +82,38 @@ export const ChamSkinSidePanelContainer = styled.button`
 
 export const ChamSkinSidePanelSelector = styled.div`
 	display: flex;
-	overflow-y: scroll;
 	flex-direction: column;
 	height: 100%;
+	overflow-y: scroll;
+	padding-top: 6rem;
+	padding-bottom: calc(100% - 8.4rem);
+	::-webkit-scrollbar {
+		width: 0.3rem;
+	}
+
+	::-webkit-scrollbar-thumb {
+		background: gray;
+		border-radius: 1rem;
+	}
+
+	::-webkit-scrollbar-thumb:hover {
+		background: #6d6d6d;
+	}
+
+	scrollbar-width: thin;
 
 	@media (max-width: 85rem) {
+		overflow-y: hidden;
+		overflow-x: scroll;
 		flex-direction: row;
+		padding-bottom: 0;
 		padding-top: 3rem;
+		padding-left: calc(50% - 5rem);
+		padding-right: calc(50% - 5rem);
+	}
+	@media (max-width: 45rem) {
+		padding-left: calc(50% - 4rem);
+		padding-right: calc(50% - 4rem);
 	}
 `;
 
@@ -92,7 +123,8 @@ export const ChamSkinSidePanel = styled.div`
 	padding: 7rem 0 1.5rem;
 	padding-right: 1rem;
 	position: absolute;
-  height: 100%;
+	height: 100%;
+
 	border-right: 1px solid #31271e;
 	@media (max-width: 85rem) {
 		border-right: unset;
@@ -112,12 +144,12 @@ export const ChamSkinImage = styled.img`
 		border-top: 1px solid #31271e;
 		border-bottom: 1px solid #31271e;
 	}
-	/* object-fit: cover;
-  object-position: center; */
 `;
 
 export const ChamSkinsContainer = styled.section`
 	width: 100%;
+	margin-top: 5rem;
+
 	display: flex;
 	flex-direction: column;
 	background-color: #111318;

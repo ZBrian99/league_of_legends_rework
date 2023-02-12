@@ -37,6 +37,7 @@ export const ChamSplash = styled.img`
 
 export const ChamHeader = styled.div`
 	position: relative;
+
 `;
 
 export const ChamHeaderContainer = styled.div`
