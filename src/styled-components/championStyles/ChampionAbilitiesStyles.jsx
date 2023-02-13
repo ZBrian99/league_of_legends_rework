@@ -21,9 +21,9 @@ export const ChamAbilityInfo = styled.div`
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-	gap: 0.5rem;
+	gap: .5rem;
 	/* width: 24rem; */
-	margin: 3rem 0;
+	padding: 3rem 0;
 	height: 12rem;
 	overflow: auto;
 	-ms-overflow-style: none;
@@ -37,12 +37,60 @@ export const ChamAbilityInfo = styled.div`
 	@media (max-width: 30rem) {
 		width: 90%;
 	}
-	/* padding: 2rem 2rem 0; */
+`;
+
+export const ChamAbilityLineCircle = styled.span`
+	transition: all 0.5s ease-out;
+	width: .5625rem;
+	height: .5625rem;
+	position: absolute;
+	background-color: ${({ variant }) => (variant ? 'rgb(208, 168, 92)' : 'gray')};
+	border-radius: 50%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+`;
+
+export const ChamAbilityUpLine = styled.span`
+	width: 1px;
+	height: 20px;
+	position: absolute;
+	left: calc(50% - .5008px);
+	visibility: hidden;
+	top: -1.375rem;
+	background-color: rgb(208, 168, 92);
+`;
+
+export const ChamAbilityLine = styled.span`
+	transition: all 0.5s ease-out;
+
+	width: 100%;
+	height: 1px;
+	background-color: gray;
+	position: absolute;
+	bottom: 0;
+`;
+export const ChamAbilityCircle = styled.span`
+	transition: all 0.5s ease-out;
+	width: 1.25rem;
+	height: 1.25rem;
+	border: .125rem solid rgb(208, 168, 92);
+	position: absolute;
+	bottom: -0.5938rem;
+	border-radius: 50%;
+	margin: -0.625rem 0px 0px -0.625rem;
+
+	left: calc(10% + 20% * ${({ focus }) => focus});
 `;
 
 export const ChamAbilityImage = styled.img`
+	transition: transform 0.5s ease-out;
 	width: 4rem;
 	height: 4rem;
+
+	@media (max-width: 1024px) {
+		margin-bottom: 40px;
+	}
 
 	@media (max-width: 30rem) {
 		width: 3rem;
@@ -52,29 +100,47 @@ export const ChamAbilityImage = styled.img`
 
 export const ChamAbilityButton = styled.button`
 	transition: transform 0.5s ease-out;
-
+	width: 25%;
+	height: 160%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
 	${({ variant }) =>
 		variant
-			? `transform: translateY(-1.5rem);
-    transition: transform 0.4s ease;
-      `
+			? `${ChamAbilityImage} {
+           transform: translateY(-1.5rem);
+      transition: transform 0.4s ease;
+  
+      }`
 			: `&:hover {
-    transition: transform 0.1s ease;
-		transform: translateY(-0.3rem);
-	}`};
-	&:hover {
-		cursor: pointer;
+    ${ChamAbilityImage} {
+      transition: transform 0.1s ease;
+      transform: translateY(-0.3rem);
+    }
+  }
+  `}
+	&:hover,
+  :focus {
+  cursor: pointer;
+		${ChamAbilityLineCircle} {
+			background-color: rgb(208, 168, 92);
+		}
 	}
 `;
 
 export const ChamAbilitiesImageContainer = styled.div`
 	display: flex;
-	justify-content: space-around;
 	align-items: flex-end;
-	gap: 1rem;
+	position: relative;
+	padding-top: 1.5rem;
+
+	/* gap: 1rem; */
 	width: 100%;
 	@media (max-width: 64rem) {
 		width: 80%;
+	margin-top: -2rem;
+
 	}
 	@media (max-width: 30rem) {
 		width: 90%;
@@ -97,7 +163,7 @@ export const ChamAbilitiesContainer = styled.div`
 
 export const ChamAbilityHeader = styled.h2`
 	color: #937341;
-	letter-spacing: 0.1rem;
+	letter-spacing: .1rem;
 	font-weight: 700;
 	font-size: 4rem;
 	line-height: 4.5rem;
@@ -105,6 +171,8 @@ export const ChamAbilityHeader = styled.h2`
 `;
 
 export const ChamAbilityVideo = styled.video`
+	border: 1px solid #31271e;
+
 	max-height: 32rem;
 	width: 100%;
 	@media (max-width: 64rem) {
@@ -142,15 +210,15 @@ export const ChamAbilityInfoContainer = styled.div`
 
 export const ChampionAbilityContainer = styled.div`
 	/* display: flex; */
-  margin-top: 5rem;
+	margin-top: 5rem;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	width: 100%;
+	width: 95%;
 	padding: 3rem 3rem;
 	gap: 3rem;
 
-	background-color: #111318;
-	border: 1px solid #31271e;
+	/* background-color: #111318; */
+	/* border: 1px solid #31271e; */
 	background-image: url('../../../src/assets/rol (1).svg');
 	background-repeat: no-repeat;
 	background-size: contain;

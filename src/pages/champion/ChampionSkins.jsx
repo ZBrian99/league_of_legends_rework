@@ -19,7 +19,7 @@ export const ChampionSkins = ({ skins, chamName, chamId }) => {
 			if (!stopInterval) {
 				setSkinNumber((skinNumber) => (skins.length - 1 <= skinNumber ? (skinNumber = 0) : skinNumber + 1));
 			}
-		}, 1000);
+		}, 4000);
 
 		return () => {
 			clearInterval(skinsRotations);

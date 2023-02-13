@@ -4,12 +4,16 @@ import {
 	ChamAbilitiesImageContainer,
 	ChamAbility,
 	ChamAbilityButton,
+	ChamAbilityCircle,
 	ChamAbilityDescription,
 	ChamAbilityHeader,
 	ChamAbilityImage,
 	ChamAbilityInfo,
 	ChamAbilityInfoContainer,
+	ChamAbilityLine,
+	ChamAbilityLineCircle,
 	ChamAbilityName,
+	ChamAbilityUpLine,
 	ChamAbilityVideo,
 	ChamAbilityVideoContainer,
 	ChampionAbilityContainer,
@@ -23,15 +27,17 @@ export const ChampionAbilities = ({ spells, passive, keyNumber }) => {
 		name: passive.name,
 		description: passive.description.replace(/ *\<[^>]*\> */g, ' '),
 		key: keyNumber,
+		id: 0,
 	});
 
-	const handleClick = ({ currentTarget }) => {
+	const handleClick = ({ currentTarget }, index) => {
 		currentTarget.id === 'Passive'
 			? setAbility({
 					ability: currentTarget.id,
 					name: passive.name,
 					description: passive.description.replace(/ *\<[^>]*\> */g, ' '),
 					key: keyNumber,
+					id: 0,
 			  })
 			: setAbility(
 					spells
@@ -42,10 +48,12 @@ export const ChampionAbilities = ({ spells, passive, keyNumber }) => {
 								name: spell.name,
 								description: spell.description.replace(/ *\<[^>]*\> */g, ' '),
 								key: keyNumber,
+								id: index + 1,
 							};
 						})[0]
 			  );
 	};
+
 	return (
 		<ChampionAbilityContainer>
 			<ChamAbilityInfoContainer>
@@ -62,21 +70,32 @@ export const ChampionAbilities = ({ spells, passive, keyNumber }) => {
 								src={`https://ddragon.leagueoflegends.com/cdn/13.1.1/img/passive/${passive.image.full}`}
 								alt={passive.name}
 							/>
+							<ChamAbilityLine>
+								<ChamAbilityLineCircle></ChamAbilityLineCircle>
+							</ChamAbilityLine>
 						</ChamAbilityButton>
 						{spells.map(({ id, name, image }, i) => (
 							<ChamAbilityButton
 								key={id}
 								id={abilities[i]}
 								keyNumber={keyNumber}
-								onClick={handleClick}
+								onClick={(e) => handleClick(e, i)}
 								variant={abilities[i].includes(ability.ability) ?? variant}
 							>
 								<ChamAbilityImage
 									src={`https://ddragon.leagueoflegends.com/cdn/13.1.1/img/spell/${image.full}`}
 									alt={name}
 								/>
+								<ChamAbilityLine>
+									<ChamAbilityLineCircle></ChamAbilityLineCircle>
+								</ChamAbilityLine>
 							</ChamAbilityButton>
 						))}
+
+						<ChamAbilityCircle focus={ability.id}>
+							<ChamAbilityLineCircle variant></ChamAbilityLineCircle>
+							<ChamAbilityUpLine></ChamAbilityUpLine>
+						</ChamAbilityCircle>
 					</ChamAbilitiesImageContainer>
 				</ChamAbilitiesContainer>
 				<ChamAbilityInfo>

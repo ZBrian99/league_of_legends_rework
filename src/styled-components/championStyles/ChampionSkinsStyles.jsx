@@ -1,14 +1,14 @@
 import styled from '@emotion/styled';
 
 export const ChamSkinSidePanelTitle = styled.p`
-	font-size: 2.25em;
-	line-height: 1.25em;
+	font-size: 2em;
+	line-height: 1em;
 	margin-left: 2rem;
 	color: #937341;
 	letter-spacing: 0.1rem;
 	font-weight: 700;
 	font-style: italic;
-	padding: 3rem 0 1rem;
+	padding: 3rem 0;
 	text-align: center;
 	position: absolute;
 
@@ -92,12 +92,16 @@ export const ChamSkinSidePanelSelector = styled.div`
 	}
 
 	::-webkit-scrollbar-thumb {
-		background: gray;
+		/* background: #31271e; */
+		background: #444;
+
 		border-radius: 1rem;
 	}
 
 	::-webkit-scrollbar-thumb:hover {
-		background: #6d6d6d;
+		background: #555;
+		/* background: #46372a; */
+
 	}
 
 	scrollbar-width: thin;
@@ -147,7 +151,8 @@ export const ChamSkinImage = styled.img`
 `;
 
 export const ChamSkinsContainer = styled.section`
-	width: 100%;
+	width: 95%;
+	/* width: 100%; */
 	margin-top: 5rem;
 
 	display: flex;

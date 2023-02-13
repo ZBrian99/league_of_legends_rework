@@ -34,3 +34,13 @@ custom scroll
 cambiar focus boton skin
 hacer efecto slider
 box shadow
+agregar campeones relacionados de la misma region y campeones aleatorios al final
+region:
+  cambiar el fondo de region a la imagen correspondiente
+  seccion de region:
+    igual que la del campeon pero con imagen de la region
+    simbolo de la region  
+    nombre de la region
+    lore de la region
+    campeones de la region
+    otras regiones
