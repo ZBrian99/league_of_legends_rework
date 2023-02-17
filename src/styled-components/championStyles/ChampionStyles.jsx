@@ -37,7 +37,6 @@ export const ChamSplash = styled.img`
 
 export const ChamHeader = styled.div`
 	position: relative;
-
 `;
 
 export const ChamHeaderContainer = styled.div`
@@ -53,7 +52,7 @@ export const ChamHeaderContainer = styled.div`
 `;
 
 export const ChampionContainer = styled.div`
-	min-height: 1500vh;
+	min-height: 100vh;
 	color: white;
 `;
 export const ChamIconFrame = styled.img`
@@ -62,21 +61,29 @@ export const ChamIconFrame = styled.img`
 	z-index: -1;
 `;
 
+export const ChamIconBorder = styled.div`
+	width: 5rem;
+	overflow: hidden;
+	border-radius: 50%;
+`;
+
 export const ChamIconImage = styled.img`
 	border-radius: 50%;
 	transform: scale(1.17);
 `;
 export const ChamIconContainer = styled.div`
 	width: 5rem;
-  position: relative;
+	${({ scale }) => (scale ? `transform: scale(${scale});` : '')}
+
+	position: relative;
 	&::before {
-    content: '';
+		content: '';
 		position: absolute;
-		top: -.2rem;
-    right: -.2rem;
-    bottom: -.2rem;
-    left: -.2rem;
-    z-index: -1;
+		top: -0.2rem;
+		right: -0.2rem;
+		bottom: -0.2rem;
+		left: -0.2rem;
+		z-index: -1;
 		background-image: linear-gradient(180deg, #3e3310, #c6b98b, #3e3310);
 		border-radius: 50%;
 	}
@@ -105,32 +112,79 @@ export const LoreText = styled.p`
 	font-size: 0.8em;
 `;
 
-export const LoreContainer = styled.div`
-	display: flex;
+export const ChamLoreContainer = styled.div`
 	width: 50%;
-	height: min-content;
+	gap: 1rem;
+	display: flex;
+	flex-direction: column;
+  @media (max-width: 64rem) {
+    width: 100%;
+    gap: 1rem;
+  }
+`;
+
+export const PhraseText = styled.p`
+	font-weight: 700;
+	font-size: 1.3em;
+	line-height: 1.5;
+	color: #c4b998;
+	text-align: center;
+`;
+
+export const PhraseAutor = styled.h3`
+	font-weight: 700;
+	font-size: 1.3em;
+	line-height: 1.5;
+	color: #937341;
+	text-align: center;
+`;
+
+export const ChamPhrase = styled.div`
+	display: flex;
+	position: relative;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	position: relative;
+	gap: 1rem;
 	border: 0.0625rem solid #31271e;
 	color: #c4b998;
-	padding: 5rem 3rem;
+	padding: 6rem 3rem 3rem;
+	background-color: #111318;
 	@media (max-width: 64rem) {
+		width: 100%;
+		padding: 5rem 2rem;
+		order: -1;
+	}
+	@media (max-width: 45rem) {
 		margin-top: 2rem;
+	}
+`;
+
+export const ChamLargeLore = styled.div`
+	display: flex;
+	height: 100%;
+	position: relative;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border: 0.0625rem solid #31271e;
+	color: #c4b998;
+	padding: 3rem 3rem;
+	background-color: #111318;
+	@media (max-width: 64rem) {
+		/* margin-top: 2rem; */
 		width: 100%;
 		padding: 5rem 2rem;
 		order: -1;
 	}
 	&::before {
 		content: ' ';
-		z-index: -1;
 		position: absolute;
 		top: 0;
 		left: 0;
 		width: 100%;
 		height: 100%;
-		background-image: url('http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Evelynn_0.jpg');
+		background-image: url(${({ image }) => image});
 		filter: brightness(0.3) grayscale(100%);
 		opacity: 0.3;
 		background-position: top center;
@@ -144,10 +198,10 @@ export const SimpleBoxImage = styled.img`
 `;
 export const LargeBoxImage = styled.img`
 	width: 10rem;
-	margin: 6rem 0;
-	@media (max-width: 64rem) {
-		margin: 3rem 0;
-	}
+	top: 50%;
+	margin: auto 0;
+	/* @media (max-width: 64rem) {
+	} */
 `;
 
 export const SimpleBoxText = styled.p`
@@ -175,7 +229,6 @@ export const SimpleBoxTextContainer = styled.div`
 `;
 export const SimpleBoxContainer = styled.div`
 	width: 100%;
-
 	display: flex;
 	${({ variant }) =>
 		variant
@@ -187,9 +240,16 @@ export const SimpleBoxContainer = styled.div`
 			: `
   flex-direction: row;
 	border: 1px solid #31271e;
+  @media (max-width: 64rem) {
+		width: calc(50% - 0.5rem);
+	}
   `}
 	height: 4.5rem;
 	background-color: #111318;
+
+	@media (max-width: 45rem) {
+		width: 100%;
+	}
 `;
 
 export const LargeRolContainer = styled.div`
@@ -201,6 +261,7 @@ export const LargeRolContainer = styled.div`
 	@media (max-width: 64rem) {
 		width: 100%;
 		flex-direction: row;
+    flex-wrap: wrap;
 	}
 	@media (max-width: 45rem) {
 		flex-direction: column;
@@ -208,8 +269,9 @@ export const LargeRolContainer = styled.div`
 `;
 
 export const LargeBoxContainer = styled.div`
-	width: calc(25% - 1rem);
-	height: min-content;
+	/* width: calc(25% - 1rem); */
+	width: 100%;
+	height: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -227,6 +289,17 @@ export const LargeBoxContainer = styled.div`
 `;
 
 export const ChamInfoContainer = styled.div`
+	display: flex;
+	height: 40rem;
+	gap: 1rem;
+  @media (max-width: 64rem) {
+    flex-direction: column;
+  	height: auto;
+
+  }
+`;
+
+export const ChamContainer = styled.div`
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;

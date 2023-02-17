@@ -35,6 +35,11 @@ cambiar focus boton skin
 hacer efecto slider
 box shadow
 agregar campeones relacionados de la misma region y campeones aleatorios al final
+error con focus
+
+
+
+
 region:
   cambiar el fondo de region a la imagen correspondiente
   seccion de region:

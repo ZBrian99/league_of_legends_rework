@@ -40,6 +40,21 @@ export const GlobalReset = () => {
 					-webkit-font-smoothing: antialiased;
 					/* opcional */
 					-moz-osx-font-smoothing: grayscale;
+
+					::-webkit-scrollbar {
+						width: 0.3rem;
+            height: .3rem;
+					}
+
+					::-webkit-scrollbar-thumb {
+						background: #444;
+
+						border-radius: 1rem;
+					}
+
+					::-webkit-scrollbar-thumb:hover {
+						background: #555;
+					}
 				}
 
 				img,

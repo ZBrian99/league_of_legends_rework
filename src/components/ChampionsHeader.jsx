@@ -1,17 +1,18 @@
 import styled from '@emotion/styled';
 
 export const CampionsHeader = styled.div`
-margin: 10rem 0 2rem;
+	margin: 10rem 0 2rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	width: 100%;
 `;
 export const CampionsHeaderIcon = styled.img`
 	width: auto;
 `;
 export const CampionsHeaderLine = styled.span`
 	transform: rotate(${({ rotate }) => rotate}deg);
-	background-image: url('../src/assets/universe/line.png');
+	background-image: url(${({ line }) => line});
 	background-repeat: no-repeat;
 	width: 30%;
 	height: 5px;
@@ -32,8 +33,9 @@ export const CampionsHeaderLine = styled.span`
 export const CampionsHeaderText = styled.span`
 	margin: 0 5rem;
 	text-transform: uppercase;
-  font-size: 1.4em;
-  letter-spacing: 5px;
+	font-size: 1.4em;
+
+	letter-spacing: 5px;
 	color: #c4b998;
 	position: relative;
 	display: flex;
@@ -42,7 +44,7 @@ export const CampionsHeaderText = styled.span`
 		content: ' ';
 		position: absolute;
 		top: -3rem;
-		background-image: url('../src/assets/universe/header_icon.png');
+		background-image: url(${({ icon }) => icon});
 		background-repeat: no-repeat;
 		background-size: cover;
 		width: 1.125rem;
@@ -53,9 +55,9 @@ export const CampionsHeaderText = styled.span`
 export const ChampionsHeader = () => {
 	return (
 		<CampionsHeader>
-			<CampionsHeaderLine rotate={180} />
-			<CampionsHeaderText>Champions</CampionsHeaderText>
-			<CampionsHeaderLine />
+			<CampionsHeaderLine line={'../src/assets/universe/line.png'} rotate={180} />
+			<CampionsHeaderText icon={'../src/assets/universe/header_icon.png'}>Champions</CampionsHeaderText>
+			<CampionsHeaderLine line={'../src/assets/universe/line.png'} />
 		</CampionsHeader>
 	);
 };

@@ -89,10 +89,10 @@ export const ChamSkinSidePanelSelector = styled.div`
 	padding-bottom: calc(100% - 8.4rem);
 	::-webkit-scrollbar {
 		width: 0.3rem;
+		height: 0.3rem;
 	}
 
 	::-webkit-scrollbar-thumb {
-		/* background: #31271e; */
 		background: #444;
 
 		border-radius: 1rem;
@@ -100,11 +100,10 @@ export const ChamSkinSidePanelSelector = styled.div`
 
 	::-webkit-scrollbar-thumb:hover {
 		background: #555;
-		/* background: #46372a; */
-
 	}
 
 	scrollbar-width: thin;
+
 
 	@media (max-width: 85rem) {
 		overflow-y: hidden;
@@ -151,8 +150,8 @@ export const ChamSkinImage = styled.img`
 `;
 
 export const ChamSkinsContainer = styled.section`
-	width: 95%;
-	/* width: 100%; */
+	/* width: 95%; */
+	width: 100%;
 	margin-top: 5rem;
 
 	display: flex;

@@ -1,4 +1,5 @@
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
+import { Footer } from './components/Footer';
 import { NavBar } from './components/NavBar';
 import { Champion, Champions, Regiones, Universo } from './pages';
 import { GlobalReset } from './styled-components';
@@ -16,6 +17,7 @@ export const App = () => {
 					<Route path='/regiones' element={<Regiones />} />
 					<Route path='/universo' element={<Universo />} />
 				</Routes>
+				<Footer />
 			</BrowserRouter>
 		</>
 	);

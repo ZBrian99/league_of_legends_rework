@@ -15,6 +15,23 @@ export const ChamAbilityName = styled.h5`
 export const ChamAbilityDescription = styled.p`
 	font-size: 0.8em;
 	color: #c4b998;
+	overflow-y: scroll;
+	::-webkit-scrollbar {
+		width: 0.3rem;
+		height: 0.3rem;
+	}
+
+	::-webkit-scrollbar-thumb {
+		background: #444;
+
+		border-radius: 1rem;
+	}
+
+	::-webkit-scrollbar-thumb:hover {
+		background: #555;
+	}
+
+	scrollbar-width: thin;
 `;
 
 export const ChamAbilityInfo = styled.div`
@@ -23,14 +40,9 @@ export const ChamAbilityInfo = styled.div`
 	width: 100%;
 	gap: .5rem;
 	/* width: 24rem; */
-	padding: 3rem 0;
-	height: 12rem;
-	overflow: auto;
-	-ms-overflow-style: none;
-	scrollbar-width: none;
-	&::-webkit-scrollbar {
-		display: none;
-	}
+	padding: 3rem 0 0;
+	height: 14rem;
+	overflow: hidden;
 	@media (max-width: 64rem) {
 		width: 80%;
 	}
@@ -213,12 +225,12 @@ export const ChampionAbilityContainer = styled.div`
 	margin-top: 5rem;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	width: 95%;
+	width: 100%;
 	padding: 3rem 3rem;
 	gap: 3rem;
 
-	/* background-color: #111318; */
-	/* border: 1px solid #31271e; */
+	background-color: #111318;
+	border: 1px solid #31271e;
 	background-image: url('../../../src/assets/rol (1).svg');
 	background-repeat: no-repeat;
 	background-size: contain;

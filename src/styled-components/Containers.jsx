@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 export const Container = styled.div`
 	width: 100%;
 	max-width: 80rem;
-	margin: 0 auto;
+	margin: 0 auto 2rem;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-evenly;
@@ -17,6 +17,7 @@ export const ChampionsContainer = styled.div`
 	display: grid;
 	grid-auto-flow: dense;
 	gap: 2rem 1rem;
+	margin-bottom: 2rem;
 	justify-content: center;
 	grid-auto-rows: 423px;
 	grid-template-columns: repeat(auto-fill, 233px);
