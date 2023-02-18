@@ -36,6 +36,7 @@ export const Champion = () => {
 	const { id } = useParams();
 	const { champion, isLoading } = useChampion(id);
 
+  console.log(useChampion(id));
 	return (
 		<>
 			{isLoading ? (

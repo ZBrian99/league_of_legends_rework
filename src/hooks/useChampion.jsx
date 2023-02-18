@@ -9,13 +9,6 @@ export const useChampion = (chamName) => {
 			const championsData = await getChampionById(chamName);
 
 			const championsInfo = Object.values(championsData).map((champion) => champion);
-			// const championsImageUrl = championsInfo.map(
-			// 	({ id }) => `http://ddragon.leagueoflegends.com/cdn/img/champion/loading/${id}_0.jpg`
-			// );
-			// const completeChampions = championsInfo.map((champion, index) => ({
-			// 	...champion,
-			// 	ImageUrl: championsImageUrl[index],
-			// }));
 			setChampion(championsInfo);
 			setIsLoading(false);
 		};

@@ -12,3 +12,29 @@ export const getChampionById = async (chamName) => {
 	const { data } = await resp.json();
 	return data;
 };
+
+
+
+
+// import axios from 'axios';
+
+// const useApi = (url) => {
+// 	const [data, setData] = useState(null);
+
+// 	const fetchData = async () => {
+// 		try {
+// 			const response = await axios.get(url);
+// 			setData(response.data);
+// 		} catch (error) {
+// 			console.log(error);
+// 		}
+// 	};
+
+// 	useEffect(() => {
+// 		fetchData();
+// 	}, []);
+
+// 	return data; // returns the data from the API call as a state variable.
+// };
+
+// export default useApi;
