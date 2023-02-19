@@ -15,28 +15,26 @@ export const ChampionOther = () => {
 	const { championsExtra, isLoading } = useContext(DataContext);
 	const { id } = useParams();
 	useEffect(() => {
-	if (!isLoading) {
-		const randomNum = [];
+		if (!isLoading) {
+			const randomNum = [];
 
-		const chamNum = championsExtra.findIndex((e) => e.id === id);
+			const chamNum = championsExtra.findIndex((e) => e.id === id);
 
-		do {
-			randomNum[0] = Math.floor(Math.random() * championsExtra.length);
-			randomNum[1] = Math.floor(Math.random() * championsExtra.length);
-			randomNum[2] = Math.floor(Math.random() * championsExtra.length);
-		} while ((randomNum[0] === chamNum) || (randomNum[1] === chamNum) || (randomNum[2] === chamNum));
+			do {
+				randomNum[0] = Math.floor(Math.random() * championsExtra.length);
+			} while (randomNum[0] === chamNum);
 
-		// randomNum[1] = randomNum[0] + 5;
-		// randomNum[1] >= championsExtra.length && (randomNum[1] -= championsExtra.length-1);
-
-		// randomNum[2] = randomNum[0] - 5;
-		// randomNum[2] <= 0 && (randomNum[2] += championsExtra.length-1);
-
-		setRandom(randomNum);
-		console.log(randomNum);
-	}
+			randomNum[1] = randomNum[0] + 10;
+			if (randomNum[1] >= championsExtra.length) {
+				randomNum[1] -= championsExtra.length;
+			}
+			randomNum[2] = randomNum[0] - 10;
+			if (randomNum[2] < 0) {
+				randomNum[2] += championsExtra.length;
+			}
+			setRandom(randomNum);
+		}
 	}, [isLoading]);
-	// console.log(isLoading);
 	return (
 		<>
 			<CampionsHeader>
@@ -51,7 +49,9 @@ export const ChampionOther = () => {
 					<>
 						<Link>
 							<OtherChampionBox
-								image={`http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${championsExtra[random[2]].id}_0.jpg`}
+								image={`http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${
+									championsExtra[random[2]].id
+								}_0.jpg`}
 							>
 								<OtherChampionName>{championsExtra[random[2]].name}</OtherChampionName>
 								<OtherChampionDescription>{championsExtra[random[2]].title}</OtherChampionDescription>
@@ -59,7 +59,9 @@ export const ChampionOther = () => {
 						</Link>
 						<Link>
 							<OtherChampionBox
-								image={`http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${championsExtra[random[0]].id}_0.jpg`}
+								image={`http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${
+									championsExtra[random[0]].id
+								}_0.jpg`}
 							>
 								<OtherChampionName>{championsExtra[random[0]].name}</OtherChampionName>
 								<OtherChampionDescription>{championsExtra[random[0]].title}</OtherChampionDescription>
@@ -67,7 +69,9 @@ export const ChampionOther = () => {
 						</Link>
 						<Link>
 							<OtherChampionBox
-								image={`http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${championsExtra[random[1]].id}_0.jpg`}
+								image={`http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${
+									championsExtra[random[1]].id
+								}_0.jpg`}
 							>
 								<OtherChampionName>{championsExtra[random[1]].name}</OtherChampionName>
 								<OtherChampionDescription>{championsExtra[random[1]].title}</OtherChampionDescription>
