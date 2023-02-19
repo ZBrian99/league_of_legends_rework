@@ -35,7 +35,7 @@ export const ChampionRelated = () => {
 						: cham.region === championsExtra[chamNum].region && cham.id !== id
 				)
 				.sort(() => Math.random() - 0.5)
-				.slice(0, 7);
+				.slice(0, 5);
 			setRelated(relatedCham);
 		}
 	}, [isLoading]);

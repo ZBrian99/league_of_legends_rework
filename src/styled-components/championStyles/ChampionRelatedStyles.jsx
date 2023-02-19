@@ -15,7 +15,7 @@ export const ChamRelatedTitle = styled.p`
 	font-size: 0.9em;
 	text-align: center;
 	text-transform: uppercase;
-	letter-spacing: .1rem;
+	letter-spacing: 0.1rem;
 	color: #937341;
 `;
 
@@ -32,14 +32,14 @@ export const ChamLargeLogoContainer = styled.div`
 	flex-direction: column;
 	align-items: center;
 	&:hover {
-    cursor: pointer;
+		cursor: pointer;
 		transform: scale(1.2);
 		${ChamRelatedName} {
-      opacity: 1;
+			opacity: 1;
 		}
 	}
 	@media (max-width: 1024px) {
-    margin: auto;
+		margin: auto;
 		padding: 0 32px;
 	}
 	/* border: 1px solid green; */
@@ -57,17 +57,17 @@ export const ChamRelatedSelectorContainer = styled.div`
 	align-items: center;
 	/* justify-content: center; */
 	/* background-color: blue; */
-  
+
 	@media (max-width: 1024px) {
-    flex-direction: row;
+		flex-direction: row;
 		overflow-x: scroll;
 		overflow-y: hidden;
 		padding: 4rem 1.5rem;
 	}
 
 	::-webkit-scrollbar {
-		width: .3rem;
-		height: .3rem;
+		width: 0.3rem;
+		height: 0.3rem;
 	}
 
 	::-webkit-scrollbar-thumb {
@@ -93,11 +93,10 @@ export const ChamRelatedTopContainer = styled.div`
 `;
 
 export const LargeBoxRelatedContainer = styled.div`
-	/* width: calc(25% - 1rem); */
+	height: 100%;
 	display: flex;
 	flex-direction: column;
-  overflow: hidden;
+	overflow: hidden;
 	border: 1px solid #31271e;
 	background-color: #111318;
-	
 `;

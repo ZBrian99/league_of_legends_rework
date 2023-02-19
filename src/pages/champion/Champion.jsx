@@ -96,28 +96,13 @@ export const Champion = () => {
 													/>
 												</ChamLogoContainer>
 												<PhraseText>
-													“Human emotions can be more volatile than even the deepest magic.”
+													“{!isLoadingChampionsExtra && championsExtra.find((e) => e.id === id).quote}”
 												</PhraseText>
 												<PhraseAutor>~ {name}</PhraseAutor>
 											</ChamPhrase>
 											<ChamLargeLore
 												image={`http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${id}_0.jpg`}
 											>
-												{/* <ChamLogoContainer>
-													<ChamIconContainer>
-														<ChamIconBorder>
-															<ChamIconImage
-																src={`http://ddragon.leagueoflegends.com/cdn/12.23.1/img/champion/${id}.png`}
-																alt='champion image'
-															/>
-														</ChamIconBorder>
-													</ChamIconContainer>
-													<ChamIconFrame
-														src='../../../src/assets/ChampionIconFrame.png'
-														alt='champion border'
-													/>
-												</ChamLogoContainer> */}
-
 												<LoreText>{lore}</LoreText>
 											</ChamLargeLore>
 										</ChamMidContainer>
@@ -180,7 +165,7 @@ export const Champion = () => {
 									{/* <div>difficulty</div> */}
 									{/* <div>attack, defense, magic</div> */}
 									{/* <div>recurso</div> */}
-                  <ChampionAbilities spells={spells} passive={passive} keyNumber={key} tag={tags[0]} />
+									<ChampionAbilities spells={spells} passive={passive} keyNumber={key} tag={tags[0]} />
 									<ChampionSkins skins={skins} chamName={name} chamId={id} />
 									<ChampionOther />
 								</ChamContainer>
