@@ -1,43 +1,22 @@
-arreglar borde derecho gris
 cerrar al hacer click fuera
-hacer navbar center responsive con un boton mas
+fuente responsive
+cambiar div por action section h p span
+pasar text a em
+video cortar formato 16/9
+agregar textshadow al nombre del campeon en grande
+box shadow
+añadir efecto de respiracion las habilidades con base
+
 arreglar animacion al cerrar menu nav
 arreglar animacion menu se abre solo al estar en mobile
-fondo campeones gris al cargar cambiar a negro o transparente
-fuente responsive
-no mostrar contenido hasta que la imagen cargue
-pasar text a em
-crear grid
-gradient iniciar agregar desde arriba tambien
-quitar babel
-hacer que el splash del campeon ocupe 100% de la pantalla responsive
-pasar cosas a grid
-cambiar div por action section h p span
-pasar fetch a axios
-cambiar presentacion de rol doble y que solo sea rol y abajo los roles en ves de rol duplicado
-completar region
-focus ability
-default passive selected
-arreglar responsive
+
+
+video splash screen
 añadir filtros de busqueda
-tipografia responsive
-habilidades responsive
-video cortar formato standard
-botones skill todo es un boton click area mas grande
-agregar textshadow al nombre del campeon en grande
-hacer algo para tener controles en los videos de habilidades
-cambiar box de habilidades separlas
-añadir efecto de respiracion las habilidades con base
-habilidades responsivas en tamaño de icono
-ZeriP es solo pasiva sin el nombre
-custom scroll
-cambiar focus boton skin
-hacer efecto slider
-box shadow
-agregar campeones relacionados de la misma region y campeones aleatorios al final
-error con focus
 
-
+pasar fetch a axios
+pasar styled a archivos individuales
+factorizar todos los componentes
 
 
 region:

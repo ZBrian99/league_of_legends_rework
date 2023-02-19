@@ -4,6 +4,7 @@ export const ChamName = styled.h2`
 	text-transform: uppercase;
 	font-weight: 500;
 	font-size: 7rem;
+	text-align: center;
 	line-height: 9rem;
 	letter-spacing: 0.2em;
 	background: linear-gradient(to top, #67471f 0%, #937341 50%);

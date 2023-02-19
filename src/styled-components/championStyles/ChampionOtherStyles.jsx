@@ -72,13 +72,15 @@ export const OtherChampionBox = styled.figure`
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: top center;
+	height: 20rem;
+	border: 1px solid #0a0a0c;
 
 	position: relative;
 	transition: transform 0.3s ease-out;
 	overflow: hidden;
 	&:hover {
 		cursor: pointer;
-		transform: scale(1.05);
+		/* transform: scale(1.05); */
 		border: 1px solid #927345;
 	}
 	&:hover ${OtherChampionName} {
@@ -87,8 +89,7 @@ export const OtherChampionBox = styled.figure`
 	&:hover ${OtherChampionDescription} {
 		transform: translateY(0);
 	}
-	height: 20rem;
-	@media (max-width: 40rem) {
+	@media (max-width: 64rem) {
 		height: 15rem;
 	}
 `;
@@ -99,7 +100,7 @@ export const OtherChampionContainer = styled.div`
 	grid-auto-flow: dense;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 1rem;
-	@media (max-width: 40rem) {
+	@media (max-width: 64rem) {
 		grid-template-columns: 1fr;
 	}
 	/* margin-top: 5rem; */

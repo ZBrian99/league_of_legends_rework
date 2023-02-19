@@ -38,7 +38,7 @@ export const ChampionCardDescription = styled.p`
 `;
 
 export const ChampionCard = styled.figure`
-	background-color: #b8b8b8;
+	/* background-color: #b8b8b8; */
 	background-image: url(${({ image }) => image});
 	background-repeat: no-repeat;
 	background-size: 110% auto;

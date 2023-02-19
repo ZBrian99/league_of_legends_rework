@@ -53,45 +53,33 @@ export const ChamSkinSidePanelContainer = styled.button`
 	&:hover {
 		cursor: pointer;
 	}
-  
+
 	${({ active }) =>
 		active
 			? `
-      @media (min-width: 85rem) {
-			${ChamSkinSidePanelImage} {
-				transform: scale(1.4);
-			}
+    ${ChamSkinSidePanelImage} {
+		transform: scale(1.4);
+	}
+	@media (max-width: 85rem) {
+		${ChamSkinSidePanelImage} {
+			transform: translateY(-1.5rem);
 		}
-    `
+	}`
 			: `
-      	&:hover {
+    	&:hover {
 		@media (min-width: 85rem) {
 			${ChamSkinSidePanelImage} {
 				transform: scale(1.1);
 			}
 		}
 	}
-      `}
+    `}
 
-	/* &:focus {
-		outline: none;
-		@media (min-width: 85rem) {
-			${ChamSkinSidePanelImage} {
-				transform: scale(1.4);
-			}
-		}
-	} */
 	@media (max-width: 85rem) {
 		flex-direction: column;
 		text-align: center;
 		margin: 0 1.5rem;
 		margin: 0;
-
-		/* &:focus {
-			${ChamSkinSidePanelImage} {
-				transform: translateY(-1.5rem);
-			}
-		} */
 	}
 `;
 
