@@ -25,12 +25,12 @@ export const ChampionSkins = ({ skins, chamName, chamId }) => {
 			clearInterval(skinsRotations);
 		};
 	}, [stopInterval]);
+
 	const hamdleClick = (num) => {
 		setStopInterval(true);
 		setSkinNumber(num);
 	};
 	useEffect(() => {
-		document.getElementById(skins[skinNumber].id).focus();
 		if (innerWidth > 1360) {
 			selector.current.scrollTo({ top: 96 * skinNumber, behavior: 'smooth' });
 		} else if (innerWidth <= 1360 && innerWidth > 720) {
@@ -46,7 +46,7 @@ export const ChampionSkins = ({ skins, chamName, chamId }) => {
 			<ChamSkinSidePanel>
 				<ChamSkinSidePanelSelector ref={selector}>
 					{skins.map(({ name, num, id }, i) => (
-						<ChamSkinSidePanelContainer key={id} id={id} onClick={() => hamdleClick(i)}>
+						<ChamSkinSidePanelContainer key={id} active={skinNumber === i} onClick={() => hamdleClick(i)}>
 							<ChamSkinSidePanelImage
 								src={`http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${chamId}_${num}.jpg`}
 								alt={name === 'default' ? num : num}

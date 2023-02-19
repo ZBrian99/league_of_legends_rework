@@ -29,7 +29,7 @@ export const ChamSkinSidePanelImage = styled.img`
 	height: 4rem;
 	object-fit: cover;
 	object-position: center;
-	transition: all 0.4s ease;
+	transition: all 0.3s ease;
 	@media (max-width: 85rem) {
 		width: 7rem;
 		height: 7rem;
@@ -52,31 +52,46 @@ export const ChamSkinSidePanelContainer = styled.button`
 
 	&:hover {
 		cursor: pointer;
+	}
+  
+	${({ active }) =>
+		active
+			? `
+      @media (min-width: 85rem) {
+			${ChamSkinSidePanelImage} {
+				transform: scale(1.4);
+			}
+		}
+    `
+			: `
+      	&:hover {
 		@media (min-width: 85rem) {
 			${ChamSkinSidePanelImage} {
 				transform: scale(1.1);
 			}
 		}
 	}
-	&:focus {
+      `}
+
+	/* &:focus {
 		outline: none;
 		@media (min-width: 85rem) {
 			${ChamSkinSidePanelImage} {
 				transform: scale(1.4);
 			}
 		}
-	}
+	} */
 	@media (max-width: 85rem) {
 		flex-direction: column;
 		text-align: center;
 		margin: 0 1.5rem;
 		margin: 0;
 
-		&:focus {
+		/* &:focus {
 			${ChamSkinSidePanelImage} {
 				transform: translateY(-1.5rem);
 			}
-		}
+		} */
 	}
 `;
 
@@ -103,7 +118,6 @@ export const ChamSkinSidePanelSelector = styled.div`
 	}
 
 	scrollbar-width: thin;
-
 
 	@media (max-width: 85rem) {
 		overflow-y: hidden;
