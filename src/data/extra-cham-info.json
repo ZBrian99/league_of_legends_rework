@@ -1,0 +1,1503 @@
+{
+	"data": [
+		{
+			"id": "Aatrox",
+			"key": "266",
+			"name": "Aatrox",
+			"title": "the Darkin Blade",
+			"quote": "I must destroy even hope…",
+			"region": "Runeterra",
+			"race": "Darkin",
+			"video": "https://assets.contentstack.io/v3/assets/blt187521ff0727be24/blt70c132451a5e61fc/60ee0b26ba1c655fbc2eeeff/aatrox-splashvideo.webm"
+		},
+		{
+			"id": "Ahri",
+			"key": "103",
+			"name": "Ahri",
+			"title": "the Nine-Tailed Fox",
+			"quote": "Human emotions can be more volatile than even the deepest magic.",
+			"region": "Ionia",
+			"race": "Vastaya"
+		},
+		{
+			"id": "Akali",
+			"key": "84",
+			"name": "Akali",
+			"title": "the Rogue Assassin",
+			"quote": "If you look dangerous, you better be dangerous.",
+			"region": "Ionia",
+			"race": "Human"
+		},
+		{
+			"id": "Akshan",
+			"key": "166",
+			"name": "Akshan",
+			"title": "the Rogue Sentinel",
+			"quote": "Not everything happens for a reason. Some things need to be sorted out.",
+			"region": "Shurima",
+			"race": "Human"
+		},
+		{
+			"id": "Alistar",
+			"key": "12",
+			"name": "Alistar",
+			"title": "the Minotaur",
+			"quote": "Nothing can hold me back!",
+			"region": "Runeterra",
+			"race": "Minotaur"
+		},
+		{
+			"id": "Amumu",
+			"key": "32",
+			"name": "Amumu",
+			"title": "the Sad Mummy",
+			"quote": "Solitude can be lonelier than death.",
+			"region": "Shurima",
+			"race": "Unknown"
+		},
+		{
+			"id": "Anivia",
+			"key": "34",
+			"name": "Anivia",
+			"title": "the Cryophoenix",
+			"quote": "I am the fury of the blizzard, the bite of the wind, and the cold of the ice. I am the Freljord.",
+			"region": "Freljord",
+			"race": "Spirit God"
+		},
+		{
+			"id": "Annie",
+			"key": "1",
+			"name": "Annie",
+			"title": "the Dark Child",
+			"quote": "Ashes, ashes, they all fall down.",
+			"region": "Runeterra",
+			"race": "Human",
+			"video": "https://assets.contentstack.io/v3/assets/blt187521ff0727be24/blt8afa23678832e539/60ee0b6644ff471db19c904b/annie-splashvideo.webm"
+		},
+		{
+			"id": "Aphelios",
+			"key": "523",
+			"name": "Aphelios",
+			"title": "the Weapon of the Faithful",
+			"quote": "Our faith is proven fate each time we deny it.",
+			"region": "Targon",
+			"race": "Human"
+		},
+		{
+			"id": "Ashe",
+			"key": "22",
+			"name": "Ashe",
+			"title": "the Frost Archer",
+			"quote": "One tribe, one people, one Freljord.",
+			"region": "Freljord",
+			"race": "Human"
+		},
+		{
+			"id": "AurelionSol",
+			"key": "136",
+			"name": "Aurelion Sol",
+			"title": "The Star Forger",
+			"quote": "Cower. Worship. Marvel. They are all appropriate responses.",
+			"region": "Runeterra",
+			"race": "Celestial Dragon"
+		},
+		{
+			"id": "Azir",
+			"key": "268",
+			"name": "Azir",
+			"title": "the Emperor of the Sands",
+			"quote": "Shurima was once the glory of Runeterra. I will make it so again.",
+			"region": "Shurima",
+			"race": "God Warrior"
+		},
+		{
+			"id": "Bard",
+			"key": "432",
+			"name": "Bardo",
+			"title": "the Wandering Caretaker",
+			"quote": "The chimes of his footsteps are echoes of change.",
+			"region": "Runeterra",
+			"race": "Celestial",
+			"video": "https://assets.contentstack.io/v3/assets/blt187521ff0727be24/blt8e657abba7ffc39a/60ee0ba56610ed4d42bc21ba/bard-splashvideo.webm"
+		},
+		{
+			"id": "Belveth",
+			"key": "200",
+			"name": "Bel'Veth",
+			"title": "the Empress of the Void",
+			"quote": "This world will not be forgotten. I will replace it—a child devouring its parent.",
+			"region": "The Void",
+			"race": "Voidborn"
+		},
+		{
+			"id": "Blitzcrank",
+			"key": "53",
+			"name": "Blitzcrank",
+			"title": "the Great Steam Golem",
+			"quote": "A SINGLE GEAR TURNING CAN MAKE ALL THE DIFFERENCE.",
+			"region": "Zaun",
+			"race": "Golem"
+		},
+		{
+			"id": "Brand",
+			"key": "63",
+			"name": "Brand",
+			"title": "the Burning Vengeance",
+			"quote": "This place will burn, not by cinder flying or breath of wind, but by the vengeance of my hand.",
+			"region": "Runeterra",
+			"race": "Human"
+		},
+		{
+			"id": "Braum",
+			"key": "201",
+			"name": "Braum",
+			"title": "the Heart of the Freljord",
+			"quote": "Today, we fight as enemies. Tomorrow, we may fight as brothers.",
+			"region": "Freljord",
+			"race": "Human",
+			"video": "https://assets.contentstack.io/v3/assets/blt187521ff0727be24/bltfa80911d16967199/60ee0bfd730ed71c59413a61/braum-splashvideo.webm"
+		},
+		{
+			"id": "Caitlyn",
+			"key": "51",
+			"name": "Caitlyn",
+			"title": "the Sheriff of Piltover",
+			"quote": "To be the best hunter, you have to be able to think like your prey.",
+			"region": "Piltover",
+			"race": "Human"
+		},
+		{
+			"id": "Camille",
+			"key": "164",
+			"name": "Camille",
+			"title": "the Steel Shadow",
+			"quote": "Precision is the difference between a butcher and a surgeon.",
+			"region": "Piltover",
+			"race": "Human",
+			"video": "https://assets.contentstack.io/v3/assets/blt187521ff0727be24/bltc0c4aed8182f7029/60ee0c099128f725cf8c84d5/camille-splashvideo.webm"
+		},
+		{
+			"id": "Cassiopeia",
+			"key": "69",
+			"name": "Cassiopeia",
+			"title": "the Serpent's Embrace",
+			"quote": "Secrets are sharper than blades…",
+			"region": "Noxus",
+			"race": "Human"
+		},
+		{
+			"id": "Chogath",
+			"key": "31",
+			"name": "Cho'Gath",
+			"title": "the Terror of the Void",
+			"quote": "Your souls will feed the Void!",
+			"region": "The Void",
+			"race": "Voidborn"
+		},
+		{
+			"id": "Corki",
+			"key": "42",
+			"name": "Corki",
+			"title": "the Daring Bombardier",
+			"quote": "Death from above!",
+			"region": "Bandle City",
+			"race": "Yordle"
+		},
+		{
+			"id": "Darius",
+			"key": "122",
+			"name": "Darius",
+			"title": "the Hand of Noxus",
+			"quote": "History only remembers the victors. Stand with Noxus, and be remembered forever.",
+			"region": "Noxus",
+			"race": "Human"
+		},
+		{
+			"id": "Diana",
+			"key": "131",
+			"name": "Diana",
+			"title": "Scorn of the Moon",
+			"quote": "I am the light coursing in the soul of the moon.",
+			"region": "Targon",
+			"race": "Human",
+			"video": "https://assets.contentstack.io/v3/assets/blt187521ff0727be24/blt52e18b467e1902ec/60ee0cb3d8e2343c032d640c/diana-splashvideo.webm"
+		},
+		{
+			"id": "Draven",
+			"key": "119",
+			"name": "Draven",
+			"title": "the Glorious Executioner",
+			"quote": "The best' is wherever I decide to set the bar each day.",
+			"region": "Noxus",
+			"race": "Human"
+		},
+		{
+			"id": "DrMundo",
+			"key": "36",
+			"name": "Dr. Mundo",
+			"title": "the Madman of Zaun",
+			"quote": "Me must be good doctor. Patients never come back.",
+			"region": "Zaun",
+			"race": "Human"
+		},
+		{
+			"id": "Ekko",
+			"key": "245",
+			"name": "Ekko",
+			"title": "the Boy Who Shattered Time",
+			"quote": "My devices work best when they don’t work as intended… which is most of the time.",
+			"region": "Zaun",
+			"race": "Human"
+		},
+		{
+			"id": "Elise",
+			"key": "60",
+			"name": "Elise",
+			"title": "the Spider Queen",
+			"quote": "Beauty is power too, and can strike swifter than any sword.",
+			"region": "Shadow Isles",
+			"race": "Human"
+		},
+		{
+			"id": "Evelynn",
+			"key": "28",
+			"name": "Evelynn",
+			"title": "Agony's Embrace",
+			"quote": "What are you doing tonight? How about we get together and unlock that vast well of torment inside you?",
+			"region": "Runeterra",
+			"race": "Demon"
+		},
+		{
+			"id": "Ezreal",
+			"key": "81",
+			"name": "Ezreal",
+			"title": "the Prodigal Explorer",
+			"quote": "If I don’t know the rules, then how can I be breaking them?",
+			"region": "Piltover",
+			"race": "Human"
+		},
+		{
+			"id": "Fiddlesticks",
+			"key": "9",
+			"name": "Fiddlesticks",
+			"title": "the Ancient Fear",
+			"quote": "It's hunting us. It knows what we're afraid of.",
+			"region": "Runeterra",
+			"race": "Demon"
+		},
+		{
+			"id": "Fiora",
+			"key": "114",
+			"name": "Fiora",
+			"title": "the Grand Duelist",
+			"quote": "I have come to kill you for the sake of honor. And though you possess none, still you die.",
+			"region": "Demacia",
+			"race": "Human"
+		},
+		{
+			"id": "Fizz",
+			"key": "105",
+			"name": "Fizz",
+			"title": "the Tidal Trickster",
+			"quote": "You people can’t even breathe water. You’re boring.",
+			"region": "Runeterra",
+			"race": "Yordle"
+		},
+		{
+			"id": "Galio",
+			"key": "3",
+			"name": "Galio",
+			"title": "the Colossus",
+			"quote": "Get behind me, Demacian! You may not have noticed, but I’m very large.",
+			"region": "Demacia",
+			"race": "Golem"
+		},
+		{
+			"id": "Gangplank",
+			"key": "41",
+			"name": "Gangplank",
+			"title": "the Saltwater Scourge",
+			"quote": "I was cutting throats and sinking Noxian war galleys when you were still pissing your britches, boy. You don’t want to take me on.",
+			"region": "Bilgewater",
+			"race": "Human"
+		},
+		{
+			"id": "Garen",
+			"key": "86",
+			"name": "Garen",
+			"title": "The Might of Demacia",
+			"quote": "This kingdom, and its people, have given me everything. What kind of man would I be if I gave any less in return?",
+			"region": "Demacia",
+			"race": "Human"
+		},
+		{
+			"id": "Gnar",
+			"key": "150",
+			"name": "Gnar",
+			"title": "the Missing Link",
+			"quote": "Gnar!",
+			"region": "Freljord",
+			"race": "Yordle",
+			"video": "https://assets.contentstack.io/v3/assets/blt187521ff0727be24/bltc3157ad5ca2940ea/60ee0dcefae20a5b4faf0abd/gnar-splashvideo.webm"
+		},
+		{
+			"id": "Gragas",
+			"key": "79",
+			"name": "Gragas",
+			"title": "the Rabble Rouser",
+			"quote": "Now this'll put hair on your chest!",
+			"region": "Freljord",
+			"race": "Human"
+		},
+		{
+			"id": "Graves",
+			"key": "104",
+			"name": "Graves",
+			"title": "the Outlaw",
+			"quote": "We’re here for your gold, not your heads… so don’t nobody decide to be a hero.",
+			"region": "Bilgewater",
+			"race": "Human"
+		},
+		{
+			"id": "Gwen",
+			"key": "887",
+			"name": "Gwen",
+			"title": "The Hallowed Seamstress",
+			"quote": "The wind at my back feels so good. I can’t lose this. I won’t.",
+			"region": "Shadow Isles",
+			"race": "Human"
+		},
+		{
+			"id": "Hecarim",
+			"key": "120",
+			"name": "Hecarim",
+			"title": "the Shadow of War",
+			"quote": "Break their ranks, and ride them down without mercy. Crush the living. Feast on their terror.",
+			"region": "Shadow Isles",
+			"race": "Wraith",
+			"video": "https://assets.contentstack.io/v3/assets/blt187521ff0727be24/bltd0cc01e6d9b34da7/60ee0de11d961d58d812dbca/hecarim-splashvideo.webm"
+		},
+		{
+			"id": "Heimerdinger",
+			"key": "74",
+			"name": "Heimerdinger",
+			"title": "the Revered Inventor",
+			"quote": "Impossible, you say? Nonsense. Just wait till you see my calculations!",
+			"region": "Piltover",
+			"race": "Yordle"
+		},
+		{
+			"id": "Illaoi",
+			"key": "420",
+			"name": "Illaoi",
+			"title": "the Kraken Priestess",
+			"quote": "Wisdom is frequently a kick in the head.",
+			"region": "Bilgewater",
+			"race": "Human",
+			"video": "https://assets.contentstack.io/v3/assets/blt187521ff0727be24/blt47139f0b90238cc2/60ee0df47b83145fc7ecaddd/illaoi-splashvideo.webm"
+		},
+		{
+			"id": "Irelia",
+			"key": "39",
+			"name": "Irelia",
+			"title": "the Blade Dancer",
+			"quote": "There was a time when I danced only for myself. Now, I dance for the First Lands.",
+			"region": "Ionia",
+			"race": "Human",
+			"video": "https://assets.contentstack.io/v3/assets/blt187521ff0727be24/blt32d1d1f93ab09206/610af182d877830e7e3ec567/irelia-splashvideo.webm"
+		},
+		{
+			"id": "Ivern",
+			"key": "427",
+			"name": "Ivern",
+			"title": "the Green Father",
+			"quote": "The cleverness of mushrooms always surprises me.",
+			"region": "Ionia",
+			"race": "Human"
+		},
+		{
+			"id": "Janna",
+			"key": "40",
+			"name": "Janna",
+			"title": "the Storm's Fury",
+			"quote": "Do not fear the winds of change—they will always be at your back.",
+			"region": "Zaun",
+			"race": "Spirit God"
+		},
+		{
+			"id": "JarvanIV",
+			"key": "59",
+			"name": "Jarvan IV",
+			"title": "the Exemplar of Demacia",
+			"quote": "Words may make a ruler, but only actions make history.",
+			"region": "Demacia",
+			"race": "Human"
+		},
+		{
+			"id": "Jax",
+			"key": "24",
+			"name": "Jax",
+			"title": "Grandmaster at Arms",
+			"quote": "Strength and will are what make a weapon.",
+			"region": "Runeterra",
+			"race": "Unknown"
+		},
+		{
+			"id": "Jayce",
+			"key": "126",
+			"name": "Jayce",
+			"title": "the Defender of Tomorrow",
+			"quote": "Picking a fight with me is the dumbest thing you’ve done today - and that’s saying a lot.",
+			"region": "Piltover",
+			"race": "Human",
+			"video": "https://assets.contentstack.io/v3/assets/blt187521ff0727be24/blt4639ea699d977db3/60ee0e4b3a7d261c53fb51f5/jayce-splashvideo.webm"
+		},
+		{
+			"id": "Jhin",
+			"key": "202",
+			"name": "Jhin",
+			"title": "the Virtuoso",
+			"quote": "Art requires a certain… cruelty.",
+			"region": "Ionia",
+			"race": "Human",
+			"video": "https://assets.contentstack.io/v3/assets/blt187521ff0727be24/blt103333d3e5a47b40/60ee0e55c326e45e15154d19/jhin-splashvideo.webm"
+		},
+		{
+			"id": "Jinx",
+			"key": "222",
+			"name": "Jinx",
+			"title": "the Loose Cannon",
+			"quote": "Volatile explosives are a girl’s best friend!",
+			"region": "Zaun",
+			"race": "Human",
+			"video": "https://assets.contentstack.io/v3/assets/blt187521ff0727be24/blt5f5448c0a40a7b77/60ee0e60d42632662baee2d1/jinx-splashvideo.webm"
+		},
+		{
+			"id": "Kaisa",
+			"key": "145",
+			"name": "Kai'Sa",
+			"title": "Daughter of the Void",
+			"quote": "My appearance may frighten you, but make no mistake—I am on your side, and we fight to the bitter end.",
+			"region": "The Void",
+			"race": "Human",
+			"video": "https://assets.contentstack.io/v3/assets/blt187521ff0727be24/blt352d2a744be227df/60ee0e6dcfb8f23a9413d1bd/kaisa-splashvideo.webm"
+		},
+		{
+			"id": "Kalista",
+			"key": "429",
+			"name": "Kalista",
+			"title": "the Spear of Vengeance",
+			"quote": "Turncoats, oath breakers and betrayers… we hate them all.",
+			"region": "Shadow Isles",
+			"race": "Wraith",
+			"video": "https://assets.contentstack.io/v3/assets/blt187521ff0727be24/blt70f64a7d0993ea72/60ee0e7547e9392c53820581/kalista-splashvideo.webm"
+		},
+		{
+			"id": "Karma",
+			"key": "43",
+			"name": "Karma",
+			"title": "the Enlightened One",
+			"quote": "As Ionia changes, so must I.",
+			"region": "Ionia",
+			"race": "Human"
+		},
+		{
+			"id": "Karthus",
+			"key": "30",
+			"name": "Karthus",
+			"title": "the Deathsinger",
+			"quote": "Death is not the end of the journey, it is just the beginning...",
+			"region": "Shadow Isles",
+			"race": "Wraith"
+		},
+		{
+			"id": "Kassadin",
+			"key": "38",
+			"name": "Kassadin",
+			"title": "the Void Walker",
+			"quote": "There are few indeed who may tread the paths between worlds.",
+			"region": "The Void",
+			"race": "Human"
+		},
+		{
+			"id": "Katarina",
+			"key": "55",
+			"name": "Katarina",
+			"title": "the Sinister Blade",
+			"quote": "Never question my loyalty. You will never know what I endure for it.",
+			"region": "Noxus",
+			"race": "Human"
+		},
+		{
+			"id": "Kayle",
+			"key": "10",
+			"name": "Kayle",
+			"title": "the Righteous",
+			"quote": "No human is perfect. But I am not human.",
+			"region": "Demacia",
+			"race": "Human"
+		},
+		{
+			"id": "Kayn",
+			"key": "141",
+			"name": "Kayn",
+			"title": "the Shadow Reaper",
+			"quote": "The child is gone. The killer remains.",
+			"region": "Ionia",
+			"race": "Human"
+		},
+		{
+			"id": "Kennen",
+			"key": "85",
+			"name": "Kennen",
+			"title": "the Heart of the Tempest",
+			"quote": "I exist across realms, in the space between lightning’s strike and thunder’s call, the true balance within the storm.",
+			"region": "Ionia",
+			"race": "Yordle"
+		},
+		{
+			"id": "Khazix",
+			"key": "121",
+			"name": "Kha'Zix",
+			"title": "the Voidreaver",
+			"quote": "Kill. Consume. Adapt.",
+			"region": "The Void",
+			"race": "Voidborn",
+			"video": "https://assets.contentstack.io/v3/assets/blt187521ff0727be24/blta12c28e47273ac3d/60ee0efd8c0ef444a6835a46/khazix-splashvideo.webm"
+		},
+		{
+			"id": "Kindred",
+			"key": "203",
+			"name": "Kindred",
+			"title": "The Eternal Hunters",
+			"quote": "Tell me again, little Lamb, which things are ours to take? All things, dear Wolf.",
+			"region": "Runeterra",
+			"race": "Spirit God",
+			"video": "https://assets.contentstack.io/v3/assets/blt187521ff0727be24/bltf45299f76bd51981/60ee0f0f30f3493a9f2fa41e/kindred-splashvideo.webm"
+		},
+		{
+			"id": "Kled",
+			"key": "240",
+			"name": "Kled",
+			"title": "the Cantankerous Cavalier",
+			"quote": "A sane man would run… but I ain’t the runnin’ kind!",
+			"region": "Noxus",
+			"race": "Yordle",
+			"video": "https://assets.contentstack.io/v3/assets/blt187521ff0727be24/blt4349d66d1b124f23/60ee0f138258b32d83974dc6/kled-splashvideo.webm"
+		},
+		{
+			"id": "KogMaw",
+			"key": "96",
+			"name": "Kog'Maw",
+			"title": "the Mouth of the Abyss",
+			"quote": "If that's just hungry, I don't want to see angry.",
+			"region": "The Void",
+			"race": "Voidborn"
+		},
+		{
+			"id": "KSante",
+			"key": "897",
+			"name": "K'Sante",
+			"title": "the Pride of Nazumah",
+			"quote": "No monster greater than pride.",
+			"region": "Shurima",
+			"race": "Human"
+		},
+		{
+			"id": "Leblanc",
+			"key": "7",
+			"name": "LeBlanc",
+			"title": "the Deceiver",
+			"quote": "A rose cannot grow in darkness. It dies, and the darkness grows…",
+			"region": "Noxus",
+			"race": "Human"
+		},
+		{
+			"id": "LeeSin",
+			"key": "64",
+			"name": "Lee Sin",
+			"title": "the Blind Monk",
+			"quote": "Enlightenment is knowing the value of one’s ignorance.",
+			"region": "Ionia",
+			"race": "Human"
+		},
+		{
+			"id": "Leona",
+			"key": "89",
+			"name": "Leona",
+			"title": "the Radiant Dawn",
+			"quote": "By the light of the Sun, the world is beheld.",
+			"region": "Targon",
+			"race": "Human"
+		},
+		{
+			"id": "Lillia",
+			"key": "876",
+			"name": "Lillia",
+			"title": "the Bashful Bloom",
+			"quote": "When the humans bloom, it’s so beautiful… I can help them! Maybe. Possibly? Perhaps…",
+			"region": "Ionia",
+			"race": "Fae Fawn"
+		},
+		{
+			"id": "Lissandra",
+			"key": "127",
+			"name": "Lissandra",
+			"title": "the Ice Witch",
+			"quote": "So many secrets, buried in ice...",
+			"region": "Freljord",
+			"race": "Human",
+			"video": "https://assets.contentstack.io/v3/assets/blt187521ff0727be24/blt7d07c62fe8a51a70/60ee0f3239cbdb45e8c48034/lissandra-splashvideo.webm"
+		},
+		{
+			"id": "Lucian",
+			"key": "236",
+			"name": "Lucian",
+			"title": "the Purifier",
+			"quote": "Wield the light, endure the pain, and cleanse all shadow from this world.",
+			"region": "Runeterra",
+			"race": "Human",
+			"video": "https://assets.contentstack.io/v3/assets/blt187521ff0727be24/blt0b575231c81dfebf/60ee0f398a77034ffea2333e/lucian-splashvideo.webm"
+		},
+		{
+			"id": "Lulu",
+			"key": "117",
+			"name": "Lulu",
+			"title": "the Fae Sorceress",
+			"quote": "The best path between two points is upside-down, between, then inside-out and round again.",
+			"region": "Bandle City",
+			"race": "Yordle"
+		},
+		{
+			"id": "Lux",
+			"key": "99",
+			"name": "Lux",
+			"title": "the Lady of Luminosity",
+			"quote": "The light inside is what makes me different, and I’m always careful where I shine it.",
+			"region": "Demacia",
+			"race": "Human"
+		},
+		{
+			"id": "Malphite",
+			"key": "54",
+			"name": "Malphite",
+			"title": "Shard of the Monolith",
+			"quote": "Beware, minions of chaos! The Shard of the Monolith has come.",
+			"region": "Ixtal",
+			"race": "Golem"
+		},
+		{
+			"id": "Malzahar",
+			"key": "90",
+			"name": "Malzahar",
+			"title": "the Prophet of the Void",
+			"quote": "We are timeless. We demand sacrifice.",
+			"region": "The Void",
+			"race": "Human"
+		},
+		{
+			"id": "Maokai",
+			"key": "57",
+			"name": "Maokai",
+			"title": "the Twisted Treant",
+			"quote": "All around me are empty husks, soulless and unafraid... but I will bring them fear.",
+			"region": "Shadow Isles",
+			"race": "Treant"
+		},
+		{
+			"id": "MasterYi",
+			"key": "11",
+			"name": "Maestro Yi",
+			"title": "the Wuju Bladesman",
+			"quote": "The edge of the sharpest blade is no match for the calm of the peaceful mind.",
+			"region": "Ionia",
+			"race": "Human"
+		},
+		{
+			"id": "MissFortune",
+			"key": "21",
+			"name": "Miss Fortune",
+			"title": "the Bounty Hunter",
+			"quote": "The bigger the risk, the bigger the bounty.",
+			"region": "Bilgewater",
+			"race": "Human"
+		},
+		{
+			"id": "MonkeyKing",
+			"key": "62",
+			"name": "Wukong",
+			"title": "the Monkey King",
+			"quote": "My journey is only beginning…",
+			"region": "Ionia",
+			"race": "Vastaya"
+		},
+		{
+			"id": "Mordekaiser",
+			"key": "82",
+			"name": "Mordekaiser",
+			"title": "the Iron Revenant",
+			"quote": "Destiny. Domination. Deceit.",
+			"region": "Noxus",
+			"race": "Revenant"
+		},
+		{
+			"id": "Morgana",
+			"key": "25",
+			"name": "Morgana",
+			"title": "the Fallen",
+			"quote": "Only those you love can break your heart.",
+			"region": "Demacia",
+			"race": "Human"
+		},
+		{
+			"id": "Nami",
+			"key": "267",
+			"name": "Nami",
+			"title": "the Tidecaller",
+			"quote": "I decide what the tide will bring.",
+			"region": "Runeterra",
+			"race": "Vastaya",
+			"video": "https://assets.contentstack.io/v3/assets/blt187521ff0727be24/blt124a2f38379065f0/60ee0fc80311fd25c98c2c25/nami-splashvideo.webm"
+		},
+		{
+			"id": "Nasus",
+			"key": "75",
+			"name": "Nasus",
+			"title": "the Curator of the Sands",
+			"quote": "For centuries, I have watched. We approach a time of reckoning.",
+			"region": "Shurima",
+			"race": "God Warrior"
+		},
+		{
+			"id": "Nautilus",
+			"key": "111",
+			"name": "Nautilus",
+			"title": "the Titan of the Depths",
+			"quote": "When consumed by utter darkness, there is nothing left but forward.",
+			"region": "Bilgewater",
+			"race": "Revenant"
+		},
+		{
+			"id": "Neeko",
+			"key": "518",
+			"name": "Neeko",
+			"title": "the Curious Chameleon",
+			"quote": "The Oovi-Kat are gone. Neeko must build her own tribe, now.",
+			"region": "Ixtal",
+			"race": "Vastaya"
+		},
+		{
+			"id": "Nidalee",
+			"key": "76",
+			"name": "Nidalee",
+			"title": "the Bestial Huntress",
+			"quote": "The untamed know no fear.",
+			"region": "Ixtal",
+			"race": "Human"
+		},
+		{
+			"id": "Nilah",
+			"key": "895",
+			"name": "Nilah",
+			"title": "the Joy Unbound",
+			"quote": "Bliss in life, and bliss forever after.",
+			"region": "Bilgewater",
+			"race": "Human"
+		},
+		{
+			"id": "Nocturne",
+			"key": "56",
+			"name": "Nocturne",
+			"title": "the Eternal Nightmare",
+			"quote": "The darkness is closing in...",
+			"region": "Runeterra",
+			"race": "Demon"
+		},
+		{
+			"id": "Nunu",
+			"key": "20",
+			"name": "Nunu y Willump",
+			"title": "the Boy and His Yeti",
+			"quote": "Pull the fur outta your earholes, Willump! This is gonna be the bestest story ever!",
+			"region": "Freljord",
+			"race": "Human"
+		},
+		{
+			"id": "Olaf",
+			"key": "2",
+			"name": "Olaf",
+			"title": "the Berserker",
+			"quote": "When you meet your ancestors, tell them Olaf sent you.",
+			"region": "Freljord",
+			"race": "Human"
+		},
+		{
+			"id": "Orianna",
+			"key": "61",
+			"name": "Orianna",
+			"title": "the Lady of Clockwork",
+			"quote": "When a moth emerges from its chrysalis, does it remember its life as a caterpillar?",
+			"region": "Piltover",
+			"race": "Golem"
+		},
+		{
+			"id": "Ornn",
+			"key": "516",
+			"name": "Ornn",
+			"title": "The Fire below the Mountain",
+			"quote": "I have said enough.",
+			"region": "Freljord",
+			"race": "Spirit God"
+		},
+		{
+			"id": "Pantheon",
+			"key": "80",
+			"name": "Pantheon",
+			"title": "the Unbreakable Spear",
+			"quote": "Here is my eternity… a day the gods will remember!",
+			"region": "Targon",
+			"race": "Human"
+		},
+		{
+			"id": "Poppy",
+			"key": "78",
+			"name": "Poppy",
+			"title": "Keeper of the Hammer",
+			"quote": "I’m no hero. Just a yordle with a hammer.",
+			"region": "Demacia",
+			"race": "Yordle",
+			"video": "https://assets.contentstack.io/v3/assets/blt187521ff0727be24/blt6456e7d6fe2666ba/60ee11129128f725cf8c855b/poppy-splashvideo.webm"
+		},
+		{
+			"id": "Pyke",
+			"key": "555",
+			"name": "Pyke",
+			"title": "the Bloodharbor Ripper",
+			"quote": "There’s plenty of room for everyone at the bottom of the sea...",
+			"region": "Bilgewater",
+			"race": "Revenant",
+			"video": "https://assets.contentstack.io/v3/assets/blt187521ff0727be24/blt741ebea413d1c60d/610af2f5bf6f0c5156156cf1/pyke-splashvideo.webm"
+		},
+		{
+			"id": "Qiyana",
+			"key": "246",
+			"name": "Qiyana",
+			"title": "Empress of the Elements",
+			"quote": "Some day, all this will be Ixaocan. A glorious empire, with an empress to fit.",
+			"region": "Ixtal",
+			"race": "Human"
+		},
+		{
+			"id": "Quinn",
+			"key": "133",
+			"name": "Quinn",
+			"title": "Demacia's Wings",
+			"quote": "Most soldiers only rely on their weapons. Few truly rely on each other.",
+			"region": "Demacia",
+			"race": "Human",
+			"video": "https://assets.contentstack.io/v3/assets/blt187521ff0727be24/bltd386b63543b498e4/60ee1133810a0e49eabfd0a8/quinn-splashvideo.webm"
+		},
+		{
+			"id": "Rakan",
+			"key": "497",
+			"name": "Rakan",
+			"title": "The Charmer",
+			"quote": "I got freedom. I got a lady. I got a cause I'd die for.",
+			"region": "Ionia",
+			"race": "Vastaya"
+		},
+		{
+			"id": "Rammus",
+			"key": "33",
+			"name": "Rammus",
+			"title": "the Armordillo",
+			"quote": "OK.",
+			"region": "Shurima",
+			"race": "Unknown"
+		},
+		{
+			"id": "RekSai",
+			"key": "421",
+			"name": "Rek'Sai",
+			"title": "the Void Burrower",
+			"quote": "Fear not ambush from the hills, nor winged beasts from the skies. The true terror of Shurima comes from the sand, and gives no warning of her presence.",
+			"region": "The Void",
+			"race": "Voidborn",
+			"video": "https://assets.contentstack.io/v3/assets/blt187521ff0727be24/blte7bf0205a0081497/60ee114a09c9f73c0e83f89a/reksai-splashvideo.webm"
+		},
+		{
+			"id": "Rell",
+			"key": "526",
+			"name": "Rell",
+			"title": "the Iron Maiden",
+			"quote": "Forge your heart into something strong. Unbreakable.",
+			"region": "Noxus",
+			"race": "Human"
+		},
+		{
+			"id": "Renata",
+			"key": "888",
+			"name": "Renata Glasc",
+			"title": "the Chem-Baroness",
+			"quote": "We don't have to be enemies. Let me change your mind.",
+			"region": "Zaun",
+			"race": "Human"
+		},
+		{
+			"id": "Renekton",
+			"key": "58",
+			"name": "Renekton",
+			"title": "the Butcher of the Sands",
+			"quote": "Blood! And vengeance!",
+			"region": "Shurima",
+			"race": "God Warrior"
+		},
+		{
+			"id": "Rengar",
+			"key": "107",
+			"name": "Rengar",
+			"title": "the Pridestalker",
+			"quote": "Prey on the weak and you may survive. Prey on the strong and you will truly live.",
+			"region": "Ixtal",
+			"race": "Vastaya",
+			"video": "https://assets.contentstack.io/v3/assets/blt187521ff0727be24/blt6b1397ed85d0ca6a/60ee115d8258b32d83974e08/rengar-splashvideo.webm"
+		},
+		{
+			"id": "Riven",
+			"key": "92",
+			"name": "Riven",
+			"title": "the Exile",
+			"quote": "A warrior’s blade reflects the truth in their heart. Mine is black, and broken.",
+			"region": "Noxus",
+			"race": "Human"
+		},
+		{
+			"id": "Rumble",
+			"key": "68",
+			"name": "Rumble",
+			"title": "the Mechanized Menace",
+			"quote": "Ugh, it's gonna take forever to scrape your face off my suit!",
+			"region": "Bandle City",
+			"race": "Yordle"
+		},
+		{
+			"id": "Ryze",
+			"key": "13",
+			"name": "Ryze",
+			"title": "the Rune Mage",
+			"quote": "Take care with this world. What is made can be unmade.",
+			"region": "Runeterra",
+			"race": "",
+			"video": "https://assets.contentstack.io/v3/assets/blt187521ff0727be24/blt02af3b5a4fb47932/60ee1193b81175257178fae8/ryze-splashvideo.webm"
+		},
+		{
+			"id": "Samira",
+			"key": "360",
+			"name": "Samira",
+			"title": "the Desert Rose",
+			"quote": "Virtues, I've got a few. Vices, a few more.",
+			"region": "Noxus",
+			"race": "Human"
+		},
+		{
+			"id": "Sejuani",
+			"key": "113",
+			"name": "Sejuani",
+			"title": "Fury of the North",
+			"quote": "I was cut from the ice. Shaped by the storms. Hardened in the cold.",
+			"region": "Freljord",
+			"race": "Human"
+		},
+		{
+			"id": "Senna",
+			"key": "235",
+			"name": "Senna",
+			"title": "the Redeemer",
+			"quote": "As shadows embrace the light, I will embrace them...",
+			"region": "Runeterra",
+			"race": "Human"
+		},
+		{
+			"id": "Seraphine",
+			"key": "147",
+			"name": "Seraphine",
+			"title": "the Starry-Eyed Songstress",
+			"quote": "This one’s for you!",
+			"region": "Piltover",
+			"race": "Human"
+		},
+		{
+			"id": "Sett",
+			"key": "875",
+			"name": "Sett",
+			"title": "the Boss",
+			"quote": "Bein’ the boss… is a lot better than not bein’ the boss.",
+			"region": "Ionia",
+			"race": "Human"
+		},
+		{
+			"id": "Shaco",
+			"key": "35",
+			"name": "Shaco",
+			"title": "the Demon Jester",
+			"quote": "Whatever you do, don't tell him you missed the punch line.",
+			"region": "Runeterra",
+			"race": "Spirit"
+		},
+		{
+			"id": "Shen",
+			"key": "98",
+			"name": "Shen",
+			"title": "the Eye of Twilight",
+			"quote": "The Eye is blind to fear, to hate, to love – to all things that would sway equilibrium.",
+			"region": "Ionia",
+			"race": "Human"
+		},
+		{
+			"id": "Shyvana",
+			"key": "102",
+			"name": "Shyvana",
+			"title": "the Half-Dragon",
+			"quote": "I am of two worlds, yet I belong to neither.",
+			"region": "Demacia",
+			"race": "Terrestrial Dragon"
+		},
+		{
+			"id": "Singed",
+			"key": "27",
+			"name": "Singed",
+			"title": "the Mad Chemist",
+			"quote": "You mustn’t die yet; I have far too much to learn from your fragile anatomy.",
+			"region": "Zaun",
+			"race": "Human"
+		},
+		{
+			"id": "Sion",
+			"key": "14",
+			"name": "Sion",
+			"title": "The Undead Juggernaut",
+			"quote": "War is eternal... as am I.",
+			"region": "Noxus",
+			"race": "Revenant",
+			"video": "https://assets.contentstack.io/v3/assets/blt187521ff0727be24/blt5bde83a844c81965/60ee12199f5cda1efaa7f799/sion-splashvideo.webm"
+		},
+		{
+			"id": "Sivir",
+			"key": "15",
+			"name": "Sivir",
+			"title": "the Battle Mistress",
+			"quote": "Coin may buy you skill for a day, but never loyalty.",
+			"region": "Shurima",
+			"race": "Human"
+		},
+		{
+			"id": "Skarner",
+			"key": "72",
+			"name": "Skarner",
+			"title": "the Crystal Vanguard",
+			"quote": "We are one. We cannot be shattered.",
+			"region": "Shurima",
+			"race": "Brackern"
+		},
+		{
+			"id": "Sona",
+			"key": "37",
+			"name": "Sona",
+			"title": "Maven of the Strings",
+			"quote": "My spies whisper to me of this Ionian treasure—that her melody moves the soul, and her silence sunders the body.",
+			"region": "Demacia",
+			"race": "Human"
+		},
+		{
+			"id": "Soraka",
+			"key": "16",
+			"name": "Soraka",
+			"title": "the Starchild",
+			"quote": "Two paths lie before you, but you can only take one.",
+			"region": "Targon",
+			"race": "Celestial"
+		},
+		{
+			"id": "Swain",
+			"key": "50",
+			"name": "Swain",
+			"title": "the Noxian Grand General",
+			"quote": "I have learned enough to detest all men. Only nations may be revered.",
+			"region": "Noxus",
+			"race": "Human"
+		},
+		{
+			"id": "Sylas",
+			"key": "517",
+			"name": "Sylas",
+			"title": "the Unshackled",
+			"quote": "I am no traitor. I am the true Demacia.",
+			"region": "Demacia",
+			"race": "Human"
+		},
+		{
+			"id": "Syndra",
+			"key": "134",
+			"name": "Syndra",
+			"title": "the Dark Sovereign",
+			"quote": "My potential is limitless. I will not be restrained.",
+			"region": "Ionia",
+			"race": "Human",
+			"video": "https://assets.contentstack.io/v3/assets/blt187521ff0727be24/bltab0cfd35a8ee93d4/60ee12a7975ffd4ff25ec31d/syndra-splashvideo.webm"
+		},
+		{
+			"id": "TahmKench",
+			"key": "223",
+			"name": "Tahm Kench",
+			"title": "The River King",
+			"quote": "The whole world's a river, and I'm its king.",
+			"region": "Runeterra",
+			"race": "Demon",
+			"video": "https://assets.contentstack.io/v3/assets/blt187521ff0727be24/blt5cc483102cdccab1/60ee12ae496a232835c1fff3/tahmkench-splashvideo.webm"
+		},
+		{
+			"id": "Taliyah",
+			"key": "163",
+			"name": "Taliyah",
+			"title": "the Stoneweaver",
+			"quote": "This world is a tapestry of our own making.",
+			"region": "Shurima",
+			"race": "Human",
+			"video": "https://assets.contentstack.io/v3/assets/blt187521ff0727be24/blt3eb0ae366eaeee4c/60ee12b39f5cda1efaa7f7a7/taliyah-splashvideo.webm"
+		},
+		{
+			"id": "Talon",
+			"key": "91",
+			"name": "Talon",
+			"title": "the Blade's Shadow",
+			"quote": "The three deadliest blademasters in all of Valoran are bound to the house of Du Couteau: my father, myself, and Talon. Challenge us, if you dare.",
+			"region": "Noxus",
+			"race": "Human"
+		},
+		{
+			"id": "Taric",
+			"key": "44",
+			"name": "Taric",
+			"title": "the Shield of Valoran",
+			"quote": "The best weapons are beautiful.",
+			"region": "Targon",
+			"race": "Human",
+			"video": "https://assets.contentstack.io/v3/assets/blt187521ff0727be24/blt7cc2cbf2b7f8a00e/60ee12d9a471a34acb2c2006/taric-splashvideo.webm"
+		},
+		{
+			"id": "Teemo",
+			"key": "17",
+			"name": "Teemo",
+			"title": "the Swift Scout",
+			"quote": "Teemo rides a thin line between chipper compatriot and unrepentant killer, but there's no one else I'd rather have as a friend.",
+			"region": "Bandle City",
+			"race": "Yordle"
+		},
+		{
+			"id": "Thresh",
+			"key": "412",
+			"name": "Thresh",
+			"title": "the Chain Warden",
+			"quote": "The mind is a wondrous thing to tear apart.",
+			"region": "Shadow Isles",
+			"race": "Wraith",
+			"video": "https://assets.contentstack.io/v3/assets/blt187521ff0727be24/blt746b910f7d5fac34/60ee12eb4be40c60fcda6d38/thresh-splashvideo.webm"
+		},
+		{
+			"id": "Tristana",
+			"key": "18",
+			"name": "Tristana",
+			"title": "the Yordle Gunner",
+			"quote": "Boomer says hi.",
+			"region": "Bandle City",
+			"race": "Yordle"
+		},
+		{
+			"id": "Trundle",
+			"key": "48",
+			"name": "Trundle",
+			"title": "the Troll King",
+			"quote": "Outsmart anyone you can't beat, and beat anyone you can't outsmart.",
+			"region": "Freljord",
+			"race": "Troll"
+		},
+		{
+			"id": "Tryndamere",
+			"key": "23",
+			"name": "Tryndamere",
+			"title": "the Barbarian King",
+			"quote": "Rage is my weapon.",
+			"region": "Freljord",
+			"race": "Human"
+		},
+		{
+			"id": "TwistedFate",
+			"key": "4",
+			"name": "Twisted Fate",
+			"title": "the Card Master",
+			"quote": "It's not gambling if you can't lose...",
+			"region": "Bilgewater",
+			"race": "Human"
+		},
+		{
+			"id": "Twitch",
+			"key": "29",
+			"name": "Twitch",
+			"title": "the Plague Rat",
+			"quote": "They threw this away? But it’s so shiny!",
+			"region": "Zaun",
+			"race": "Plague Rat"
+		},
+		{
+			"id": "Udyr",
+			"key": "77",
+			"name": "Udyr",
+			"title": "the Spirit Walker",
+			"quote": "I can taste our enemies' hunger for victory. Let them starve.",
+			"region": "Freljord",
+			"race": "Human"
+		},
+		{
+			"id": "Urgot",
+			"key": "6",
+			"name": "Urgot",
+			"title": "the Dreadnought",
+			"quote": "There is only one way to measure a man. Tear him… into… pieces.",
+			"region": "Zaun",
+			"race": "Human"
+		},
+		{
+			"id": "Varus",
+			"key": "110",
+			"name": "Varus",
+			"title": "the Arrow of Retribution",
+			"quote": "You didn’t destroy us all. And that mistake will be your undoing.",
+			"region": "Ionia",
+			"race": "Darkin"
+		},
+		{
+			"id": "Vayne",
+			"key": "67",
+			"name": "Vayne",
+			"title": "the Night Hunter",
+			"quote": "I don’t kill creatures like you because it’s the right thing to do. I kill you because I enjoy it.",
+			"region": "Demacia",
+			"race": "Human"
+		},
+		{
+			"id": "Veigar",
+			"key": "45",
+			"name": "Veigar",
+			"title": "the Tiny Master of Evil",
+			"quote": "You deny the darkness in your soul...",
+			"region": "Bandle City",
+			"race": "Yordle"
+		},
+		{
+			"id": "Velkoz",
+			"key": "161",
+			"name": "Vel'Koz",
+			"title": "the Eye of the Void",
+			"quote": "Only by deconstruction is truth revealed.",
+			"region": "The Void",
+			"race": "Voidborn",
+			"video": "https://assets.contentstack.io/v3/assets/blt187521ff0727be24/bltd2fc0805e5e17ed2/60ee138472ec164ac4bedde2/velkoz-splashvideo.webm"
+		},
+		{
+			"id": "Vex",
+			"key": "711",
+			"name": "Vex",
+			"title": "the Gloomist",
+			"quote": "Just... ughhhhh.",
+			"region": "Shadow Isles",
+			"race": "Yordle"
+		},
+		{
+			"id": "Vi",
+			"key": "254",
+			"name": "Vi",
+			"title": "the Piltover Enforcer",
+			"quote": "We can either do this the hard way or… Oh wait, no. There's just the hard way.",
+			"region": "Piltover",
+			"race": "Human",
+			"video": "https://assets.contentstack.io/v3/assets/blt187521ff0727be24/blt3265d4d974879b08/60ee138d4b5f906107319630/vi-splashvideo.webm"
+		},
+		{
+			"id": "Viego",
+			"key": "234",
+			"name": "Viego",
+			"title": "The Ruined King",
+			"quote": "No price is too great. No atrocity beyond my reach. For her... I will do anything.",
+			"region": "Shadow Isles",
+			"race": "Wraith"
+		},
+		{
+			"id": "Viktor",
+			"key": "112",
+			"name": "Viktor",
+			"title": "the Machine Herald",
+			"quote": "A mechanized heart never misses a beat, and never falters with emotion. So why would anyone trust their life to a fragile muscle of flesh and blood?",
+			"region": "Zaun",
+			"race": "Human"
+		},
+		{
+			"id": "Vladimir",
+			"key": "8",
+			"name": "Vladimir",
+			"title": "the Crimson Reaper",
+			"quote": "Time has made me wiser, but no more patient.",
+			"region": "Noxus",
+			"race": "Human"
+		},
+		{
+			"id": "Volibear",
+			"key": "106",
+			"name": "Volibear",
+			"title": "the Relentless Storm",
+			"quote": "They have forgotten the old ways. The old ways have not forgotten them.",
+			"region": "Freljord",
+			"race": "Spirit God"
+		},
+		{
+			"id": "Warwick",
+			"key": "19",
+			"name": "Warwick",
+			"title": "the Uncaged Wrath of Zaun",
+			"quote": "Spill blood... draw the beast!",
+			"region": "Zaun",
+			"race": "Human",
+			"video": "https://assets.contentstack.io/v3/assets/blt187521ff0727be24/bltb8347094e2e74661/60ee13b044ff471db19c90d1/warwick_login_screensaver.webm"
+		},
+		{
+			"id": "Xayah",
+			"key": "498",
+			"name": "Xayah",
+			"title": "the Rebel",
+			"quote": "Ever been stabbed by a feather?",
+			"region": "Ionia",
+			"race": "Vastaya"
+		},
+		{
+			"id": "Xerath",
+			"key": "101",
+			"name": "Xerath",
+			"title": "the Magus Ascendant",
+			"quote": "A lifetime as a slave has prepared me for eternity as your master.",
+			"region": "Shurima",
+			"race": "Baccai"
+		},
+		{
+			"id": "XinZhao",
+			"key": "5",
+			"name": "Xin Zhao",
+			"title": "the Seneschal of Demacia",
+			"quote": "Death is inevitable. One can only avoid defeat.",
+			"region": "Demacia",
+			"race": "Human"
+		},
+		{
+			"id": "Yasuo",
+			"key": "157",
+			"name": "Yasuo",
+			"title": "the Unforgiven",
+			"quote": "Death is like the wind—always by my side.",
+			"region": "Ionia",
+			"race": "Human",
+			"video": "https://assets.contentstack.io/v3/assets/blt187521ff0727be24/blt19165eb731ffe312/60ee13e12202166087e382d7/yasuo-splashvideo.webm"
+		},
+		{
+			"id": "Yone",
+			"key": "777",
+			"name": "Yone",
+			"title": "the Unforgotten",
+			"quote": "They look at me and see only the mask. I look at them and see only their fears.",
+			"region": "Ionia",
+			"race": "Human"
+		},
+		{
+			"id": "Yorick",
+			"key": "83",
+			"name": "Yorick",
+			"title": "Shepherd of Souls",
+			"quote": "These isles… How they scream.",
+			"region": "Shadow Isles",
+			"race": "Human",
+			"video": "https://assets.contentstack.io/v3/assets/blt187521ff0727be24/blt1db6b8ba59fc1ea0/610af49b98a6d911f172e80a/yorick-splashvideo.webm"
+		},
+		{
+			"id": "Yuumi",
+			"key": "350",
+			"name": "Yuumi",
+			"title": "the Magical Cat",
+			"quote": "Cats are made of twilight and tricks, dogs are made of barks and sticks! Book’s just old trees.",
+			"region": "Bandle City",
+			"race": "Cat"
+		},
+		{
+			"id": "Zac",
+			"key": "154",
+			"name": "Zac",
+			"title": "the Secret Weapon",
+			"quote": "The angrier you get, the more this is going to hurt...",
+			"region": "Zaun",
+			"race": "Golem",
+			"video": "https://assets.contentstack.io/v3/assets/blt187521ff0727be24/blt94b9810bc9a3cf25/60ee13fc12cadb2032d63b7c/zac-splashvideo.webm"
+		},
+		{
+			"id": "Zed",
+			"key": "238",
+			"name": "Zed",
+			"title": "the Master of Shadows",
+			"quote": "Balance is a fool’s master.",
+			"region": "Ionia",
+			"race": "Human",
+			"video": "https://assets.contentstack.io/v3/assets/blt187521ff0727be24/blt57c05535f45ac06e/60ee143b44ff471db19c90d9/zed-splashvideo.webm"
+		},
+		{
+			"id": "Zeri",
+			"key": "221",
+			"name": "Zeri",
+			"title": "The Spark of Zaun",
+			"quote": "I belong here. We all belong here.",
+			"region": "Zaun",
+			"race": "Human"
+		},
+		{
+			"id": "Ziggs",
+			"key": "115",
+			"name": "Ziggs",
+			"title": "the Hexplosives Expert",
+			"quote": "Ziggs? Unpredictable, dangerous, yes yes. But quite brilliant!",
+			"region": "Zaun",
+			"race": "Yordle"
+		},
+		{
+			"id": "Zilean",
+			"key": "26",
+			"name": "Zilean",
+			"title": "the Chronokeeper",
+			"quote": "There is no greater grief than for a loss that is yet to come.",
+			"region": "Runeterra",
+			"race": "Human"
+		},
+		{
+			"id": "Zoe",
+			"key": "142",
+			"name": "Zoe",
+			"title": "the Aspect of Twilight",
+			"quote": "I bring a message for you all—a warning, a sigil. But first, I wanna see the sparkleflies!",
+			"region": "Targon",
+			"race": "Human"
+		},
+		{
+			"id": "Zyra",
+			"key": "143",
+			"name": "Zyra",
+			"title": "Rise of the Thorns",
+			"quote": "Where are your friends? Mine are all around…",
+			"region": "Ixtal",
+			"race": "Unknown",
+			"video": "https://assets.contentstack.io/v3/assets/blt187521ff0727be24/blt59ff15e0667a9108/60ee1451a86d0f5a0be449db/zyra-splashvideo.webm"
+		}
+	]
+}

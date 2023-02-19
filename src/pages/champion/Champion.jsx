@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom';
-import { useChampion } from '../../hooks';
+import { useChampion, useChampionsExtra } from '../../hooks';
 import {
 	ChamContainer,
 	ChamHeader,
@@ -31,12 +31,16 @@ import {
 	SimpleBoxTextContainer,
 } from '../../styled-components';
 import { ChampionAbilities, ChampionOther, ChampionRelated, ChampionSkins } from './';
+import { useState } from 'react';
 
 export const Champion = () => {
 	const { id } = useParams();
 	const { champion, isLoading } = useChampion(id);
 
-  console.log(useChampion(id));
+	const { championsExtra, isLoading: isLoadingChampionsExtra } = useChampionsExtra();
+	if (!isLoadingChampionsExtra) {
+		// console.log(championsExtra[Math.floor(Math.random() * championsExtra.length)]);
+	}
 	return (
 		<>
 			{isLoading ? (
@@ -135,7 +139,9 @@ export const Champion = () => {
 													</SimpleBoxImageContainer>
 													<SimpleBoxTextContainer>
 														<SimpleBoxText>Region</SimpleBoxText>
-														<SimpleBoxText variant>Runaterra</SimpleBoxText>
+														<SimpleBoxText variant>
+															{!isLoadingChampionsExtra ? championsExtra.find((e) => e.id === id).region : ''}
+														</SimpleBoxText>
 													</SimpleBoxTextContainer>
 												</SimpleBoxContainer>
 											</LargeBoxContainer>

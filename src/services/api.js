@@ -13,6 +13,13 @@ export const getChampionById = async (chamName) => {
 	return data;
 };
 
+export const getChampionsExtra = async () => {
+	const resp = await fetch(`../../src/data/extra-cham-info.json`);
+	const {data} = await resp.json();
+  // console.log(data);
+	return data;
+};
+
 
 
 
