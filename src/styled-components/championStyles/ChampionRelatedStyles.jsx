@@ -51,7 +51,7 @@ export const ChamRelatedSelectorContainer = styled.div`
 	overflow-y: scroll;
 	overflow-x: hidden;
 	min-height: calc(100% - 4.375rem);
-	padding: 16px 0;
+	padding: 1.5rem 0;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -62,7 +62,7 @@ export const ChamRelatedSelectorContainer = styled.div`
     flex-direction: row;
 		overflow-x: scroll;
 		overflow-y: hidden;
-		padding: 4rem 1rem;
+		padding: 4rem 1.5rem;
 	}
 
 	::-webkit-scrollbar {
@@ -93,15 +93,11 @@ export const ChamRelatedTopContainer = styled.div`
 `;
 
 export const LargeBoxRelatedContainer = styled.div`
-	/* width: 100%; */
-	width: calc(25% - 1rem);
+	/* width: calc(25% - 1rem); */
 	display: flex;
-	/* overflow: hidden; */
 	flex-direction: column;
+  overflow: hidden;
 	border: 1px solid #31271e;
 	background-color: #111318;
-	@media (max-width: 64rem) {
-		width: calc(100vw - 2rem);
-    order: 3;
-	}
+	
 `;

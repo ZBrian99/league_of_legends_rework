@@ -112,15 +112,15 @@ export const LoreText = styled.p`
 	font-size: 0.8em;
 `;
 
-export const ChamLoreContainer = styled.div`
+export const ChamMidContainer = styled.div`
 	width: 50%;
 	gap: 1rem;
 	display: flex;
 	flex-direction: column;
-  @media (max-width: 64rem) {
-    width: 100%;
-    gap: 1rem;
-  }
+	@media (max-width: 64rem) {
+		width: 100%;
+		gap: 1rem;
+	}
 `;
 
 export const PhraseText = styled.p`
@@ -241,7 +241,6 @@ export const SimpleBoxContainer = styled.div`
   flex-direction: row;
 	border: 1px solid #31271e;
   @media (max-width: 64rem) {
-		width: calc(50% - 0.5rem);
 	}
   `}
 	height: 4.5rem;
@@ -252,7 +251,21 @@ export const SimpleBoxContainer = styled.div`
 	}
 `;
 
-export const LargeRolContainer = styled.div`
+export const SimpleRolContainer = styled.div`
+	display: flex;
+	width: 100%;
+	gap: 1rem;
+	flex-wrap: wrap;
+	@media (max-width: 64rem) {
+		flex-wrap: nowrap;
+	}
+
+	@media (max-width: 45rem) {
+		flex-wrap: wrap;
+	}
+`;
+
+export const ChamRightContainer = styled.div`
 	width: calc(25% - 1rem);
 	display: flex;
 	flex-direction: column;
@@ -261,10 +274,21 @@ export const LargeRolContainer = styled.div`
 	@media (max-width: 64rem) {
 		width: 100%;
 		flex-direction: row;
-    flex-wrap: wrap;
+		flex-wrap: wrap;
 	}
 	@media (max-width: 45rem) {
 		flex-direction: column;
+	}
+`;
+
+export const ChamLeftContainer = styled.div`
+	width: calc(25% - 1rem);
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	@media (max-width: 64rem) {
+		width: calc(100vw - 2rem);
+		order: 3;
 	}
 `;
 
@@ -292,11 +316,10 @@ export const ChamInfoContainer = styled.div`
 	display: flex;
 	height: 40rem;
 	gap: 1rem;
-  @media (max-width: 64rem) {
-    flex-direction: column;
-  	height: auto;
-
-  }
+	@media (max-width: 64rem) {
+		flex-direction: column;
+		height: auto;
+	}
 `;
 
 export const ChamContainer = styled.div`

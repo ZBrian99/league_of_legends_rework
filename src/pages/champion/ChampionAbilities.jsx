@@ -21,7 +21,7 @@ import {
 
 const abilities = ['Q', 'W', 'E', 'R'];
 
-export const ChampionAbilities = ({ spells, passive, keyNumber }) => {
+export const ChampionAbilities = ({ spells, passive, keyNumber, tag }) => {
 	const [ability, setAbility] = useState({
 		ability: 'Passive',
 		name: passive.name,
@@ -55,7 +55,7 @@ export const ChampionAbilities = ({ spells, passive, keyNumber }) => {
 	};
 
 	return (
-		<ChampionAbilityContainer>
+		<ChampionAbilityContainer tag={tag}>
 			<ChamAbilityInfoContainer>
 				<ChamAbilitiesContainer>
 					<ChamAbilityHeader>ABILITIES</ChamAbilityHeader>

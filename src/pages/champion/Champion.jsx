@@ -1,4 +1,5 @@
-import { useParams } from 'react-router-dom';
+import { useEffect } from 'react';
+import { useFetcher, useParams } from 'react-router-dom';
 import { useChampion, useChampionsExtra } from '../../hooks';
 import {
 	ChamContainer,
@@ -10,17 +11,19 @@ import {
 	ChamIconImage,
 	ChamInfoContainer,
 	ChamLargeLore,
+	ChamLeftContainer,
 	ChamLogoContainer,
-	ChamLoreContainer,
+	ChamMidContainer,
 	ChamName,
 	ChamPhrase,
 	ChampionContainer,
+	ChamRightContainer,
 	ChamSeparator,
 	ChamSplash,
 	ChamTitle,
 	LargeBoxContainer,
 	LargeBoxImage,
-	LargeRolContainer,
+	Loader,
 	LoreText,
 	PhraseAutor,
 	PhraseText,
@@ -29,14 +32,13 @@ import {
 	SimpleBoxImageContainer,
 	SimpleBoxText,
 	SimpleBoxTextContainer,
+	SimpleRolContainer,
 } from '../../styled-components';
 import { ChampionAbilities, ChampionOther, ChampionRelated, ChampionSkins } from './';
-import { useState } from 'react';
 
 export const Champion = () => {
 	const { id } = useParams();
 	const { champion, isLoading } = useChampion(id);
-
 	const { championsExtra, isLoading: isLoadingChampionsExtra } = useChampionsExtra();
 	if (!isLoadingChampionsExtra) {
 		// console.log(championsExtra[Math.floor(Math.random() * championsExtra.length)]);
@@ -44,7 +46,7 @@ export const Champion = () => {
 	return (
 		<>
 			{isLoading ? (
-				<div>Cargando...</div>
+				<Loader />
 			) : (
 				<>
 					{champion
@@ -63,9 +65,21 @@ export const Champion = () => {
 								</ChamHeader>
 								<ChamContainer>
 									<ChamInfoContainer>
-										<ChampionRelated />
+										<ChamLeftContainer>
+											<SimpleRolContainer>
+												<SimpleBoxContainer>
+													<SimpleBoxTextContainer>
+														<SimpleBoxText>Race</SimpleBoxText>
+														<SimpleBoxText variant>
+															{!isLoadingChampionsExtra && championsExtra.find((e) => e.id === id).race}
+														</SimpleBoxText>
+													</SimpleBoxTextContainer>
+												</SimpleBoxContainer>
+											</SimpleRolContainer>
+											<ChampionRelated />
+										</ChamLeftContainer>
 
-										<ChamLoreContainer>
+										<ChamMidContainer>
 											<ChamPhrase>
 												<ChamLogoContainer>
 													<ChamIconContainer>
@@ -106,51 +120,67 @@ export const Champion = () => {
 
 												<LoreText>{lore}</LoreText>
 											</ChamLargeLore>
-										</ChamLoreContainer>
+										</ChamMidContainer>
 
-										<LargeRolContainer>
-											<SimpleBoxContainer>
-												<SimpleBoxImageContainer>
-													<SimpleBoxImage src={`../../../src/assets/${tags[0]}.png`} alt='rol' />
-												</SimpleBoxImageContainer>
-												<SimpleBoxTextContainer>
-													<SimpleBoxText>Rol</SimpleBoxText>
-													<SimpleBoxText variant>{tags[0]}</SimpleBoxText>
-												</SimpleBoxTextContainer>
-											</SimpleBoxContainer>
-											{tags[1] ? (
+										<ChamRightContainer>
+											<SimpleRolContainer>
 												<SimpleBoxContainer>
 													<SimpleBoxImageContainer>
-														<SimpleBoxImage src={`../../../src/assets/${tags[1]}.png`} alt='rol' />
+														<SimpleBoxImage src={`../../../src/assets/${tags[0]}.png`} alt='rol' />
 													</SimpleBoxImageContainer>
 													<SimpleBoxTextContainer>
 														<SimpleBoxText>Rol</SimpleBoxText>
-														<SimpleBoxText variant>{tags[1]}</SimpleBoxText>
+														<SimpleBoxText variant>{tags[0]}</SimpleBoxText>
 													</SimpleBoxTextContainer>
 												</SimpleBoxContainer>
-											) : (
-												''
+												{tags[1] ? (
+													<SimpleBoxContainer>
+														<SimpleBoxImageContainer>
+															<SimpleBoxImage src={`../../../src/assets/${tags[1]}.png`} alt='rol' />
+														</SimpleBoxImageContainer>
+														<SimpleBoxTextContainer>
+															<SimpleBoxText>Rol</SimpleBoxText>
+															<SimpleBoxText variant>{tags[1]}</SimpleBoxText>
+														</SimpleBoxTextContainer>
+													</SimpleBoxContainer>
+												) : (
+													''
+												)}
+											</SimpleRolContainer>
+											{!isLoadingChampionsExtra && (
+												<LargeBoxContainer>
+													<LargeBoxImage
+														src={`../../../src/assets/${championsExtra
+															.find((e) => e.id === id)
+															.region.split(' ')
+															.join('_')}_emblem.png`}
+														alt='region'
+													/>
+													<SimpleBoxContainer variant>
+														<SimpleBoxImageContainer reverse>
+															<SimpleBoxImage
+																src={`../../../src/assets/${championsExtra
+																	.find((e) => e.id === id)
+																	.region.split(' ')
+																	.join('_')}_crest_icon.png`}
+																alt='region'
+															/>
+														</SimpleBoxImageContainer>
+														<SimpleBoxTextContainer>
+															<SimpleBoxText>Region</SimpleBoxText>
+															<SimpleBoxText variant>
+																{!isLoadingChampionsExtra && championsExtra.find((e) => e.id === id).region}
+															</SimpleBoxText>
+														</SimpleBoxTextContainer>
+													</SimpleBoxContainer>
+												</LargeBoxContainer>
 											)}
-											<LargeBoxContainer>
-												<LargeBoxImage src='../../../src/assets/runaterra.png' alt='region' />
-												<SimpleBoxContainer variant>
-													<SimpleBoxImageContainer reverse none>
-														<SimpleBoxImage src='../../../src/assets/runaterra.png' alt='region' />
-													</SimpleBoxImageContainer>
-													<SimpleBoxTextContainer>
-														<SimpleBoxText>Region</SimpleBoxText>
-														<SimpleBoxText variant>
-															{!isLoadingChampionsExtra ? championsExtra.find((e) => e.id === id).region : ''}
-														</SimpleBoxText>
-													</SimpleBoxTextContainer>
-												</SimpleBoxContainer>
-											</LargeBoxContainer>
-										</LargeRolContainer>
+										</ChamRightContainer>
 									</ChamInfoContainer>
 									{/* <div>difficulty</div> */}
 									{/* <div>attack, defense, magic</div> */}
 									{/* <div>recurso</div> */}
-									<ChampionAbilities spells={spells} passive={passive} keyNumber={key} />
+                  <ChampionAbilities spells={spells} passive={passive} keyNumber={key} tag={tags[0]} />
 									<ChampionSkins skins={skins} chamName={name} chamId={id} />
 									<ChampionOther />
 								</ChamContainer>

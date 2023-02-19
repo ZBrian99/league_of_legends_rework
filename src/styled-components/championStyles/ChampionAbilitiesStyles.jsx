@@ -38,7 +38,7 @@ export const ChamAbilityInfo = styled.div`
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-	gap: .5rem;
+	gap: 0.5rem;
 	/* width: 24rem; */
 	padding: 3rem 0 0;
 	height: 14rem;
@@ -53,8 +53,8 @@ export const ChamAbilityInfo = styled.div`
 
 export const ChamAbilityLineCircle = styled.span`
 	transition: all 0.5s ease-out;
-	width: .5625rem;
-	height: .5625rem;
+	width: 0.5625rem;
+	height: 0.5625rem;
 	position: absolute;
 	background-color: ${({ variant }) => (variant ? 'rgb(208, 168, 92)' : 'gray')};
 	border-radius: 50%;
@@ -67,7 +67,7 @@ export const ChamAbilityUpLine = styled.span`
 	width: 1px;
 	height: 20px;
 	position: absolute;
-	left: calc(50% - .5008px);
+	left: calc(50% - 0.5008px);
 	visibility: hidden;
 	top: -1.375rem;
 	background-color: rgb(208, 168, 92);
@@ -86,7 +86,7 @@ export const ChamAbilityCircle = styled.span`
 	transition: all 0.5s ease-out;
 	width: 1.25rem;
 	height: 1.25rem;
-	border: .125rem solid rgb(208, 168, 92);
+	border: 0.125rem solid rgb(208, 168, 92);
 	position: absolute;
 	bottom: -0.5938rem;
 	border-radius: 50%;
@@ -134,7 +134,7 @@ export const ChamAbilityButton = styled.button`
   `}
 	&:hover,
   :focus {
-  cursor: pointer;
+		cursor: pointer;
 		${ChamAbilityLineCircle} {
 			background-color: rgb(208, 168, 92);
 		}
@@ -151,8 +151,7 @@ export const ChamAbilitiesImageContainer = styled.div`
 	width: 100%;
 	@media (max-width: 64rem) {
 		width: 80%;
-	margin-top: -2rem;
-
+		margin-top: -2rem;
 	}
 	@media (max-width: 30rem) {
 		width: 90%;
@@ -175,7 +174,7 @@ export const ChamAbilitiesContainer = styled.div`
 
 export const ChamAbilityHeader = styled.h2`
 	color: #937341;
-	letter-spacing: .1rem;
+	letter-spacing: 0.1rem;
 	font-weight: 700;
 	font-size: 4rem;
 	line-height: 4.5rem;
@@ -231,7 +230,7 @@ export const ChampionAbilityContainer = styled.div`
 
 	background-color: #111318;
 	border: 1px solid #31271e;
-	background-image: url('../../../src/assets/rol (1).svg');
+	background-image: url(../../../src/assets/${({ tag }) => tag}.svg);
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: center;

@@ -14,6 +14,6 @@ export const useChampion = (chamName) => {
 		};
 
 		getChampion();
-	}, []);
+	}, [chamName]);
 	return { champion, isLoading };
 };
