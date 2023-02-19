@@ -15,7 +15,7 @@ import {
 	ChamLogoContainer,
 	ChamMidContainer,
 	ChamName,
-	ChamPhrase,
+	ChamQuote,
 	ChampionContainer,
 	ChamRightContainer,
 	ChamSeparator,
@@ -25,8 +25,8 @@ import {
 	LargeBoxImage,
 	Loader,
 	LoreText,
-	PhraseAutor,
-	PhraseText,
+	QuoteAutor,
+	QuoteText,
 	SimpleBoxContainer,
 	SimpleBoxImage,
 	SimpleBoxImageContainer,
@@ -80,7 +80,7 @@ export const Champion = () => {
 										</ChamLeftContainer>
 
 										<ChamMidContainer>
-											<ChamPhrase>
+											<ChamQuote>
 												<ChamLogoContainer>
 													<ChamIconContainer>
 														<ChamIconBorder>
@@ -95,11 +95,11 @@ export const Champion = () => {
 														alt='champion border'
 													/>
 												</ChamLogoContainer>
-												<PhraseText>
+												<QuoteText>
 													“{!isLoadingChampionsExtra && championsExtra.find((e) => e.id === id).quote}”
-												</PhraseText>
-												<PhraseAutor>~ {name}</PhraseAutor>
-											</ChamPhrase>
+												</QuoteText>
+												<QuoteAutor>~ {name}</QuoteAutor>
+											</ChamQuote>
 											<ChamLargeLore
 												image={`http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${id}_0.jpg`}
 											>
@@ -142,15 +142,20 @@ export const Champion = () => {
 														alt='region'
 													/>
 													<SimpleBoxContainer variant>
-														<SimpleBoxImageContainer reverse>
-															<SimpleBoxImage
-																src={`../../../src/assets/${championsExtra
-																	.find((e) => e.id === id)
-																	.region.split(' ')
-																	.join('_')}_crest_icon.png`}
-																alt='region'
-															/>
-														</SimpleBoxImageContainer>
+														{championsExtra.find((e) => e.id === id)?.region.includes('The Void') ||
+															(championsExtra.find((e) => e.id === id)?.region.includes('Runeterra') ? (
+																''
+															) : (
+																<SimpleBoxImageContainer reverse>
+																	<SimpleBoxImage
+																		src={`../../../src/assets/${championsExtra
+																			.find((e) => e.id === id)
+																			.region.split(' ')
+																			.join('_')}_crest_icon.png`}
+																		alt='region'
+																	/>
+																</SimpleBoxImageContainer>
+															))}
 														<SimpleBoxTextContainer>
 															<SimpleBoxText>Region</SimpleBoxText>
 															<SimpleBoxText variant>

@@ -135,9 +135,9 @@ export const ChamAbilityButton = styled.button`
 	&:hover,
   :focus {
 		cursor: pointer;
-		${ChamAbilityLineCircle} {
+		/* ${ChamAbilityLineCircle} {
 			background-color: rgb(208, 168, 92);
-		}
+		} */
 	}
 `;
 

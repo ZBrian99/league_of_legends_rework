@@ -123,7 +123,7 @@ export const ChamMidContainer = styled.div`
 	}
 `;
 
-export const PhraseText = styled.p`
+export const QuoteText = styled.p`
 	font-weight: 700;
 	font-size: 1.3em;
 	line-height: 1.5;
@@ -131,7 +131,7 @@ export const PhraseText = styled.p`
 	text-align: center;
 `;
 
-export const PhraseAutor = styled.h3`
+export const QuoteAutor = styled.h3`
 	font-weight: 700;
 	font-size: 1.3em;
 	line-height: 1.5;
@@ -139,7 +139,7 @@ export const PhraseAutor = styled.h3`
 	text-align: center;
 `;
 
-export const ChamPhrase = styled.div`
+export const ChamQuote = styled.div`
 	display: flex;
 	position: relative;
 	flex-direction: column;
@@ -195,6 +195,7 @@ export const ChamLargeLore = styled.div`
 export const SimpleBoxImage = styled.img`
 	width: 3rem;
 	height: 3rem;
+  object-fit: contain;
 `;
 export const LargeBoxImage = styled.img`
 	width: 10rem;
