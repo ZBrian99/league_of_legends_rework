@@ -1,22 +1,22 @@
-cerrar al hacer click fuera
 fuente responsive
 cambiar div por action section h p span
 pasar text a em
+pasar todos los px a rem
 video cortar formato 16/9
 agregar textshadow al nombre del campeon en grande
 box shadow
 añadir efecto de respiracion las habilidades con base
-
+hacer un poco mas de gap en chaminfo en mobile
 arreglar animacion al cerrar menu nav
 arreglar animacion menu se abre solo al estar en mobile
-
+arregar mas padding al text lateral de las skins cuando hover 
 
 video splash screen
 añadir filtros de busqueda
 
 pasar fetch a axios
 pasar styled a archivos individuales
-factorizar todos los componentes
+refactorizar todos los componentes
 
 
 region:
