@@ -10,7 +10,8 @@ hacer un poco mas de gap en chaminfo en mobile
 arreglar animacion al cerrar menu nav
 arreglar animacion menu se abre solo al estar en mobile
 arregar mas padding al text lateral de las skins cuando hover 
-
+skin selector hover cambiar color texto y el brillo de la miniatura aparece con opacidad
+hacer que los texto e imagenes aparescan con opacidad  estilo desvanecerse
 video splash screen
 añadir filtros de busqueda
 
