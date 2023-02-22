@@ -48,7 +48,7 @@ export const ChampionSkins = ({ skins, chamName, chamId }) => {
 					{skins.map(({ name, num, id }, i) => (
 						<ChamSkinSidePanelContainer key={id} active={skinNumber === i} onClick={() => hamdleClick(i)}>
 							<ChamSkinSidePanelImage
-								src={`http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${chamId}_${num}.jpg`}
+								src={`https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${chamId}_${num}.jpg`}
 								alt={name === 'default' ? num : num}
 							/>
 							<ChamSkinSidePanelText>{name === 'default' ? chamName : name}</ChamSkinSidePanelText>
@@ -57,7 +57,7 @@ export const ChampionSkins = ({ skins, chamName, chamId }) => {
 				</ChamSkinSidePanelSelector>
 			</ChamSkinSidePanel>
 			<ChamSkinImage
-				src={`http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${chamId}_${skins[skinNumber].num}.jpg`}
+				src={`https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${chamId}_${skins[skinNumber].num}.jpg`}
 				alt={skins[skinNumber].num}
 			/>
 		</ChamSkinsContainer>

@@ -12,86 +12,54 @@ import {
 
 export const ChampionOther = () => {
 	const [random, setRandom] = useState(null);
-	const { championsExtra, isLoading } = useContext(DataContext);
+	const { extraChamInfo } = useContext(DataContext);
 	const { id } = useParams();
 	useEffect(() => {
-		if (!isLoading) {
-			const randomNum = [];
+		const randomNum = [];
 
-			const chamNum = championsExtra.findIndex((e) => e.id === id);
+		const chamNum = extraChamInfo.findIndex((e) => e.id === id);
 
-			do {
-				randomNum[1] = Math.floor(Math.random() * championsExtra.length);
-			} while (randomNum[1] === chamNum);
+		do {
+			randomNum[1] = Math.floor(Math.random() * extraChamInfo.length);
+		} while (randomNum[1] === chamNum);
 
-			randomNum[2] = randomNum[1] + 10;
-			if (randomNum[2] >= championsExtra.length) {
-				randomNum[2] -= championsExtra.length;
-			}
-			randomNum[0] = randomNum[1] - 10;
-			if (randomNum[0] < 0) {
-				randomNum[0] += championsExtra.length;
-			}
-			setRandom(randomNum);
+		randomNum[2] = randomNum[1] + 10;
+		if (randomNum[2] >= extraChamInfo.length) {
+			randomNum[2] -= extraChamInfo.length;
 		}
-	}, [isLoading]);
+		randomNum[0] = randomNum[1] - 10;
+		if (randomNum[0] < 0) {
+			randomNum[0] += extraChamInfo.length;
+		}
+		setRandom(randomNum);
+	}, []);
 	return (
 		<>
 			<CampionsHeader>
-				<CampionsHeaderLine line={'../../../src/assets/universe/line.png'} rotate={180} />
-				<OtherCampionsIcon small icon={'../../../src/assets/universe/other_icon.png'}>
+				<CampionsHeaderLine line={`${baseUrl}assets/line.png`} rotate={180} />
+				<OtherCampionsIcon small icon={`${baseUrl}assets/icon_universe.png`}>
 					Other Champions
 				</OtherCampionsIcon>
-				<CampionsHeaderLine line={'../../../src/assets/universe/line.png'} />
+				<CampionsHeaderLine line={`${baseUrl}assets/line.png`} />
 			</CampionsHeader>
 			<OtherChampionContainer>
-				{!isLoading & !!random && (
+				{!!random && (
 					<>
 						{random.map((num) => (
-								<Link
-									key={championsExtra[num].id}
-									to={`/champion/${championsExtra[num].id}/`}
+							<Link
+								key={extraChamInfo[num].id}
+								to={`/champion/${extraChamInfo[num].id}/`}
+								title={extraChamInfo[num].id}
+							>
+								<OtherChampionBox
+									image={`https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${extraChamInfo[num].id}_0.jpg`}
 								>
-									<OtherChampionBox
-										image={`http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${
-											championsExtra[num].id
-										}_0.jpg`}
-									>
-										<OtherChampionName>{championsExtra[num].name}</OtherChampionName>
-										<OtherChampionDescription>{championsExtra[num].title}</OtherChampionDescription>
-									</OtherChampionBox>
-								</Link>
+									<OtherChampionName>{extraChamInfo[num].name}</OtherChampionName>
+									<OtherChampionDescription>{extraChamInfo[num].title}</OtherChampionDescription>
+								</OtherChampionBox>
+							</Link>
 						))}
-						{/* <Link key={id} to={`/champion/${championsExtra[random[2]].id}/`}>
-							<OtherChampionBox
-								image={`http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${
-									championsExtra[random[2]].id
-								}_0.jpg`}
-							>
-								<OtherChampionName>{championsExtra[random[2]].name}</OtherChampionName>
-								<OtherChampionDescription>{championsExtra[random[2]].title}</OtherChampionDescription>
-							</OtherChampionBox>
-						</Link>
-						<Link key={id} to={`/champion/${championsExtra[random[0]].id}/`}>
-							<OtherChampionBox
-								image={`http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${
-									championsExtra[random[0]].id
-								}_0.jpg`}
-							>
-								<OtherChampionName>{championsExtra[random[0]].name}</OtherChampionName>
-								<OtherChampionDescription>{championsExtra[random[0]].title}</OtherChampionDescription>
-							</OtherChampionBox>
-						</Link>
-						<Link key={id} to={`/champion/${championsExtra[random[1]].id}/`}>
-							<OtherChampionBox
-								image={`http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${
-									championsExtra[random[1]].id
-								}_0.jpg`}
-							>
-								<OtherChampionName>{championsExtra[random[1]].name}</OtherChampionName>
-								<OtherChampionDescription>{championsExtra[random[1]].title}</OtherChampionDescription>
-							</OtherChampionBox>
-						</Link> */}
+						
 					</>
 				)}
 			</OtherChampionContainer>

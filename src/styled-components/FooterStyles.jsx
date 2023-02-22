@@ -11,6 +11,9 @@ export const FooterESRBText = styled.li`
 
 export const FooterESRBImage = styled.img`
   width: 4rem;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
 `
 
 export const FooterESRB = styled.div`

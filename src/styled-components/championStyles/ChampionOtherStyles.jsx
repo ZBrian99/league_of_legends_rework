@@ -67,7 +67,7 @@ export const OtherChampionTitle = styled.h3`
 `;
 
 export const OtherChampionBox = styled.figure`
-	background-color: #b8b8b8;
+	/* background-color: #b8b8b8; */
 	background-image: url(${({ image }) => image});
 	background-repeat: no-repeat;
 	background-size: cover;

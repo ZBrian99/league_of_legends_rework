@@ -230,7 +230,11 @@ export const ChampionAbilityContainer = styled.div`
 
 	background-color: #111318;
 	border: 1px solid #31271e;
-	background-image: url(../../../src/assets/${({ tag }) => tag}.svg);
+	/* background-image: url(${baseUrl}assets/regionbg.png); */
+	/* background-image: url(${baseUrl}assets/${({ tag }) => tag}.svg); */
+	/* background-image: url(${import.meta.env.BASE_URL}assets/${({ tag }) => tag}.svg); */
+	background-image: url(${baseUrl}assets/${({ tag }) => tag}.svg);
+
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: center;

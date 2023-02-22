@@ -12,36 +12,33 @@ import {
 	ChamRelatedTitle,
 	ChamRelatedTopContainer,
 	LargeBoxRelatedContainer,
-  SimpleBoxContainer,
-  SimpleBoxImage,
-  SimpleBoxImageContainer,
-  SimpleBoxText,
-  SimpleBoxTextContainer,
+	SimpleBoxContainer,
+	SimpleBoxImage,
+	SimpleBoxImageContainer,
+	SimpleBoxText,
+	SimpleBoxTextContainer,
 } from '../../styled-components';
 
 export const ChampionRelated = () => {
 	const { id } = useParams();
-	const { championsExtra, isLoading } = useContext(DataContext);
+	const { extraChamInfo } = useContext(DataContext);
 
 	const [related, setRelated] = useState(null);
 
 	useEffect(() => {
-		if (!isLoading) {
-			const chamNum = championsExtra.findIndex((e) => e.id === id);
-			const relatedCham = championsExtra
-				.filter((cham) =>
-					championsExtra[chamNum].region === 'Runeterra'
-						? cham.race === championsExtra[chamNum].race && cham.id !== id
-						: cham.region === championsExtra[chamNum].region && cham.id !== id
-				)
-				.sort(() => Math.random() - 0.5)
-				.slice(0, 5);
-			setRelated(relatedCham);
-		}
-	}, [isLoading]);
+		const chamNum = extraChamInfo.findIndex((e) => e.id === id);
+		const relatedCham = extraChamInfo
+			.filter((cham) =>
+				extraChamInfo[chamNum].region === 'Runeterra'
+					? cham.race === extraChamInfo[chamNum].race && cham.id !== id
+					: cham.region === extraChamInfo[chamNum].region && cham.id !== id
+			)
+			.sort(() => Math.random() - 0.5)
+			.slice(0, 5);
+		setRelated(relatedCham);
+	}, []);
 	return (
 		<LargeBoxRelatedContainer>
-			
 			<ChamRelatedTopContainer>
 				<ChamRelatedTitle>RELATED CHAMPIONS</ChamRelatedTitle>
 			</ChamRelatedTopContainer>
@@ -49,12 +46,12 @@ export const ChampionRelated = () => {
 			<ChamRelatedSelectorContainer>
 				{!!related &&
 					related.map(({ id, name }) => (
-						<Link key={id} to={`/champion/${id}/`}>
+						<Link key={id} to={`/champion/${id}/`} title={id}>
 							<ChamLargeLogoContainer>
 								<ChamIconContainer scale={1.1}>
 									<ChamIconBorder>
 										<ChamIconImage
-											src={`http://ddragon.leagueoflegends.com/cdn/12.23.1/img/champion/${id}.png`}
+											src={`https://ddragon.leagueoflegends.com/cdn/12.23.1/img/champion/${id}.png`}
 											alt='champion image'
 										/>
 									</ChamIconBorder>

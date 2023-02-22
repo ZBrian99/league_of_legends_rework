@@ -1,6 +1,7 @@
-import { useEffect } from 'react';
-import { useFetcher, useParams } from 'react-router-dom';
-import { useChampion, useChampionsExtra } from '../../hooks';
+import { useContext, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
+import { DataContext } from '@/context';
+import { useChampion } from '@/hooks';
 import {
 	ChamContainer,
 	ChamHeader,
@@ -33,16 +34,18 @@ import {
 	SimpleBoxText,
 	SimpleBoxTextContainer,
 	SimpleRolContainer,
-} from '../../styled-components';
+} from '@/styled-components';
 import { ChampionAbilities, ChampionOther, ChampionRelated, ChampionSkins } from './';
+// import HeaderDivider from '@/assets/t1HeaderDivider.png';
+// import ChampionIconFrame from '@/assets/ChampionIconFrame.png';
 
 export const Champion = () => {
 	const { id } = useParams();
 	const { champion, isLoading } = useChampion(id);
-	const { championsExtra, isLoading: isLoadingChampionsExtra } = useChampionsExtra();
-	if (!isLoadingChampionsExtra) {
-		// console.log(championsExtra[Math.floor(Math.random() * championsExtra.length)]);
-	}
+	const { extraChamInfo } = useContext(DataContext);
+	// console.log(extraChamInfo);
+	// const { championsExtra: extraChamInfo, isLoading: isLoadingChampionsExtra } = useChampionsExtra();
+	// console.log(championsExtra[Math.floor(Math.random() * championsExtra.length)]);
 	return (
 		<>
 			{isLoading ? (
@@ -56,11 +59,12 @@ export const Champion = () => {
 								<ChamHeader>
 									<ChamHeaderContainer>
 										<ChamName>{name}</ChamName>
-										<ChamSeparator src='../../../src/assets/t1HeaderDivider.png' alt='Header Divider' />
+										<ChamSeparator src={`${baseUrl}assets/t1HeaderDivider.png`} alt='Header Divider' />
 										<ChamTitle>{title}</ChamTitle>
 									</ChamHeaderContainer>
 									<ChamSplash
-										src={`http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${id}_0.jpg`}
+										src={`https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${id}_0.jpg`}
+										alt='champion splash'
 									></ChamSplash>
 								</ChamHeader>
 								<ChamContainer>
@@ -71,7 +75,7 @@ export const Champion = () => {
 													<SimpleBoxTextContainer>
 														<SimpleBoxText>Race</SimpleBoxText>
 														<SimpleBoxText variant>
-															{!isLoadingChampionsExtra && championsExtra.find((e) => e.id === id).race}
+															{extraChamInfo.find((e) => e.id === id).race}
 														</SimpleBoxText>
 													</SimpleBoxTextContainer>
 												</SimpleBoxContainer>
@@ -85,23 +89,21 @@ export const Champion = () => {
 													<ChamIconContainer>
 														<ChamIconBorder>
 															<ChamIconImage
-																src={`http://ddragon.leagueoflegends.com/cdn/12.23.1/img/champion/${id}.png`}
+																src={`https://ddragon.leagueoflegends.com/cdn/12.23.1/img/champion/${id}.png`}
 																alt='champion image'
 															/>
 														</ChamIconBorder>
 													</ChamIconContainer>
 													<ChamIconFrame
-														src='../../../src/assets/ChampionIconFrame.png'
+														src={`${baseUrl}assets/ChampionIconFrame.png`}
 														alt='champion border'
 													/>
 												</ChamLogoContainer>
-												<QuoteText>
-													“{!isLoadingChampionsExtra && championsExtra.find((e) => e.id === id).quote}”
-												</QuoteText>
+												<QuoteText>“{extraChamInfo.find((e) => e.id === id).quote}”</QuoteText>
 												<QuoteAutor>~ {name}</QuoteAutor>
 											</ChamQuote>
 											<ChamLargeLore
-												image={`http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${id}_0.jpg`}
+												image={`https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${id}_0.jpg`}
 											>
 												<LoreText>{lore}</LoreText>
 											</ChamLargeLore>
@@ -111,7 +113,7 @@ export const Champion = () => {
 											<SimpleRolContainer>
 												<SimpleBoxContainer>
 													<SimpleBoxImageContainer>
-														<SimpleBoxImage src={`../../../src/assets/${tags[0]}.png`} alt='rol' />
+														<SimpleBoxImage src={`${baseUrl}assets/${tags[0]}.png`} alt='rol' />
 													</SimpleBoxImageContainer>
 													<SimpleBoxTextContainer>
 														<SimpleBoxText>Rol</SimpleBoxText>
@@ -121,7 +123,7 @@ export const Champion = () => {
 												{tags[1] ? (
 													<SimpleBoxContainer>
 														<SimpleBoxImageContainer>
-															<SimpleBoxImage src={`../../../src/assets/${tags[1]}.png`} alt='rol' />
+															<SimpleBoxImage src={`${baseUrl}assets/${tags[1]}.png`} alt='rol' />
 														</SimpleBoxImageContainer>
 														<SimpleBoxTextContainer>
 															<SimpleBoxText>Rol</SimpleBoxText>
@@ -132,26 +134,28 @@ export const Champion = () => {
 													''
 												)}
 											</SimpleRolContainer>
-											{!isLoadingChampionsExtra && (
+											{
 												<LargeBoxContainer>
 													<LargeBoxImage
-														src={`../../../src/assets/${championsExtra
+														src={`${baseUrl}assets/${extraChamInfo
 															.find((e) => e.id === id)
 															.region.split(' ')
-															.join('_')}_emblem.png`}
+															.join('_')
+															.toLowerCase()}_emblem.png`}
 														alt='region'
 													/>
 													<SimpleBoxContainer variant>
-														{championsExtra.find((e) => e.id === id)?.region.includes('The Void') ||
-															(championsExtra.find((e) => e.id === id)?.region.includes('Runeterra') ? (
+														{extraChamInfo.find((e) => e.id === id)?.region.includes('The Void') ||
+															(extraChamInfo.find((e) => e.id === id)?.region.includes('Runeterra') ? (
 																''
 															) : (
 																<SimpleBoxImageContainer reverse>
 																	<SimpleBoxImage
-																		src={`../../../src/assets/${championsExtra
+																		src={`${baseUrl}assets/${extraChamInfo
 																			.find((e) => e.id === id)
 																			.region.split(' ')
-																			.join('_')}_crest_icon.png`}
+																			.join('_')
+																			.toLowerCase()}_crest_icon.png`}
 																		alt='region'
 																	/>
 																</SimpleBoxImageContainer>
@@ -159,12 +163,12 @@ export const Champion = () => {
 														<SimpleBoxTextContainer>
 															<SimpleBoxText>Region</SimpleBoxText>
 															<SimpleBoxText variant>
-																{!isLoadingChampionsExtra && championsExtra.find((e) => e.id === id).region}
+																{extraChamInfo.find((e) => e.id === id).region}
 															</SimpleBoxText>
 														</SimpleBoxTextContainer>
 													</SimpleBoxContainer>
 												</LargeBoxContainer>
-											)}
+											}
 										</ChamRightContainer>
 									</ChamInfoContainer>
 									{/* <div>difficulty</div> */}

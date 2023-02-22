@@ -112,7 +112,7 @@ export const ChampionAbilities = ({ spells, passive, keyNumber, tag }) => {
 			</ChamAbilityInfoContainer>
 			<ChamAbilityVideoContainer>
 				<ChamAbilityVideo
-					poster={'../../../src/assets/preVideo.png'}
+					poster={`${baseUrl}assets/preVideo.png`}
 					muted
 					autoPlay
 					loop

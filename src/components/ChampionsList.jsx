@@ -12,7 +12,7 @@ export const ChampionsList = () => {
 			) : (
 				<>
 					{champions.map(({ id, title, ImageUrl, name }) => (
-						<Link key={id} to={`/champion/${id}/`}>
+						<Link key={id} to={`/champion/${id}/`} title={id}>
 							<ChampionCard image={ImageUrl}>
 								<ChampionCardTitle>{name}</ChampionCardTitle>
 								<ChampionCardDescription>{title}</ChampionCardDescription>

@@ -9,7 +9,7 @@ export const useChampions = () => {
 			const championsData = await getChampions();
 			const championsInfo = Object.values(championsData).map((champion) => champion);
 			const championsImageUrl = championsInfo.map(
-				({ id }) => `http://ddragon.leagueoflegends.com/cdn/img/champion/loading/${id}_0.jpg`
+				({ id }) => `https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${id}_0.jpg`
 			);
 			const completeChampions = championsInfo.map((champion, index) => ({
 				...champion,

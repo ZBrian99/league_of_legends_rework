@@ -7,9 +7,7 @@ export const CampionsHeader = styled.div`
 	align-items: center;
 	width: 100%;
 `;
-export const CampionsHeaderIcon = styled.img`
-	width: auto;
-`;
+
 export const CampionsHeaderLine = styled.span`
 	transform: rotate(${({ rotate }) => rotate}deg);
 	background-image: url(${({ line }) => line});
@@ -51,13 +49,16 @@ export const CampionsHeaderText = styled.span`
 		height: 2rem;
 	}
 `;
-
+// import line from '@/assets/line.png';
+// import header from '@/assets/header_icon.png';
+import line from '@/assets/line.png';
+import header_icon from '@/assets/header_icon.png';
 export const ChampionsHeader = () => {
 	return (
 		<CampionsHeader>
-			<CampionsHeaderLine line={'../src/assets/universe/line.png'} rotate={180} />
-			<CampionsHeaderText icon={'../src/assets/universe/header_icon.png'}>Champions</CampionsHeaderText>
-			<CampionsHeaderLine line={'../src/assets/universe/line.png'} />
+			<CampionsHeaderLine line={line} rotate={180} />
+			<CampionsHeaderText icon={header_icon}>Champions</CampionsHeaderText>
+			<CampionsHeaderLine line={line} />
 		</CampionsHeader>
 	);
 };
