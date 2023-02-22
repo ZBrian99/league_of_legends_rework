@@ -1,7 +1,7 @@
 import { useContext, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { DataContext } from '@/context';
-import { useChampion } from '@/hooks';
+import { DataContext } from '../../context';
+import { useChampion } from '../../hooks';
 import {
 	ChamContainer,
 	ChamHeader,
@@ -34,18 +34,18 @@ import {
 	SimpleBoxText,
 	SimpleBoxTextContainer,
 	SimpleRolContainer,
-} from '@/styled-components';
+	ChamSplashContainer,
+} from '../../styled-components';
 import { ChampionAbilities, ChampionOther, ChampionRelated, ChampionSkins } from './';
-// import HeaderDivider from '@/assets/t1HeaderDivider.png';
-// import ChampionIconFrame from '@/assets/ChampionIconFrame.png';
 
 export const Champion = () => {
 	const { id } = useParams();
 	const { champion, isLoading } = useChampion(id);
 	const { extraChamInfo } = useContext(DataContext);
-	// console.log(extraChamInfo);
-	// const { championsExtra: extraChamInfo, isLoading: isLoadingChampionsExtra } = useChampionsExtra();
-	// console.log(championsExtra[Math.floor(Math.random() * championsExtra.length)]);
+	useEffect(() => {
+		scrollTo(0, 0);
+	}, []);
+
 	return (
 		<>
 			{isLoading ? (
@@ -62,10 +62,12 @@ export const Champion = () => {
 										<ChamSeparator src={`${baseUrl}assets/t1HeaderDivider.png`} alt='Header Divider' />
 										<ChamTitle>{title}</ChamTitle>
 									</ChamHeaderContainer>
-									<ChamSplash
-										src={`https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${id}_0.jpg`}
-										alt='champion splash'
-									></ChamSplash>
+									<ChamSplashContainer>
+										<ChamSplash
+											src={`https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${id}_0.jpg`}
+											alt='champion splash'
+										></ChamSplash>
+									</ChamSplashContainer>
 								</ChamHeader>
 								<ChamContainer>
 									<ChamInfoContainer>
@@ -185,3 +187,5 @@ export const Champion = () => {
 		</>
 	);
 };
+
+export default Champion;

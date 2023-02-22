@@ -211,7 +211,7 @@ export const NavBar = () => {
 
 	useEffect(() => {
 		const NavMenuClickOutside = (e) => {
-			if (!menuRef.current.contains(e.target)) {
+			if (menuRef?.current && !menuRef.current.contains(e.target)) {
 				setMobileMenu(false);
 			}
 		};

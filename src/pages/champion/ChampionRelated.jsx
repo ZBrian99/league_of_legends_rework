@@ -36,7 +36,8 @@ export const ChampionRelated = () => {
 			.sort(() => Math.random() - 0.5)
 			.slice(0, 5);
 		setRelated(relatedCham);
-	}, []);
+  }, []);
+  
 	return (
 		<LargeBoxRelatedContainer>
 			<ChamRelatedTopContainer>

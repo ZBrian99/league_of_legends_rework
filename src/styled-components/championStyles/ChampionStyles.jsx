@@ -29,13 +29,24 @@ export const ChamTitle = styled.p`
 `;
 export const ChamSeparator = styled.img`
 	width: 100%;
+  
+
 `;
 
 export const ChamSplash = styled.img`
+	position: absolute;
+	top: 0;
+	left: 0;
 	width: 100%;
-	height: auto;
+	height: 100%;
+	object-fit: cover;
+	z-index: -1;
 `;
-
+export const ChamSplashContainer = styled.div`
+	position: relative;
+	width: 100%;
+	padding-bottom: 56.25%;
+`;
 export const ChamHeader = styled.div`
 	position: relative;
 `;
@@ -79,6 +90,7 @@ export const ChamIconContainer = styled.div`
 	position: relative;
 	&::before {
 		content: '';
+		/* ${({ imageVisible }) => !imageVisible && `display: none;`} */
 		position: absolute;
 		top: -0.2rem;
 		right: -0.2rem;
@@ -196,7 +208,7 @@ export const ChamLargeLore = styled.div`
 export const SimpleBoxImage = styled.img`
 	width: 3rem;
 	height: 3rem;
-  object-fit: contain;
+	object-fit: contain;
 `;
 export const LargeBoxImage = styled.img`
 	width: 10rem;

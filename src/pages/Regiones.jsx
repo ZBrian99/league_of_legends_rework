@@ -192,3 +192,5 @@ export const Regiones = () => {
 		</>
 	);
 };
+
+export default Regiones;

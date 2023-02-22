@@ -825,3 +825,4 @@ export const Universo = () => {
 		</>
 	);
 };
+export default Universo;

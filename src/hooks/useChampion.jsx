@@ -7,7 +7,6 @@ export const useChampion = (chamName) => {
 	useEffect(() => {
 		const getChampion = async () => {
 			const championsData = await getChampionById(chamName);
-
 			const championsInfo = Object.values(championsData).map((champion) => champion);
 			setChampion(championsInfo);
 			setIsLoading(false);
