@@ -183,19 +183,25 @@ export const ChamAbilityHeader = styled.h2`
 
 export const ChamAbilityVideo = styled.video`
 	border: 1px solid #31271e;
-
-	max-height: 32rem;
+	position: absolute;
+	top: 0;
+	left: 0;
 	width: 100%;
-	@media (max-width: 64rem) {
+	height: 100%;
+	object-fit: cover;
+	/* @media (max-width: 64rem) {
 		object-fit: cover;
-	}
+	} */
 `;
 
 export const ChamAbilityVideoContainer = styled.div`
 	/* width: 100%; */
 	/* width: 50%; */
-	display: flex;
+
 	margin: auto;
+	position: relative;
+	width: 100%;
+	padding-bottom: 56.25%;
 	@media (max-width: 64rem) {
 		width: 80%;
 		order: -1;

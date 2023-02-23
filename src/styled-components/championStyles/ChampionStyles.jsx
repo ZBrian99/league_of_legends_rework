@@ -3,34 +3,33 @@ import styled from '@emotion/styled';
 export const ChamName = styled.h2`
 	text-transform: uppercase;
 	font-weight: 500;
-	font-size: 7rem;
+	font-size: clamp(2rem, 9vw, 7rem);
 	text-align: center;
-	line-height: 9rem;
+	/* line-height: 9rem; */
 	letter-spacing: 0.2em;
 	background: linear-gradient(to top, #67471f 0%, #937341 50%);
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
-	@media (max-width: 64rem) {
+	/* @media (max-width: 64rem) {
 		font-size: 5rem;
 		line-height: 7rem;
 	}
 	@media (max-width: 45rem) {
 		font-size: 3rem;
 		line-height: 5rem;
-	}
+	} */
 `;
 export const ChamTitle = styled.p`
 	text-transform: uppercase;
 	font-weight: 700;
-	font-size: 1rem;
+	font-size: clamp(1rem, 4vw, 2rem);
+
 	color: #c4b998;
 	letter-spacing: 0.25rem;
 	padding: 1rem 0 1rem 0.25rem;
 `;
 export const ChamSeparator = styled.img`
 	width: 100%;
-  
-
 `;
 
 export const ChamSplash = styled.img`

@@ -4,11 +4,11 @@ import { NavBar } from './components/NavBar';
 import { GlobalReset, Loader } from './styled-components';
 import { DataProvider } from './context';
 import { lazy, Suspense } from 'react';
-// import { Champion, Champions, Regiones, Universo } from './pages';
-const Champion = lazy(() => import('./pages/Champion/Champion'));
-const Champions = lazy(() => import('./pages/Champions'));
-const Regiones = lazy(() => import('./pages/Regiones'));
-const Universo = lazy(() => import('./pages/Universo'));
+import { Champion, Champions, Regiones, Universo } from './pages';
+// const Champion = lazy(() => import('./pages/Champion/Champion'));
+// const Champions = lazy(() => import('./pages/Champions'));
+// const Regiones = lazy(() => import('./pages/Regiones'));
+// const Universo = lazy(() => import('./pages/Universo'));
 export const App = () => {
 	return (
 		<>

@@ -33,7 +33,7 @@ export const GlobalReset = () => {
 					letter-spacing: 1px;
 					color: var(--negro);
 					/* opcional */
-					line-height: 1.4em;
+					/* line-height: 1.4em; */
 					/* opcional */
 					font-smooth: always;
 					/* opcional */

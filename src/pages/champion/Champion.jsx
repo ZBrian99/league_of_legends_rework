@@ -42,9 +42,9 @@ export const Champion = () => {
 	const { id } = useParams();
 	const { champion, isLoading } = useChampion(id);
 	const { extraChamInfo } = useContext(DataContext);
-	useEffect(() => {
-		scrollTo(0, 0);
-	}, []);
+	// useEffect(() => {
+	// 	scrollTo(0, 0);
+	// }, []);
 
 	return (
 		<>
