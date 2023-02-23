@@ -1,5 +1,13 @@
 import styled from '@emotion/styled';
-
+import { fadeIn } from './championStyles';
+// export const fadeIn = keyframes`
+// 0% {
+//     opacity: 0;
+//   }
+//   100% {
+//     opacity: 1;
+//   }
+// `;
 export const Container = styled.div`
 	width: 100%;
 	max-width: 80rem;
@@ -7,6 +15,7 @@ export const Container = styled.div`
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-evenly;
+	animation: ${fadeIn} 0.3s ease-in-out forwards;
 	@media (max-width: 48rem) {
 		width: 95%;
 	}

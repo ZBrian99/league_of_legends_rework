@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useChampions } from '../hooks';
-import { ChampionCard, ChampionCardDescription, ChampionCardTitle } from '../styled-components';
+import { ChampionCard, ChampionCardDescription, ChampionCardTitle, Loader } from '../styled-components';
 
 export const ChampionsList = () => {
 	const { champions, isLoading } = useChampions();
@@ -8,7 +8,7 @@ export const ChampionsList = () => {
 	return (
 		<>
 			{isLoading ? (
-				<div>Cargando...</div>
+				<Loader />
 			) : (
 				<>
 					{champions.map(({ id, title, ImageUrl, name }) => (

@@ -1,5 +1,2 @@
-export * from './Champion';
-export * from './ChampionAbilities';
-export * from './ChampionOther';
-export * from './ChampionRelated';
-export * from './ChampionSkins';
+export { default as Champion } from './Champion';
+export * from './components';

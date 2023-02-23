@@ -1,3 +1,4 @@
+import { keyframes } from '@emotion/react';
 import styled from '@emotion/styled';
 
 export const ChamName = styled.h2`
@@ -45,6 +46,7 @@ export const ChamSplashContainer = styled.div`
 	position: relative;
 	width: 100%;
 	padding-bottom: 56.25%;
+	background: linear-gradient(0deg, rgba(10, 10, 12, 1) 20%, rgba(10, 10, 12, 0.3) 100%);
 `;
 export const ChamHeader = styled.div`
 	position: relative;
@@ -58,14 +60,25 @@ export const ChamHeaderContainer = styled.div`
 	flex-flow: column nowrap;
 	align-items: center;
 	justify-content: center;
-	color: rgb(10, 10, 12);
-	background: linear-gradient(0deg, rgba(10, 10, 12, 1) 20%, rgba(10, 10, 12, 0.3) 100%);
-`;
+	z-index: 1;
 
+	${({ visible }) => !visible && 'visibility: hidden;'}
+`;
+export const fadeIn = keyframes`
+0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+`;
 export const ChampionContainer = styled.div`
 	min-height: 100vh;
 	color: white;
+	opacity: 0;
+	animation: ${fadeIn} 0.3s ease-in-out forwards;
 `;
+
 export const ChamIconFrame = styled.img`
 	width: 7.5rem;
 	position: absolute;
@@ -256,12 +269,22 @@ export const SimpleBoxContainer = styled.div`
   @media (max-width: 64rem) {
 	}
   `}
-	height: 4.5rem;
+	min-height: 4.5rem;
 	background-color: #111318;
 
 	@media (max-width: 45rem) {
 		width: 100%;
 	}
+`;
+
+export const RaceBoxContainer = styled.div`
+	width: 100%;
+	min-height: 4.5rem;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	border: 1px solid #31271e;
+	background-color: #111318;
 `;
 
 export const SimpleRolContainer = styled.div`

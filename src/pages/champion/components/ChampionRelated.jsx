@@ -1,6 +1,6 @@
 import { useContext, useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { DataContext } from '../../context';
+import { DataContext } from '../../../context';
 import {
 	ChamIconBorder,
 	ChamIconContainer,
@@ -17,7 +17,7 @@ import {
 	SimpleBoxImageContainer,
 	SimpleBoxText,
 	SimpleBoxTextContainer,
-} from '../../styled-components';
+} from '../../../styled-components';
 
 export const ChampionRelated = () => {
 	const { id } = useParams();
@@ -34,10 +34,10 @@ export const ChampionRelated = () => {
 					: cham.region === extraChamInfo[chamNum].region && cham.id !== id
 			)
 			.sort(() => Math.random() - 0.5)
-			.slice(0, 5);
+			.slice(0, 7);
 		setRelated(relatedCham);
-  }, []);
-  
+	}, []);
+
 	return (
 		<LargeBoxRelatedContainer>
 			<ChamRelatedTopContainer>

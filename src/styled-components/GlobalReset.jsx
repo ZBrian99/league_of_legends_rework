@@ -86,7 +86,7 @@ export const GlobalReset = () => {
 				}
 
 				html {
-					scroll-behavior: smooth;
+					/* scroll-behavior: smooth; */
 				}
 
 				h1,

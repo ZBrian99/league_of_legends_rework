@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useContext, useEffect, useRef, useState } from 'react';
 import {
 	ChamSkinImage,
 	ChamSkinsContainer,
@@ -8,9 +8,12 @@ import {
 	ChamSkinSidePanelSelector,
 	ChamSkinSidePanelText,
 	ChamSkinSidePanelTitle,
-} from '../../styled-components';
+} from '../../../styled-components';
+import { ChampionContext } from '../Champion';
 
-export const ChampionSkins = ({ skins, chamName, chamId }) => {
+export const ChampionSkins = () => {
+	const { skins, name: chamName, id: chamId } = useContext(ChampionContext);
+
 	const [skinNumber, setSkinNumber] = useState(0);
 	const [stopInterval, setStopInterval] = useState(false);
 	const selector = useRef();

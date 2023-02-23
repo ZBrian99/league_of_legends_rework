@@ -1,14 +1,14 @@
 import { useContext, useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { CampionsHeader, CampionsHeaderLine, CampionsHeaderText } from '../../components';
-import { DataContext } from '../../context';
+import { CampionsHeader, CampionsHeaderLine, CampionsHeaderText } from '../../../components';
+import { DataContext } from '../../../context';
 import {
 	OtherCampionsIcon,
 	OtherChampionBox,
 	OtherChampionContainer,
 	OtherChampionDescription,
 	OtherChampionName,
-} from '../../styled-components';
+} from '../../../styled-components';
 
 export const ChampionOther = () => {
 	const [random, setRandom] = useState(null);
@@ -59,7 +59,6 @@ export const ChampionOther = () => {
 								</OtherChampionBox>
 							</Link>
 						))}
-						
 					</>
 				)}
 			</OtherChampionContainer>

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import {
 	ChamAbilitiesContainer,
 	ChamAbilitiesImageContainer,
@@ -16,17 +16,22 @@ import {
 	ChamAbilityUpLine,
 	ChamAbilityVideo,
 	ChamAbilityVideoContainer,
-	ChampionAbilityContainer,
-} from '../../styled-components';
+  ChampionAbilityContainer,
+} from '../../../styled-components';
+import { ChampionContext } from '../Champion';
 
 const abilities = ['Q', 'W', 'E', 'R'];
 
-export const ChampionAbilities = ({ spells, passive, keyNumber, tag }) => {
+export const ChampionAbilities = () => {
+  	const { spells, passive, key, tags } = useContext(ChampionContext);
+
+
+
 	const [ability, setAbility] = useState({
 		ability: 'Passive',
 		name: passive.name,
 		description: passive.description.replace(/ *\<[^>]*\> */g, ' '),
-		key: keyNumber,
+		key: key,
 		id: 0,
 	});
 
@@ -36,7 +41,7 @@ export const ChampionAbilities = ({ spells, passive, keyNumber, tag }) => {
 					ability: currentTarget.id,
 					name: passive.name,
 					description: passive.description.replace(/ *\<[^>]*\> */g, ' '),
-					key: keyNumber,
+					key: key,
 					id: 0,
 			  })
 			: setAbility(
@@ -47,7 +52,7 @@ export const ChampionAbilities = ({ spells, passive, keyNumber, tag }) => {
 								ability: currentTarget.id,
 								name: spell.name,
 								description: spell.description.replace(/ *\<[^>]*\> */g, ' '),
-								key: keyNumber,
+								key: key,
 								id: index + 1,
 							};
 						})[0]
@@ -55,14 +60,14 @@ export const ChampionAbilities = ({ spells, passive, keyNumber, tag }) => {
 	};
 
 	return (
-		<ChampionAbilityContainer tag={tag}>
+		<ChampionAbilityContainer tag={tags[0]}>
 			<ChamAbilityInfoContainer>
 				<ChamAbilitiesContainer>
 					<ChamAbilityHeader>ABILITIES</ChamAbilityHeader>
 					<ChamAbilitiesImageContainer>
 						<ChamAbilityButton
 							id={'Passive'}
-							keyNumber={keyNumber}
+							keyNumber={key}
 							onClick={handleClick}
 							variant={'Passive'.includes(ability.ability) ?? variant}
 						>
@@ -78,7 +83,7 @@ export const ChampionAbilities = ({ spells, passive, keyNumber, tag }) => {
 							<ChamAbilityButton
 								key={id}
 								id={abilities[i]}
-								keyNumber={keyNumber}
+								keyNumber={key}
 								onClick={(e) => handleClick(e, i)}
 								variant={abilities[i].includes(ability.ability) ?? variant}
 							>
