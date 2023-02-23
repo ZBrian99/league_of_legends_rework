@@ -19,6 +19,13 @@ pasar fetch a axios
 pasar styled a archivos individuales
 refactorizar todos los componentes
 
+hacer un marco y effecto bueno para las habilidades
+animacion a las habilidades
+hacer que el texto de las habilidades aparesca gradualmente
+hacer que las skins aparescan gradualmente
+arreglas video fondo y transiciones
+hacer que el icono del campeon no se muestre hasta cargar
+
 
 region:
   cambiar el fondo de region a la imagen correspondiente
