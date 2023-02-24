@@ -98,11 +98,11 @@ export const ChamIconImage = styled.img`
 export const ChamIconContainer = styled.div`
 	width: 5rem;
 	${({ scale }) => (scale ? `transform: scale(${scale});` : '')}
+	${({ visible }) => !visible && `display: none;`}
 
 	position: relative;
 	&::before {
 		content: '';
-		/* ${({ imageVisible }) => !imageVisible && `display: none;`} */
 		position: absolute;
 		top: -0.2rem;
 		right: -0.2rem;

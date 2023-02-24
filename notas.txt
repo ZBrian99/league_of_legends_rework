@@ -25,7 +25,7 @@ hacer que el texto de las habilidades aparesca gradualmente
 hacer que las skins aparescan gradualmente
 arreglas video fondo y transiciones
 hacer que el icono del campeon no se muestre hasta cargar
-
+botones footer mas grandes 1 2
 
 region:
   cambiar el fondo de region a la imagen correspondiente
