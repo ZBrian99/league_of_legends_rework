@@ -1,6 +1,6 @@
-import { useContext } from "react";
+import { useContext } from 'react';
 import { ChamSplash, ChamSplashContainer } from '../styled-components';
-import { ChampionContext } from "../Champion";
+import { ChampionContext } from '../Champion';
 
 export const ChampionSplash = () => {
 	const { id } = useContext(ChampionContext);

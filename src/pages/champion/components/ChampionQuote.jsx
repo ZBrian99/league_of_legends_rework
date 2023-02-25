@@ -1,11 +1,7 @@
 import { useContext } from 'react';
 import { DataContext } from '../../../context';
 
-import {
-	ChamQuote,
-	QuoteAutor,
-	QuoteText,
-} from '../styled-components';
+import { ChamQuote, QuoteAutor, QuoteText } from '../styled-components';
 import { ChampionContext } from '../Champion';
 import { ChampionLogo } from './';
 

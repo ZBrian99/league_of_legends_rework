@@ -1,6 +1,5 @@
 import { HeaderIconText } from '../../../styled-components';
 import { CampionsHeaderContainer, CampionsHeaderLine } from '../../champions/styled-components';
-// import { OtherCampionsIcon } from '../styled-components';
 
 export const ChampionOtherHeader = ({ title, src }) => {
 	return (
