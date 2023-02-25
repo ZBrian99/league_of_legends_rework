@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-export const CampionsHeaderContainer = styled.div`
+export const ChampionsHeaderContainer = styled.div`
 	margin: 10rem 0 2rem;
 	display: flex;
 	justify-content: center;
@@ -8,7 +8,7 @@ export const CampionsHeaderContainer = styled.div`
 	width: 100%;
 `;
 
-export const CampionsHeaderLine = styled.span`
+export const ChampionsHeaderLine = styled.span`
 	transform: rotate(${({ rotate }) => rotate}deg);
 	background-image: url(${({ line }) => line});
 	background-repeat: no-repeat;
