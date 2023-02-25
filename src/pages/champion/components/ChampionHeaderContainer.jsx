@@ -1,5 +1,5 @@
 import { useContext, useState } from 'react';
-import { ChamHeaderContainer, ChamName, ChamSeparator, ChamTitle } from '../../../styled-components';
+import { ChamHeaderContainer, ChamName, ChamSeparator, ChamTitle } from '../styled-components';
 import { ChampionContext } from '../Champion';
 
 export const ChampionHeaderContainer = () => {

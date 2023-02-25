@@ -49,8 +49,6 @@ export const CampionsHeaderText = styled.span`
 		height: 2rem;
 	}
 `;
-// import line from '@/assets/line.png';
-// import header from '@/assets/header_icon.png';
 import line from '@/assets/line.png';
 import header_icon from '@/assets/header_icon.png';
 export const ChampionsHeader = () => {

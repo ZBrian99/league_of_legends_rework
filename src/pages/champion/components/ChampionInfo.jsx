@@ -1,4 +1,4 @@
-import { ChamInfoContainer } from '../../../styled-components';
+import { ChamInfoContainer } from '../styled-components';
 import { ChampionInfoLeft, ChampionInfoMid, ChampionInfoRight } from './';
 
 export const ChampionInfo = () => {

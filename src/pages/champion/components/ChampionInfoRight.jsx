@@ -1,4 +1,4 @@
-import { ChamRightContainer } from '../../../styled-components';
+import { ChamRightContainer } from '../styled-components';
 import { ChampionBoxRegion } from './ChampionBoxRegion';
 import { ChampionBoxRol } from './ChampionBoxRol';
 

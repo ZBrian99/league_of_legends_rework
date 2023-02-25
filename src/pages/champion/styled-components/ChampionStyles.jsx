@@ -1,5 +1,6 @@
 import { keyframes } from '@emotion/react';
 import styled from '@emotion/styled';
+import { fadeIn } from '../../../styled-components';
 
 export const ChamName = styled.h2`
 	text-transform: uppercase;
@@ -64,14 +65,7 @@ export const ChamHeaderContainer = styled.div`
 
 	${({ visible }) => !visible && 'visibility: hidden;'}
 `;
-export const fadeIn = keyframes`
-0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-`;
+
 export const ChampionContainer = styled.div`
 	min-height: 100vh;
 	color: white;

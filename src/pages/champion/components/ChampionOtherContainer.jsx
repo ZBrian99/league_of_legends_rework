@@ -2,7 +2,7 @@ import { useContext, useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { ChampionOtherCard } from '..';
 import { DataContext } from '../../../context';
-import { OtherChampionContainer } from '../../../styled-components';
+import { OtherChampionContainer } from '../styled-components';
 
 const generateRandomNumbers = (array, index) => {
 	const randomNum = [];

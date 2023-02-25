@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { fadeIn } from './championStyles';
+import { fadeIn } from '../../../styled-components';
 
 export const Container = styled.div`
 	width: 100%;

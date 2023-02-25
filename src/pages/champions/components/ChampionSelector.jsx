@@ -1,5 +1,5 @@
-import { ChampionsCard } from '..';
-import { ChampionsContainer, Container } from '../../../styled-components';
+import { ChampionsCard } from '../../champion';
+import { ChampionsContainer, Container } from '../styled-components';
 
 export const ChampionSelector = ({ champions }) => {
 	return (

@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { ChamAbilitiesImageContainer } from '../../../styled-components';
+import { ChamAbilitiesImageContainer } from '../styled-components';
 import { ChampionContext } from '../Champion';
 import { ChampionAbilityButton } from './ChampionAbilityButton';
 import { ChampionAbilitySelectorCircle } from './ChampionAbilitySelectorCircle';

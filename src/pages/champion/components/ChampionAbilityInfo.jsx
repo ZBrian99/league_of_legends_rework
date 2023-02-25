@@ -1,4 +1,4 @@
-import { ChamAbility, ChamAbilityDescription, ChamAbilityInfo, ChamAbilityName } from "../../../styled-components";
+import { ChamAbility, ChamAbilityDescription, ChamAbilityInfo, ChamAbilityName } from "../styled-components";
 
 export const ChampionAbilityInfo = ({ ability }) => {
 	return (

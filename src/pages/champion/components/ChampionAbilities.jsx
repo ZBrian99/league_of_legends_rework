@@ -4,7 +4,7 @@ import {
 	ChamAbilityHeader,
 	ChamAbilityInfoContainer,
 	ChampionAbilityContainer,
-} from '../../../styled-components';
+} from '../styled-components';
 import { ChampionContext } from '../Champion';
 import { ChampionAbilityInfo, ChampionAbilitySelector, ChampionAbilityVideo } from './';
 

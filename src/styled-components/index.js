@@ -1,6 +1,4 @@
-export * from './ChampionsListStyles';
-export * from './Containers';
 export * from './FooterStyles';
+export * from './GeneralStyles';
 export * from './GlobalReset';
 export * from './Loaders';
-export * from './championStyles';

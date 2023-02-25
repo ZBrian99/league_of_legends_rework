@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import { DataContext } from '../../../context';
-import { LargeBoxContainer, LargeBoxImage } from '../../../styled-components';
+import { LargeBoxContainer, LargeBoxImage } from '../styled-components';
 import { ChampionContext } from '../Champion';
 import { ChampionBox } from './ChampionBox';
 

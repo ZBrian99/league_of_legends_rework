@@ -1,5 +1,5 @@
 import { ChampionLore, ChampionQuote } from '.';
-import { ChamMidContainer } from '../../../styled-components';
+import { ChamMidContainer } from '../styled-components';
 
 export const ChampionInfoMid = () => {
 	return (

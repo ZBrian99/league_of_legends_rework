@@ -1,4 +1,4 @@
-import { LargeBoxRelatedContainer } from '../../../styled-components';
+import { LargeBoxRelatedContainer } from '../styled-components';
 import { ChampionRelatedSelector, ChampionRelatedTitle } from './';
 
 export const ChampionRelated = () => {

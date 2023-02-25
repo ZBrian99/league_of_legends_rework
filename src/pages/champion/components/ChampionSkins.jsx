@@ -1,5 +1,5 @@
 import { useContext, useEffect, useRef, useState } from 'react';
-import { ChamSkinImage, ChamSkinsContainer, ChamSkinSidePanelTitle } from '../../../styled-components';
+import { ChamSkinImage, ChamSkinsContainer, ChamSkinSidePanelTitle } from '../styled-components';
 import { ChampionContext } from '../Champion';
 import { ChampionSkinSelector } from './ChampionSkinSelector';
 

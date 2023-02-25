@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
-import { useChampions } from '../hooks';
-import { ChampionCard, ChampionCardDescription, ChampionCardTitle, Loader } from '../styled-components';
+import { useChampions } from '../../../hooks';
+import { Loader } from '../../../styled-components';
+import { ChampionCard, ChampionCardDescription, ChampionCardTitle} from '../styled-components';
 
 export const ChampionsList = () => {
 	const { champions, isLoading } = useChampions();

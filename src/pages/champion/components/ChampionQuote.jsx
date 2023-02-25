@@ -5,7 +5,7 @@ import {
 	ChamQuote,
 	QuoteAutor,
 	QuoteText,
-} from '../../../styled-components';
+} from '../styled-components';
 import { ChampionContext } from '../Champion';
 import { ChampionLogo } from './';
 

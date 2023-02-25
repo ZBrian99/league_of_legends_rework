@@ -3,7 +3,7 @@ import {
 	ChamAbilityImage,
 	ChamAbilityLine,
 	ChamAbilityLineCircle,
-} from '../../../styled-components';
+} from '../styled-components';
 
 export const ChampionAbilityButton = ({ id, onClick, variant, src, alt }) => {
 

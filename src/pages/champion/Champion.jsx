@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { useChampion } from '../../hooks';
-import { ChampionContainer, Loader } from '../../styled-components';
 import { ChampionDetails, ChampionHeader } from './';
 import { createContext } from 'react';
+import { ChampionContainer } from './styled-components';
+import { Loader } from '../../styled-components';
 
 export const ChampionContext = createContext();
 

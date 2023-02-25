@@ -1,4 +1,4 @@
-import { ChamAbilityVideo, ChamAbilityVideoContainer } from "../../../styled-components";
+import { ChamAbilityVideo, ChamAbilityVideoContainer } from '../styled-components';
 
 export const ChampionAbilityVideo = ({ ability }) => {
 	return (

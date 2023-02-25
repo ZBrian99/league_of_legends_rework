@@ -1,4 +1,4 @@
-import { SimpleBoxContainer } from '../../../styled-components';
+import { SimpleBoxContainer } from '../styled-components';
 import { ChampionImageBox } from './ChampionBoxImage';
 import { ChampionTextBox } from './ChampionBoxText';
 

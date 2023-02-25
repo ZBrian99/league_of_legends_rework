@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { SimpleRolContainer } from '../../../styled-components';
+import { SimpleRolContainer } from '../styled-components';
 import { ChampionContext } from '../Champion';
 import { ChampionBox } from './ChampionBox';
 

@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import { ChampionSkinPanel } from '.';
-import { ChamSkinSidePanel, ChamSkinSidePanelSelector } from '../../../styled-components';
+import { ChamSkinSidePanel, ChamSkinSidePanelSelector } from '../styled-components';
 import { ChampionContext } from '../Champion';
 
 export const ChampionSkinSelector = ({ selector, skinNumber, fn }) => {

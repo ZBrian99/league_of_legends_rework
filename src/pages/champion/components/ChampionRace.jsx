@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import { DataContext } from '../../../context';
-import { RaceBoxContainer, SimpleBoxText } from '../../../styled-components';
+import { RaceBoxContainer, SimpleBoxText } from '../styled-components';
 import { ChampionContext } from '../Champion';
 
 export const ChampionRace = () => {

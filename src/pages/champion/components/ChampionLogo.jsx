@@ -1,4 +1,4 @@
-import { ChamIconFrame, ChamLogoContainer } from '../../../styled-components';
+import { ChamIconFrame, ChamLogoContainer } from '../styled-components';
 import { ChampionIcon } from './';
 
 export const ChampionLogo = ({ id }) => {

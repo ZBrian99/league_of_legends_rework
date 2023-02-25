@@ -1,5 +1,5 @@
 import { CampionsHeader, CampionsHeaderLine } from '../../../components';
-import { OtherCampionsIcon } from '../../../styled-components';
+import { OtherCampionsIcon } from '../styled-components';
 
 export const ChampionOtherHeader = ({ title, src }) => {
 	return (

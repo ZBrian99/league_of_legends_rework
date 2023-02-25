@@ -1,6 +1,6 @@
 import { useContext, useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { ChamRelatedSelectorContainer } from '../../../styled-components';
+import { ChamRelatedSelectorContainer } from '../styled-components';
 import { DataContext } from '../../../context';
 import { ChampionLogoWithName } from './ChampionLogoWithName';
 export const ChampionRelatedSelector = () => {

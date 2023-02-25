@@ -1,4 +1,4 @@
-import { ChamContainer } from '../../../styled-components';
+import { ChamContainer } from '../styled-components';
 import { ChampionAbilities } from './ChampionAbilities';
 import { ChampionInfo } from './ChampionInfo';
 import { ChampionOther } from './ChampionOther';
