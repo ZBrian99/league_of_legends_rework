@@ -1,13 +1,6 @@
 import styled from '@emotion/styled';
 import { fadeIn } from './championStyles';
-// export const fadeIn = keyframes`
-// 0% {
-//     opacity: 0;
-//   }
-//   100% {
-//     opacity: 1;
-//   }
-// `;
+
 export const Container = styled.div`
 	width: 100%;
 	max-width: 80rem;

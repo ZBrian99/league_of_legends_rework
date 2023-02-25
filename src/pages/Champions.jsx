@@ -1,15 +1,7 @@
-import { ChampionsHeader, ChampionsList } from '../components';
+import { ChampionsHeader } from '../components';
 import { useChampions } from '../hooks';
-import {
-	ChampionCard,
-	ChampionCardDescription,
-	ChampionCardTitle,
-	ChampionsContainer,
-	ChampionsContainerBackground,
-	Container,
-	Loader,
-} from '../styled-components';
-import { Link } from 'react-router-dom';
+import { ChampionsContainerBackground, Loader } from '../styled-components';
+import { ChampionSelector } from './champion/components';
 
 export const Champions = () => {
 	const { champions, isLoading } = useChampions();
@@ -22,19 +14,7 @@ export const Champions = () => {
 				<>
 					<ChampionsContainerBackground />
 					<ChampionsHeader />
-
-					<Container>
-						<ChampionsContainer>
-							{champions.map(({ id, title, ImageUrl, name }) => (
-								<Link key={id} to={`/champion/${id}/`} title={id}>
-									<ChampionCard image={ImageUrl}>
-										<ChampionCardTitle>{name}</ChampionCardTitle>
-										<ChampionCardDescription>{title}</ChampionCardDescription>
-									</ChampionCard>
-								</Link>
-							))}
-						</ChampionsContainer>
-					</Container>
+					<ChampionSelector champions={champions} />
 				</>
 			)}
 		</>

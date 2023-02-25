@@ -1,18 +1,10 @@
 import { useContext, useEffect, useRef, useState } from 'react';
-import {
-	ChamSkinImage,
-	ChamSkinsContainer,
-	ChamSkinSidePanel,
-	ChamSkinSidePanelContainer,
-	ChamSkinSidePanelImage,
-	ChamSkinSidePanelSelector,
-	ChamSkinSidePanelText,
-	ChamSkinSidePanelTitle,
-} from '../../../styled-components';
+import { ChamSkinImage, ChamSkinsContainer, ChamSkinSidePanelTitle } from '../../../styled-components';
 import { ChampionContext } from '../Champion';
+import { ChampionSkinSelector } from './ChampionSkinSelector';
 
 export const ChampionSkins = () => {
-	const { skins, name: chamName, id: chamId } = useContext(ChampionContext);
+	const { skins, id: chamId } = useContext(ChampionContext);
 
 	const [skinNumber, setSkinNumber] = useState(0);
 	const [stopInterval, setStopInterval] = useState(false);
@@ -29,7 +21,7 @@ export const ChampionSkins = () => {
 		};
 	}, [stopInterval]);
 
-	const hamdleClick = (num) => {
+	const handleClick = (num) => {
 		setStopInterval(true);
 		setSkinNumber(num);
 	};
@@ -46,19 +38,9 @@ export const ChampionSkins = () => {
 	return (
 		<ChamSkinsContainer image={skins[skinNumber].num}>
 			<ChamSkinSidePanelTitle>AVAILABLE SKINS</ChamSkinSidePanelTitle>
-			<ChamSkinSidePanel>
-				<ChamSkinSidePanelSelector ref={selector}>
-					{skins.map(({ name, num, id }, i) => (
-						<ChamSkinSidePanelContainer key={id} active={skinNumber === i} onClick={() => hamdleClick(i)}>
-							<ChamSkinSidePanelImage
-								src={`https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${chamId}_${num}.jpg`}
-								alt={name === 'default' ? num : num}
-							/>
-							<ChamSkinSidePanelText>{name === 'default' ? chamName : name}</ChamSkinSidePanelText>
-						</ChamSkinSidePanelContainer>
-					))}
-				</ChamSkinSidePanelSelector>
-			</ChamSkinSidePanel>
+
+			<ChampionSkinSelector selector={selector} skinNumber={skinNumber} fn={handleClick} />
+
 			<ChamSkinImage
 				src={`https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${chamId}_${skins[skinNumber].num}.jpg`}
 				alt={skins[skinNumber].num}
