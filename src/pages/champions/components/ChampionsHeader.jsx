@@ -1,62 +1,13 @@
-import styled from '@emotion/styled';
-
-export const CampionsHeader = styled.div`
-	margin: 10rem 0 2rem;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-`;
-
-export const CampionsHeaderLine = styled.span`
-	transform: rotate(${({ rotate }) => rotate}deg);
-	background-image: url(${({ line }) => line});
-	background-repeat: no-repeat;
-	width: 30%;
-	height: 5px;
-	position: relative;
-	&::before {
-		content: '◇';
-		height: 5px;
-		width: 5px;
-		top: -2px;
-		left: -5px;
-		position: absolute;
-		transform: rotate(45deg);
-		border: 1px solid #373121;
-		font-size: 0;
-	}
-`;
-
-export const CampionsHeaderText = styled.span`
-	margin: 0 5rem;
-	text-transform: uppercase;
-	font-size: 1.4em;
-
-	letter-spacing: 5px;
-	color: #c4b998;
-	position: relative;
-	display: flex;
-	justify-content: center;
-	&::after {
-		content: ' ';
-		position: absolute;
-		top: -3rem;
-		background-image: url(${({ icon }) => icon});
-		background-repeat: no-repeat;
-		background-size: cover;
-		width: 1.125rem;
-		height: 2rem;
-	}
-`;
-import line from '@/assets/line.png';
-import header_icon from '@/assets/header_icon.png';
+import { HeaderIconText } from '../../../styled-components';
+import { CampionsHeaderContainer, CampionsHeaderLine } from '../styled-components';
 export const ChampionsHeader = () => {
 	return (
-		<CampionsHeader>
-			<CampionsHeaderLine line={line} rotate={180} />
-			<CampionsHeaderText icon={header_icon}>Champions</CampionsHeaderText>
-			<CampionsHeaderLine line={line} />
-		</CampionsHeader>
+		<CampionsHeaderContainer>
+			<CampionsHeaderLine line={`${baseUrl}assets/line.png`} rotate={180} />
+			<HeaderIconText icon={`${baseUrl}assets/header_icon.png`} size={'1.4em'} width={'1.125rem'}>
+				Champions
+			</HeaderIconText>
+			<CampionsHeaderLine line={`${baseUrl}assets/line.png`} />
+		</CampionsHeaderContainer>
 	);
 };

@@ -1,27 +1,5 @@
 import styled from '@emotion/styled';
 
-export const OtherCampionsIcon = styled.span`
-	margin: 0 5rem;
-	text-transform: uppercase;
-	font-size: 0.9em;
-	letter-spacing: 5px;
-	color: #c4b998;
-	position: relative;
-	display: flex;
-	text-align: center;
-	justify-content: center;
-	&::after {
-		content: ' ';
-		position: absolute;
-		top: -3rem;
-		background-image: url(${({ icon }) => icon});
-		background-repeat: no-repeat;
-		background-size: cover;
-		width: 2rem;
-		height: 2rem;
-	}
-`;
-
 export const OtherChampionDescription = styled.div`
 	background-color: rgba(12 12 15 / 0.9);
 	border-top: 1px solid #927345;

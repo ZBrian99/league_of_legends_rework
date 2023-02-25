@@ -1,7 +1,6 @@
-import { ChampionsHeader } from '../../components';
 import { useChampions } from '../../hooks';
 import { Loader } from '../../styled-components';
-import { ChampionSelector } from '../champion/components';
+import { ChampionSelector, ChampionsHeader } from './components';
 import { ChampionsContainerBackground } from './styled-components';
 
 export const Champions = () => {

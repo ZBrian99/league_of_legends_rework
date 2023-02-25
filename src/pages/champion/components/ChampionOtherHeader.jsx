@@ -1,12 +1,13 @@
-import { CampionsHeader, CampionsHeaderLine } from '../../../components';
-import { OtherCampionsIcon } from '../styled-components';
+import { HeaderIconText } from '../../../styled-components';
+import { CampionsHeaderContainer, CampionsHeaderLine } from '../../champions/styled-components';
+// import { OtherCampionsIcon } from '../styled-components';
 
 export const ChampionOtherHeader = ({ title, src }) => {
 	return (
-		<CampionsHeader>
+		<CampionsHeaderContainer>
 			<CampionsHeaderLine line={`${baseUrl}assets/line.png`} rotate={180} />
-			<OtherCampionsIcon icon={src}>{title}</OtherCampionsIcon>
+			<HeaderIconText icon={src}>{title}</HeaderIconText>
 			<CampionsHeaderLine line={`${baseUrl}assets/line.png`} />
-		</CampionsHeader>
+		</CampionsHeaderContainer>
 	);
 };
