@@ -1,23 +1,10 @@
 import { useContext } from 'react';
 import { ChampionBox } from './ChampionBox';
-import { DataContext } from '../../../../../context';
 import { LargeBoxContainer, LargeBoxImage } from '../../../styled-components';
-import { ChampionContext } from '../../../Champion';
+import { useChampionBoxRegion } from '../../../hooks';
 
 export const ChampionBoxRegion = () => {
-	const { extraChamInfo } = useContext(DataContext);
-	const { id } = useContext(ChampionContext);
-
-	const region = extraChamInfo.find((e) => e.id === id)?.region;
-	const RegionVoid = region?.includes('The Void');
-	const RegionRuneterra = region?.includes('Runeterra');
-
-	const base = `${baseUrl}assets/${region?.split(' ').join('_').toLowerCase()}`;
-
-	const regionEmblemUrl = `${base}_emblem.png`;
-	const regionIconUrl = `${base}_crest_icon.png`;
-
-	const ShowregionIcon = !!RegionVoid || !!RegionRuneterra;
+	const { regionEmblemUrl, ShowregionIcon, regionIconUrl, region } = useChampionBoxRegion();
 
 	return (
 		<LargeBoxContainer>
