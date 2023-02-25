@@ -1,31 +1,42 @@
 import styled from '@emotion/styled';
 import { Link } from 'react-router-dom';
 
+export const FooterLogo = styled.svg`
+	fill: #fff;
+	width: 7rem;
+	opacity: 0.3;
+	&:hover {
+		opacity: 1;
+		cursor: pointer;
+	}
+	margin: 1.5rem;
+`;
+
 export const FooterESRBText = styled.li`
 	text-align: left;
 	color: #efefef;
-	font-size: .8em;
+	font-size: 0.8em;
 	font-weight: 500;
 	line-height: 1.5em;
 `;
 
 export const FooterESRBImage = styled.img`
-  width: 4rem;
-  height: 100%;
-  object-fit: contain;
-  object-position: center;
-`
+	width: 4rem;
+	height: 100%;
+	object-fit: contain;
+	object-position: center;
+`;
 
 export const FooterESRB = styled.div`
 	display: flex;
 	background: #292929;
 	padding: 1rem;
-	border-radius: .5rem;
-  gap: 1rem;
+	border-radius: 0.5rem;
+	gap: 1rem;
 `;
 
 export const FooterLink = styled(Link)`
-	padding: .5rem 1rem;
+	padding: 1rem 2rem;
 	text-decoration: none;
 	font-size: 0.9em;
 	color: #f9f9f9;
@@ -35,35 +46,35 @@ export const FooterLink = styled(Link)`
 		background: rgba(128, 128, 128, 0.3);
 	}
 	@media (max-width: 64rem) {
-    width: 100%;
-    text-align: center;
+		width: 100%;
+		text-align: center;
 	}
 `;
 
 export const FooterLinksContainer = styled.div`
 	display: flex;
-  gap: 1rem;
+	gap: 1rem;
 	${({ variant }) => (variant ? 'background: #292929;' : '')}
 	width: 100%;
 	justify-content: center;
-align-items: center;
+	align-items: center;
 	user-select: none;
-	padding: 1.5rem;
+	padding: 1rem;
 	color: #7e7e7e;
-	font-size: .9em;
+	font-size: 0.9em;
 	letter-spacing: 0.08em;
 	text-transform: uppercase;
 
-  @media (max-width: 64rem){
-    flex-direction: column;
-  }
+	@media (max-width: 64rem) {
+		flex-direction: column;
+	}
 `;
 
 export const FooterText = styled.p`
 	max-width: 640px;
 	font-weight: 500;
-	font-size: .75rem;
-  margin-top: 5rem;
+	font-size: 0.75rem;
+	/* margin-top: 5rem; */
 	text-align: center;
 	color: #7e7e7e;
 `;
