@@ -1,3 +1,3 @@
-export * from './ChampionsCardStyles';
-export * from './ChampionsHeaderStyles';
-export * from './ChampionsStyles';
+export * from './Champions.styles';
+export * from './ChampionsCard.styles';
+export * from './ChampionsHeader.styles';
