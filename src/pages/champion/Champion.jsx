@@ -1,4 +1,4 @@
-import { ChampionDetails, ChampionHeader } from './';
+import { ChampionDetails, ChampionHeaderContainer } from './';
 import { createContext } from 'react';
 import { ChampionContainer } from './styled-components';
 import { Loader } from '../../styled-components';
@@ -21,7 +21,7 @@ export const Champion = () => {
 					{
 						<ChampionContext.Provider value={championData}>
 							<ChampionContainer>
-								<ChampionHeader />
+								<ChampionHeaderContainer />
 								<ChampionDetails />
 							</ChampionContainer>
 						</ChampionContext.Provider>
