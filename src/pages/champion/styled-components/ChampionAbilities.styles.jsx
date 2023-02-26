@@ -178,7 +178,7 @@ export const ChamAbilityHeader = styled.h2`
 	font-weight: 700;
 	font-size: 4rem;
 	line-height: 4.5rem;
-	font-style: italic;
+	/* font-style: italic; */
 `;
 
 export const ChamAbilityVideo = styled.video`

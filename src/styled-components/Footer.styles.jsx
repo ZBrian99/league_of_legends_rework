@@ -5,10 +5,10 @@ export const FooterLogo = styled.svg`
 	fill: #fff;
 	width: 7rem;
 	opacity: 0.3;
-	&:hover {
+	/* &:hover {
 		opacity: 1;
 		cursor: pointer;
-	}
+	} */
 	margin: 1.5rem;
 `;
 

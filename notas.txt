@@ -15,7 +15,6 @@ hacer que los texto e imagenes aparescan con opacidad  estilo desvanecerse
 video splash screen
 añadir filtros de busqueda
 
-pasar fetch a axios
 pasar styled a archivos individuales
 refactorizar todos los componentes
 
@@ -24,7 +23,9 @@ animacion a las habilidades
 hacer que el texto de las habilidades aparesca gradualmente
 hacer que las skins aparescan gradualmente
 arreglas video fondo y transiciones
-hacer que el icono del campeon no se muestre hasta cargar
+
+refactorizar navbar y footer
+
 
 region:
   cambiar el fondo de region a la imagen correspondiente

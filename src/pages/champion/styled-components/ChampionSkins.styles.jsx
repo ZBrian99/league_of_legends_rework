@@ -7,7 +7,7 @@ export const ChamSkinSidePanelTitle = styled.p`
 	color: #937341;
 	letter-spacing: 0.1rem;
 	font-weight: 700;
-	font-style: italic;
+	/* font-style: italic; */
 	padding: 3rem 0;
 	text-align: center;
 	position: absolute;
