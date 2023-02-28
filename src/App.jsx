@@ -1,10 +1,9 @@
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
-import { Footer } from './components/Footer';
-import { NavBar } from './components/NavBar';
 import { GlobalReset, Loader } from './styled-components';
 import { DataProvider } from './context';
 import { lazy, Suspense } from 'react';
 import { Champion, Champions, Regiones, Universo } from './pages';
+import { Footer, NavBar } from './components';
 // const Champion = lazy(() => import('./pages/Champion/Champion'));
 // const Champions = lazy(() => import('./pages/Champions'));
 // const Regiones = lazy(() => import('./pages/Regiones'));

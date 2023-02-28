@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { useNavBar } from '../hooks';
+import { useNavBar } from '../../hooks';
 import {
 	MobileMenuContent,
 	MobileTopContent,
@@ -12,7 +12,7 @@ import {
 	NavText,
 	Svg,
 	NavLink,
-} from '../styled-components';
+} from '../../styled-components';
 
 export const NavBar = () => {
 	const { mobileMenu, menuRef, NavMenuOpen, NavMenuClose } = useNavBar();
