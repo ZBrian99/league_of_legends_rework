@@ -1,31 +1,27 @@
 fuente responsive
-cambiar div por action section h p span
-pasar text a em
-pasar todos los px a rem
-video cortar formato 16/9
-agregar textshadow al nombre del campeon en grande
-box shadow
-añadir efecto de respiracion las habilidades con base
 hacer un poco mas de gap en chaminfo en mobile
 arreglar animacion al cerrar menu nav
 arreglar animacion menu se abre solo al estar en mobile
-arregar mas padding al text lateral de las skins cuando hover 
-skin selector hover cambiar color texto y el brillo de la miniatura aparece con opacidad
-hacer que los texto e imagenes aparescan con opacidad  estilo desvanecerse
-video splash screen
-añadir filtros de busqueda
 
-pasar styled a archivos individuales
-refactorizar todos los componentes
+hacer que los texto e imagenes aparescan con opacidad  estilo desvanecerse
+añadir filtros de busqueda
+video splash screen
 
 hacer un marco y effecto bueno para las habilidades
+añadir efecto de respiracion las habilidades con base
 animacion a las habilidades
 hacer que el texto de las habilidades aparesca gradualmente
 hacer que las skins aparescan gradualmente
 arreglas video fondo y transiciones
 
-refactorizar navbar y footer
+cambiar div por action section h p span
+pasar text a em
+pasar todos los px a rem
+box shadow
 
+agregar textshadow al nombre del campeon en grande
+arregar mas padding al text lateral de las skins cuando hover 
+skin selector hover cambiar color texto y el brillo de la miniatura aparece con opacidad
 
 region:
   cambiar el fondo de region a la imagen correspondiente
