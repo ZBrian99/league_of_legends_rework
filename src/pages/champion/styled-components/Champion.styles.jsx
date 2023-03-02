@@ -5,7 +5,7 @@ import { fadeIn } from '../../../styled-components';
 export const ChamName = styled.h2`
 	text-transform: uppercase;
 	font-weight: 500;
-	font-size: clamp(4em, 9vw, 7em);
+	font-size: clamp(2em, 9vw, 7em);
 	text-align: center;
 	letter-spacing: 0.2em;
 	background: linear-gradient(to top, #67471f 0%, #b18c51 50%);
@@ -30,7 +30,16 @@ export const ChamTitle = styled.p`
 export const ChamSeparator = styled.img`
 	width: 100%;
 `;
-
+;
+export const ChamSplashVideo = styled.video`
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: -1;
+`;
 export const ChamSplash = styled.img`
 	position: absolute;
 	top: 0;

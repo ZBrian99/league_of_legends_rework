@@ -4,4 +4,5 @@ export * from './useChampionAbilityVideo';
 export * from './useChampionBoxRegion';
 export * from './useChampionRelatedSelector';
 export * from './useChampionSkins';
+export * from './useChampionSplash';
 export * from './useRandomChampion';

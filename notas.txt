@@ -5,11 +5,10 @@ hacer que el texto de las habilidades aparesca gradualmente
 arreglar animacion menu se abre solo al estar en mobile
 hacer que las skins aparescan gradualmente
 hacer que los texto e imagenes aparescan con opacidad  estilo desvanecerse
+arreglas video fondo y transiciones
 
 añadir filtros de busqueda
 video splash screen
-
-arreglas video fondo y transiciones
 
 cambiar div por action section h p span
 

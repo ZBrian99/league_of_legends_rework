@@ -170,7 +170,6 @@ export const ChamSkinSidePanelSelector = styled.div`
 
 export const ChamSkinSidePanel = styled.div`
 	width: 30%;
-	min-width: 22rem;
 	padding: 7rem 0 1.5rem;
 	padding-right: 1rem;
 	position: absolute;

@@ -12,7 +12,7 @@ export const ChampionQuote = () => {
 	return (
 		<ChamQuote>
 			<ChampionLogo id={id} />
-			<QuoteText>“{extraChamInfo.find((e) => e.id === id).quote}”</QuoteText>
+			<QuoteText>“{extraChamInfo.find((e) => e.id === id)?.quote}”</QuoteText>
 			<QuoteAutor>~ {name}</QuoteAutor>
 		</ChamQuote>
 	);

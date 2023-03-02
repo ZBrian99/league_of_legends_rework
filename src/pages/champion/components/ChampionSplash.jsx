@@ -1,16 +1,15 @@
-import { useContext } from 'react';
-import { ChamSplash, ChamSplashContainer } from '../styled-components';
-import { ChampionContext } from '../Champion';
+import { ChamSplash, ChamSplashContainer, ChamSplashVideo } from '../styled-components';
+import { useChampionSplash } from '../hooks';
 
 export const ChampionSplash = () => {
-	const { id } = useContext(ChampionContext);
-
+	const { isVideo, Url } = useChampionSplash();
 	return (
 		<ChamSplashContainer>
-			<ChamSplash
-				src={`https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${id}_0.jpg`}
-				alt='champion splash'
-			></ChamSplash>
+			{isVideo ? (
+				<ChamSplashVideo src={Url} muted autoPlay loop />
+			) : (
+				<ChamSplash src={Url} alt='champion splash'></ChamSplash>
+			)}
 		</ChamSplashContainer>
 	);
 };
