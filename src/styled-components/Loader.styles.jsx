@@ -19,7 +19,7 @@ const AnimLoader = keyframes`
 `;
 export const Loader = styled.div`
 	width: 100%;
-	height: 4.8px;
+	height: .3rem;
 	display: inline-block;
 	position: relative;
 	overflow: hidden;
@@ -28,7 +28,7 @@ export const Loader = styled.div`
 	&::after {
 		content: '';
 		width: 100%;
-		height: 4.8px;
+		height: .3rem;
 		background: #292929;
 		position: absolute;
 		animation: ${AnimLoader} 1s linear infinite;

@@ -1,5 +1,18 @@
+import { css, keyframes } from '@emotion/react';
 import styled from '@emotion/styled';
 /* #c4b998` : `#937341 */
+
+const levitate = keyframes`
+ 0% {
+    transform: translate(0, 0) rotateZ(-5deg);
+  }
+  50% {
+    transform: translate(0, -.3rem) rotateZ(5deg);
+  }
+  100% {
+    transform: translate(0, 0) rotateZ(-5deg);
+  }
+  `;
 
 export const ChamAbility = styled.h6`
 	font-size: 0.9em;
@@ -65,9 +78,9 @@ export const ChamAbilityLineCircle = styled.span`
 
 export const ChamAbilityUpLine = styled.span`
 	width: 1px;
-	height: 20px;
+	height: 1.25rem;
 	position: absolute;
-	left: calc(50% - 0.5008px);
+	left: calc(50% - .0313rem);
 	visibility: hidden;
 	top: -1.375rem;
 	background-color: rgb(208, 168, 92);
@@ -90,7 +103,7 @@ export const ChamAbilityCircle = styled.span`
 	position: absolute;
 	bottom: -0.5938rem;
 	border-radius: 50%;
-	margin: -0.625rem 0px 0px -0.625rem;
+	margin: -0.625rem 0 0 -0.625rem;
 
 	left: calc(10% + 20% * ${({ focus }) => focus});
 `;
@@ -100,14 +113,15 @@ export const ChamAbilityImage = styled.img`
 	width: 4rem;
 	height: 4rem;
 
-	@media (max-width: 1024px) {
-		margin-bottom: 40px;
+	@media (max-width: 64rem) {
+		margin-bottom: 2.5rem;
 	}
 
 	@media (max-width: 30rem) {
 		width: 3rem;
 		height: 3rem;
 	}
+	/* animation: ${levitate} 1s ease-in-out infinite; */
 `;
 
 export const ChamAbilityButton = styled.button`
@@ -118,7 +132,10 @@ export const ChamAbilityButton = styled.button`
 	flex-direction: column;
 	align-items: center;
 	position: relative;
-	${({ variant }) =>
+	&:hover {
+		cursor: pointer;
+	}
+	/* ${({ variant }) =>
 		variant
 			? `${ChamAbilityImage} {
            transform: translateY(-1.5rem);
@@ -131,15 +148,33 @@ export const ChamAbilityButton = styled.button`
       transform: translateY(-0.3rem);
     }
   }
-  `}
-	&:hover,
-  :focus {
-		cursor: pointer;
-		/* ${ChamAbilityLineCircle} {
-			background-color: rgb(208, 168, 92);
-		} */
-	}
+  `} */
+	//-------------------------------------------
+	//-------------------------------------------
+	//-------------------------------------------
+	${({ variant }) =>
+		variant
+			? css`
+					${ChamAbilityImage} {
+						animation: ${levitate} 5s ease-in-out infinite;
+
+						box-shadow: 0 .1875rem .3125rem rgba(0, 0, 0, 0.2);
+					}
+			  `
+			: css`
+					&:hover {
+						${ChamAbilityImage} {
+							/* transform: scale(1.05);
+							transition: transform 0.1s ease; */
+						}
+					}
+			  `}
 `;
+
+//-------------------------------------------
+//-------------------------------------------
+//-------------------------------------------
+//-------------------------------------------
 
 export const ChamAbilitiesImageContainer = styled.div`
 	display: flex;

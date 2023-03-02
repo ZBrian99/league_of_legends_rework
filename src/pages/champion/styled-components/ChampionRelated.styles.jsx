@@ -4,10 +4,10 @@ export const ChamRelatedName = styled.h3`
 	font-weight: 400;
 	font-size: 0.7em;
 	color: #c4b998;
-	letter-spacing: 2px;
+	letter-spacing: .125rem;
 	text-transform: uppercase;
 	opacity: 0;
-	padding-top: 16px;
+	padding-top: 1rem;
 	text-align: center;
 `;
 
@@ -26,7 +26,7 @@ export const ChamLargeLogoContainer = styled.div`
 	box-sizing: content-box;
 	z-index: 1;
 	/* padding: .2rem; */
-	padding: 40px 0;
+	padding: 2.5rem 0;
 	transition: all 0.2s ease;
 	display: flex;
 	flex-direction: column;
@@ -38,9 +38,9 @@ export const ChamLargeLogoContainer = styled.div`
 			opacity: 1;
 		}
 	}
-	@media (max-width: 1024px) {
+	@media (max-width: 64rem) {
 		margin: auto;
-		padding: 0 32px;
+		padding: 0 2rem;
 	}
 	/* border: 1px solid green; */
 `;
@@ -58,7 +58,7 @@ export const ChamRelatedSelectorContainer = styled.div`
 	/* justify-content: center; */
 	/* background-color: blue; */
 
-	@media (max-width: 1024px) {
+	@media (max-width: 64rem) {
 		flex-direction: row;
 		overflow-x: scroll;
 		overflow-y: hidden;

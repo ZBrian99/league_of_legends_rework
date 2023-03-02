@@ -14,7 +14,7 @@ export const HeaderIconText = styled.span`
 	margin: 0 5rem;
 	text-transform: uppercase;
 	font-size: ${({ size }) => (size ? size : '0.9em')};
-	letter-spacing: 5px;
+	letter-spacing: .3125rem;
 	color: #c4b998;
 	position: relative;
 	display: flex;

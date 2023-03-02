@@ -176,7 +176,7 @@ export const Nav = styled.nav`
 	align-items: center;
 	font-size: 0.9em;
 	font-weight: 500;
-	letter-spacing: 2px;
+	letter-spacing: .125rem;
 	text-transform: uppercase;
 	position: relative;
 `;

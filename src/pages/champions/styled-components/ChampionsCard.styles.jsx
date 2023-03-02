@@ -7,13 +7,12 @@ export const ChampionCardTitle = styled.div`
 	border-top: 1px solid #927345;
 	bottom: 0;
 	color: #937341;
-	height: 77px;
+	height: 4.8125rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 
-	/* line-height: 77px; */
 	position: absolute;
 	width: 100%;
 	transition: all 0.3s ease-out;
@@ -28,8 +27,8 @@ export const ChampionCardDescription = styled.p`
 	text-transform: capitalize;
 	font-size: 0.8em;
 	font-style: italic;
-	height: 55px;
-	line-height: 55px;
+	height: 3.4375rem;
+	line-height: 3.4375rem;
 	position: absolute;
 	text-align: center;
 	width: 100%;
@@ -58,7 +57,7 @@ export const ChampionCard = styled.figure`
 		border: 1px solid #927345;
 	}
 	&:hover ${ChampionCardTitle} {
-		transform: translateY(-55px);
+		transform: translateY(-3.4375rem);
 	}
 	&:hover ${ChampionCardDescription} {
 		transform: translateY(0);

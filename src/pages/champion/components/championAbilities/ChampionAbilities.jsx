@@ -11,14 +11,17 @@ export const ChampionAbilities = () => {
 	const { tags, handleClick, ability, abilities } = useChampionAbilities();
 
 	return (
-		<ChampionAbilityContainer tag={tags[0]}>
-			<ChamAbilityInfoContainer>
+    <ChampionAbilityContainer tag={tags[0]}>
+      
+      <ChamAbilityInfoContainer>
+        
 				<ChamAbilitiesContainer>
 					<ChamAbilityHeader>ABILITIES</ChamAbilityHeader>
 					<ChampionAbilitySelector fn={handleClick} ability={ability} abilities={abilities} />
 				</ChamAbilitiesContainer>
 
-				<ChampionAbilityInfo ability={ability} />
+        <ChampionAbilityInfo ability={ability} />
+        
 			</ChamAbilityInfoContainer>
 
 			<ChampionAbilityVideo ability={ability} />

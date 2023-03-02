@@ -21,15 +21,15 @@ export const ChampionsContainer = styled.div`
 	gap: 2rem 1rem;
 	margin-bottom: 2rem;
 	justify-content: center;
-	grid-auto-rows: 423px;
-	grid-template-columns: repeat(auto-fill, 233px);
-	@media (max-width: 1280px) {
-		grid-auto-rows: 323px;
-		grid-template-columns: repeat(auto-fill, 223px);
+	grid-auto-rows: 26.4375rem;
+	grid-template-columns: repeat(auto-fill, 14.5625rem);
+	@media (max-width: 80rem) {
+		grid-auto-rows: 20.1875rem;
+		grid-template-columns: repeat(auto-fill, 13.9375rem);
 	}
 	@media (max-width: 48rem) {
-		grid-auto-rows: 280px;
-		grid-template-columns: repeat(auto-fill, 180px);
+		grid-auto-rows: 17.5rem;
+		grid-template-columns: repeat(auto-fill, 11.25rem);
 	}
 `;
 

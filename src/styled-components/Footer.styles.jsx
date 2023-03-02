@@ -71,7 +71,7 @@ export const FooterLinksContainer = styled.div`
 `;
 
 export const FooterText = styled.p`
-	max-width: 640px;
+	max-width: 40rem;
 	font-weight: 500;
 	font-size: 0.75rem;
 	/* margin-top: 5rem; */
@@ -90,5 +90,5 @@ export const FooterContainer = styled.footer`
 	justify-content: center;
 	align-items: center;
 	padding-bottom: 3rem;
-	border-top: 2px solid #343434;
+	border-top: .125rem solid #343434;
 `;
