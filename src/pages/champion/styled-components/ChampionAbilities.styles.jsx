@@ -124,23 +124,7 @@ export const ChamAbilityButton = styled.button`
 	&:hover {
 		cursor: pointer;
 	}
-	/* ${({ variant }) =>
-		variant
-			? `${ChamAbilityImage} {
-           transform: translateY(-1.5rem);
-      transition: transform 0.4s ease;
-  
-      }`
-			: `&:hover {
-    ${ChamAbilityImage} {
-      transition: transform 0.1s ease;
-      transform: translateY(-0.3rem);
-    }
-  }
-  `} */
-	//-------------------------------------------
-	//-------------------------------------------
-	//-------------------------------------------
+	
 	${({ variant }) =>
 		variant
 			? css`
@@ -192,10 +176,6 @@ export const ChamAbilityButton = styled.button`
 			  `}
 `;
 
-//-------------------------------------------
-//-------------------------------------------
-//-------------------------------------------
-//-------------------------------------------
 
 export const ChamAbilitiesImageContainer = styled.div`
 	display: flex;
@@ -203,7 +183,6 @@ export const ChamAbilitiesImageContainer = styled.div`
 	position: relative;
 	padding-top: 1.5rem;
 
-	/* gap: 1rem; */
 	width: 100%;
 	@media (max-width: 64rem) {
 		width: 80%;

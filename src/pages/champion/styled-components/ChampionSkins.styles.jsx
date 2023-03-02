@@ -28,14 +28,14 @@ export const ChamSkinSidePanelText = styled.p`
 		text-align: center;
 	}
 `;
-
-export const ChamSkinSidePanelImage = styled.img`
+export const ChamSkinSidePanelImageContainer = styled.div`
 	width: 4rem;
 	height: 4rem;
-	object-fit: cover;
-	object-position: center;
 	transition: all 0.2s ease;
-
+	position: relative;
+	&::before {
+		content: '';
+	}
 	@media (max-width: 85rem) {
 		width: 7rem;
 		height: 7rem;
@@ -45,6 +45,12 @@ export const ChamSkinSidePanelImage = styled.img`
 		width: 5rem;
 		height: 5rem;
 	}
+`;
+export const ChamSkinSidePanelImage = styled.img`
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
 `;
 
 export const ChamSkinSidePanelContainer = styled.button`
@@ -71,11 +77,35 @@ export const ChamSkinSidePanelContainer = styled.button`
 							margin-left: 0.8rem;
 						}
 					}
-					${ChamSkinSidePanelImage} {
+					${ChamSkinSidePanelImageContainer} {
 						transform: scale(1.4);
+						&::before {
+							content: '';
+							transition: all 0.4s ease;
+							position: absolute;
+							top: -0.3rem;
+							left: -0.3rem;
+							right: -0.3rem;
+							bottom: -0.3rem;
+							background-color: rgb(208, 168, 92);
+							clip-path: polygon(
+								0 0,
+								0 100%,
+								1% 100%,
+								1% 1%,
+								70% 1%,
+								99% 30%,
+								99% 99%,
+								0% 99%,
+								0% 100%,
+								100% 100%,
+								100% 29%,
+								71% 0
+							);
+						}
 					}
 					@media (max-width: 85rem) {
-						${ChamSkinSidePanelImage} {
+						${ChamSkinSidePanelImageContainer} {
 							transform: translateY(-1.5rem);
 						}
 					}
@@ -84,7 +114,7 @@ export const ChamSkinSidePanelContainer = styled.button`
 					opacity: 0.7;
 					&:hover {
 						@media (min-width: 85rem) {
-							${ChamSkinSidePanelImage} {
+							${ChamSkinSidePanelImageContainer} {
 								transform: scale(1.1);
 							}
 						}
