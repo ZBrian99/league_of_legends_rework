@@ -1,3 +1,4 @@
+import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 
 export const ChamSkinSidePanelTitle = styled.p`
@@ -19,8 +20,12 @@ export const ChamSkinSidePanelTitle = styled.p`
 `;
 
 export const ChamSkinSidePanelText = styled.p`
+	transition: all 0.3s ease;
+	text-align: start;
+
 	@media (max-width: 85rem) {
 		padding: 0 0.5rem;
+		text-align: center;
 	}
 `;
 
@@ -29,7 +34,8 @@ export const ChamSkinSidePanelImage = styled.img`
 	height: 4rem;
 	object-fit: cover;
 	object-position: center;
-	transition: all 0.3s ease;
+	transition: all 0.2s ease;
+
 	@media (max-width: 85rem) {
 		width: 7rem;
 		height: 7rem;
@@ -49,31 +55,41 @@ export const ChamSkinSidePanelContainer = styled.button`
 	margin-left: 3rem;
 	padding-top: 1rem;
 	padding-bottom: 1rem;
+	position: relative;
 
 	&:hover {
 		cursor: pointer;
+		opacity: 1;
 	}
 
 	${({ active }) =>
 		active
-			? `
-    ${ChamSkinSidePanelImage} {
-		transform: scale(1.4);
-	}
-	@media (max-width: 85rem) {
-		${ChamSkinSidePanelImage} {
-			transform: translateY(-1.5rem);
-		}
-	}`
-			: `
-    	&:hover {
-		@media (min-width: 85rem) {
-			${ChamSkinSidePanelImage} {
-				transform: scale(1.1);
-			}
-		}
-	}
-    `}
+			? css`
+					opacity: 1;
+					@media (min-width: 85rem) {
+						${ChamSkinSidePanelText} {
+							margin-left: 0.8rem;
+						}
+					}
+					${ChamSkinSidePanelImage} {
+						transform: scale(1.4);
+					}
+					@media (max-width: 85rem) {
+						${ChamSkinSidePanelImage} {
+							transform: translateY(-1.5rem);
+						}
+					}
+			  `
+			: css`
+					opacity: 0.7;
+					&:hover {
+						@media (min-width: 85rem) {
+							${ChamSkinSidePanelImage} {
+								transform: scale(1.1);
+							}
+						}
+					}
+			  `}
 
 	@media (max-width: 85rem) {
 		flex-direction: column;

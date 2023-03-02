@@ -5,30 +5,27 @@ import { fadeIn } from '../../../styled-components';
 export const ChamName = styled.h2`
 	text-transform: uppercase;
 	font-weight: 500;
-	font-size: clamp(2em, 9vw, 7em);
+	font-size: clamp(4em, 9vw, 7em);
 	text-align: center;
-	/* line-height: 9rem; */
 	letter-spacing: 0.2em;
-	background: linear-gradient(to top, #67471f 0%, #937341 50%);
+	background: linear-gradient(to top, #67471f 0%, #b18c51 50%);
+
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
-	/* @media (max-width: 64rem) {
-		font-size: 5rem;
-		line-height: 7rem;
-	}
-	@media (max-width: 45rem) {
-		font-size: 3rem;
-		line-height: 5rem;
-	} */
+
+	filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
 `;
 export const ChamTitle = styled.p`
 	text-transform: uppercase;
 	font-weight: 700;
-	font-size: clamp(1em, 4vw, 2em);
+	font-size: clamp(0.9em, 3vw, 2em);
+
+	/* font-size: clamp(0.9em, 2vw, 1.5em); */
 
 	color: #c4b998;
 	letter-spacing: 0.25rem;
 	padding: 1rem 0 1rem 0.25rem;
+	filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.5));
 `;
 export const ChamSeparator = styled.img`
 	width: 100%;
@@ -47,7 +44,7 @@ export const ChamSplashContainer = styled.div`
 	position: relative;
 	width: 100%;
 	padding-bottom: 56.25%;
-	background: linear-gradient(0deg, rgba(10, 10, 12, 1) 20%, rgba(10, 10, 12, 0.3) 100%);
+	background: linear-gradient(0deg, rgba(10, 10, 12, 1) 20%, rgba(10, 10, 12, 0) 100%);
 `;
 export const ChamHeader = styled.div`
 	position: relative;
@@ -149,6 +146,7 @@ export const QuoteText = styled.p`
 	line-height: 1.5;
 	color: #c4b998;
 	text-align: center;
+	font-size: clamp(1em, 3vw, 1.3em);
 `;
 
 export const QuoteAutor = styled.h3`
@@ -157,6 +155,7 @@ export const QuoteAutor = styled.h3`
 	line-height: 1.5;
 	color: #937341;
 	text-align: center;
+	font-size: clamp(1em, 3vw, 1.3em);
 `;
 
 export const ChamQuote = styled.div`

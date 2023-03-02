@@ -3,15 +3,15 @@ import styled from '@emotion/styled';
 /* #c4b998` : `#937341 */
 
 const levitate = keyframes`
- 0% {
-    transform: translate(0, 0) rotateZ(-5deg);
+  0% {
+    transform: translateY(-1rem);
   }
   50% {
-    transform: translate(0, -.3rem) rotateZ(5deg);
+    transform: translateY(-.5rem);
   }
   100% {
-    transform: translate(0, 0) rotateZ(-5deg);
-  }
+    transform: translateY(-1rem);
+}
   `;
 
 export const ChamAbility = styled.h6`
@@ -65,7 +65,6 @@ export const ChamAbilityInfo = styled.div`
 `;
 
 export const ChamAbilityLineCircle = styled.span`
-	transition: all 0.5s ease-out;
 	width: 0.5625rem;
 	height: 0.5625rem;
 	position: absolute;
@@ -74,13 +73,15 @@ export const ChamAbilityLineCircle = styled.span`
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+
+  
 `;
 
 export const ChamAbilityUpLine = styled.span`
 	width: 1px;
 	height: 1.25rem;
 	position: absolute;
-	left: calc(50% - .0313rem);
+	left: calc(50% - 0.0313rem);
 	visibility: hidden;
 	top: -1.375rem;
 	background-color: rgb(208, 168, 92);
@@ -109,10 +110,13 @@ export const ChamAbilityCircle = styled.span`
 `;
 
 export const ChamAbilityImage = styled.img`
-	transition: transform 0.5s ease-out;
+	width: 100%;
+	height: 100%;
+`;
+export const ChamAbilityImageContainer = styled.div`
+	transition: all 0.5s ease-out;
 	width: 4rem;
 	height: 4rem;
-
 	@media (max-width: 64rem) {
 		margin-bottom: 2.5rem;
 	}
@@ -121,7 +125,14 @@ export const ChamAbilityImage = styled.img`
 		width: 3rem;
 		height: 3rem;
 	}
-	/* animation: ${levitate} 1s ease-in-out infinite; */
+	position: relative;
+	/* clip-path: polygon(0 0, 100% 0, 100% 50%, 50% 100%, 0 100%); */
+
+	z-index: 1;
+	/* clip-path: polygon(0 0, 100% 0, 100% 50%, 50% 100%, 0 100%); */
+	&::before {
+		content: '';
+	}
 `;
 
 export const ChamAbilityButton = styled.button`
@@ -155,17 +166,49 @@ export const ChamAbilityButton = styled.button`
 	${({ variant }) =>
 		variant
 			? css`
-					${ChamAbilityImage} {
-						animation: ${levitate} 5s ease-in-out infinite;
-
-						box-shadow: 0 .1875rem .3125rem rgba(0, 0, 0, 0.2);
+					${ChamAbilityImageContainer} {
+						transform: translateY(-0.8rem);
+						transition: all 0.4s ease;
+						&::before {
+							content: '';
+							transition: all 0.4s ease;
+							position: absolute;
+							top: -0.5rem;
+							left: -0.5rem;
+							right: -0.5rem;
+							bottom: -0.5rem;
+							background-color: rgb(208, 168, 92);
+							clip-path: polygon(
+								0 0,
+								0 100%,
+								1% 100%,
+								1% 1%,
+								70% 1%,
+								99% 30%,
+								99% 99%,
+								0% 99%,
+								0% 100%,
+								100% 100%,
+								100% 29%,
+								71% 0
+							);
+						}
+					}
+					${ChamAbilityLineCircle} {
+						background-color: transparent;
 					}
 			  `
 			: css`
+					${ChamAbilityLineCircle} {
+						transition: all 0.2s ease-out;
+					}
 					&:hover {
-						${ChamAbilityImage} {
-							/* transform: scale(1.05);
-							transition: transform 0.1s ease; */
+						/* ${ChamAbilityLineCircle} {
+              background-color: rgb(208, 168, 92);
+						} */
+						${ChamAbilityImageContainer} {
+							transition: all 0.1s ease;
+							transform: translateY(-0.3rem);
 						}
 					}
 			  `}
@@ -213,6 +256,9 @@ export const ChamAbilityHeader = styled.h2`
 	font-weight: 700;
 	font-size: 4em;
 	line-height: 4.5rem;
+	@media (max-width: 30rem) {
+		font-size: 3em;
+	}
 	/* font-style: italic; */
 `;
 

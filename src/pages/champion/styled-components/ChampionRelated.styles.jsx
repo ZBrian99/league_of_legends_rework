@@ -4,7 +4,7 @@ export const ChamRelatedName = styled.h3`
 	font-weight: 400;
 	font-size: 0.7em;
 	color: #c4b998;
-	letter-spacing: .125rem;
+	letter-spacing: 0.125rem;
 	text-transform: uppercase;
 	opacity: 0;
 	padding-top: 1rem;

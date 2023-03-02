@@ -1,15 +1,17 @@
 import {
 	ChamAbilityButton,
 	ChamAbilityImage,
+	ChamAbilityImageContainer,
 	ChamAbilityLine,
 	ChamAbilityLineCircle,
 } from '../../styled-components';
 
 export const ChampionAbilityButton = ({ id, onClick, variant, src, alt }) => {
-
 	return (
 		<ChamAbilityButton id={id} onClick={onClick} variant={variant}>
-			<ChamAbilityImage src={src} alt={alt} />
+			<ChamAbilityImageContainer>
+				<ChamAbilityImage src={src} alt={alt} />
+			</ChamAbilityImageContainer>
 			<ChamAbilityLine>
 				<ChamAbilityLineCircle />
 			</ChamAbilityLine>
