@@ -1,18 +1,6 @@
-import { css, keyframes } from '@emotion/react';
+import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 /* #c4b998` : `#937341 */
-
-const levitate = keyframes`
-  0% {
-    transform: translateY(-1rem);
-  }
-  50% {
-    transform: translateY(-.5rem);
-  }
-  100% {
-    transform: translateY(-1rem);
-}
-  `;
 
 export const ChamAbility = styled.h6`
 	font-size: 0.9em;
@@ -73,18 +61,6 @@ export const ChamAbilityLineCircle = styled.span`
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-
-  
-`;
-
-export const ChamAbilityUpLine = styled.span`
-	width: 1px;
-	height: 1.25rem;
-	position: absolute;
-	left: calc(50% - 0.0313rem);
-	visibility: hidden;
-	top: -1.375rem;
-	background-color: rgb(208, 168, 92);
 `;
 
 export const ChamAbilityLine = styled.span`
@@ -117,19 +93,21 @@ export const ChamAbilityImageContainer = styled.div`
 	transition: all 0.5s ease-out;
 	width: 4rem;
 	height: 4rem;
+
 	@media (max-width: 64rem) {
 		margin-bottom: 2.5rem;
 	}
 
-	@media (max-width: 30rem) {
+	@media (max-width: 35rem) {
 		width: 3rem;
 		height: 3rem;
 	}
-	position: relative;
+	@media (max-width: 25rem) {
+		width: 2.5rem;
+		height: 2.5rem;
+	}
 	/* clip-path: polygon(0 0, 100% 0, 100% 50%, 50% 100%, 0 100%); */
 
-	z-index: 1;
-	/* clip-path: polygon(0 0, 100% 0, 100% 50%, 50% 100%, 0 100%); */
 	&::before {
 		content: '';
 	}
@@ -203,9 +181,9 @@ export const ChamAbilityButton = styled.button`
 						transition: all 0.2s ease-out;
 					}
 					&:hover {
-						/* ${ChamAbilityLineCircle} {
-              background-color: rgb(208, 168, 92);
-						} */
+						${ChamAbilityLineCircle} {
+							background-color: rgb(208, 168, 92);
+						}
 						${ChamAbilityImageContainer} {
 							transition: all 0.1s ease;
 							transform: translateY(-0.3rem);
