@@ -211,7 +211,7 @@ export const ChamAbilityHeader = styled.h2`
 	color: #937341;
 	letter-spacing: 0.1rem;
 	font-weight: 700;
-	font-size: 4rem;
+	font-size: 4em;
 	line-height: 4.5rem;
 	/* font-style: italic; */
 `;

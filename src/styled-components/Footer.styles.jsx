@@ -73,7 +73,7 @@ export const FooterLinksContainer = styled.div`
 export const FooterText = styled.p`
 	max-width: 40rem;
 	font-weight: 500;
-	font-size: 0.75rem;
+	font-size: 0.75em;
 	/* margin-top: 5rem; */
 	text-align: center;
 	color: #7e7e7e;

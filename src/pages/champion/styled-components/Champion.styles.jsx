@@ -5,7 +5,7 @@ import { fadeIn } from '../../../styled-components';
 export const ChamName = styled.h2`
 	text-transform: uppercase;
 	font-weight: 500;
-	font-size: clamp(2rem, 9vw, 7rem);
+	font-size: clamp(2em, 9vw, 7em);
 	text-align: center;
 	/* line-height: 9rem; */
 	letter-spacing: 0.2em;
@@ -24,7 +24,7 @@ export const ChamName = styled.h2`
 export const ChamTitle = styled.p`
 	text-transform: uppercase;
 	font-weight: 700;
-	font-size: clamp(1rem, 4vw, 2rem);
+	font-size: clamp(1em, 4vw, 2em);
 
 	color: #c4b998;
 	letter-spacing: 0.25rem;
