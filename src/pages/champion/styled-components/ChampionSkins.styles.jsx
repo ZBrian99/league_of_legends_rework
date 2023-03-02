@@ -1,7 +1,7 @@
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 
-export const ChamSkinSidePanelTitle = styled.p`
+export const ChamSkinSidePanelTitle = styled.h3`
 	font-size: 2em;
 	line-height: 1em;
 	margin-left: 2rem;
@@ -19,7 +19,7 @@ export const ChamSkinSidePanelTitle = styled.p`
 	}
 `;
 
-export const ChamSkinSidePanelText = styled.p`
+export const ChamSkinSidePanelText = styled.h4`
 	transition: all 0.3s ease;
 	text-align: start;
 

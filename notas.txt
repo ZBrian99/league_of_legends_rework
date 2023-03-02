@@ -1,16 +1,13 @@
-fuente responsive
-hacer un poco mas de gap en chaminfo en mobile
 arreglar animacion al cerrar menu nav
-hacer que el texto de las habilidades aparesca gradualmente
 arreglar animacion menu se abre solo al estar en mobile
-hacer que las skins aparescan gradualmente
-hacer que los texto e imagenes aparescan con opacidad  estilo desvanecerse
+hacer que el texto de las habilidades aparesca gradualmente
+hacer que las skins aparezcan gradualmente
+hacer que los texto e imagenes aparezcan con opacidad estilo desvanecerse
 arreglas video fondo y transiciones
 
 añadir filtros de busqueda
-video splash screen
 
-cambiar div por action section h p span
+arreglar imports
 
 region:
   cambiar el fondo de region a la imagen correspondiente

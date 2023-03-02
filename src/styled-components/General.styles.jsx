@@ -10,11 +10,11 @@ export const fadeIn = keyframes`
   }
 `;
 
-export const HeaderIconText = styled.span`
+export const HeaderIconText = styled.h1`
 	margin: 0 5rem;
 	text-transform: uppercase;
 	font-size: ${({ size }) => (size ? size : '0.9em')};
-	letter-spacing: .3125rem;
+	letter-spacing: 0.3125rem;
 	color: #c4b998;
 	position: relative;
 	display: flex;
@@ -31,3 +31,4 @@ export const HeaderIconText = styled.span`
 		height: 2rem;
 	}
 `;
+

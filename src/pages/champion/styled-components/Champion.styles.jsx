@@ -1,8 +1,7 @@
-import { keyframes } from '@emotion/react';
 import styled from '@emotion/styled';
 import { fadeIn } from '../../../styled-components';
 
-export const ChamName = styled.h2`
+export const ChamName = styled.h1`
 	text-transform: uppercase;
 	font-weight: 500;
 	font-size: clamp(2em, 9vw, 7em);
@@ -15,7 +14,7 @@ export const ChamName = styled.h2`
 
 	filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
 `;
-export const ChamTitle = styled.p`
+export const ChamTitle = styled.h2`
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: clamp(0.9em, 3vw, 2em);
@@ -30,7 +29,6 @@ export const ChamTitle = styled.p`
 export const ChamSeparator = styled.img`
 	width: 100%;
 `;
-;
 export const ChamSplashVideo = styled.video`
 	position: absolute;
 	top: 0;
@@ -55,7 +53,7 @@ export const ChamSplashContainer = styled.div`
 	padding-bottom: 56.25%;
 	background: linear-gradient(0deg, rgba(10, 10, 12, 1) 20%, rgba(10, 10, 12, 0) 100%);
 `;
-export const ChamHeader = styled.div`
+export const ChamHeader = styled.header`
 	position: relative;
 `;
 
@@ -158,7 +156,7 @@ export const QuoteText = styled.p`
 	font-size: clamp(1em, 3vw, 1.3em);
 `;
 
-export const QuoteAutor = styled.h3`
+export const QuoteAutor = styled.span`
 	font-weight: 700;
 	font-size: 1.3em;
 	line-height: 1.5;
@@ -304,7 +302,7 @@ export const SimpleRolContainer = styled.div`
 	}
 `;
 
-export const ChamRightContainer = styled.div`
+export const ChamRightContainer = styled.aside`
 	width: calc(25% - 1rem);
 	display: flex;
 	flex-direction: column;
@@ -320,7 +318,7 @@ export const ChamRightContainer = styled.div`
 	}
 `;
 
-export const ChamLeftContainer = styled.div`
+export const ChamLeftContainer = styled.aside`
 	width: calc(25% - 1rem);
 	display: flex;
 	flex-direction: column;
@@ -351,7 +349,7 @@ export const LargeBoxContainer = styled.div`
 	}
 `;
 
-export const ChamInfoContainer = styled.div`
+export const ChamInfoContainer = styled.section`
 	display: flex;
 	height: 40rem;
 	gap: 1rem;

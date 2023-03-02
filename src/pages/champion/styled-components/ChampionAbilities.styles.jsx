@@ -2,13 +2,13 @@ import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 /* #c4b998` : `#937341 */
 
-export const ChamAbility = styled.h6`
+export const ChamAbility = styled.span`
 	font-size: 0.9em;
 	color: lightgray;
 	font-weight: bold;
 	opacity: 0.7;
 `;
-export const ChamAbilityName = styled.h5`
+export const ChamAbilityName = styled.h4`
 	font-size: 1.5em;
 	font-weight: 600;
 	color: #937341;
@@ -207,7 +207,7 @@ export const ChamAbilitiesContainer = styled.div`
 	}
 `;
 
-export const ChamAbilityHeader = styled.h2`
+export const ChamAbilityHeader = styled.h3`
 	color: #937341;
 	letter-spacing: 0.1rem;
 	font-weight: 700;
@@ -258,7 +258,7 @@ export const ChamAbilityInfoContainer = styled.div`
 	}
 `;
 
-export const ChampionAbilityContainer = styled.div`
+export const ChampionAbilityContainer = styled.section`
 	/* display: flex; */
 	margin-top: 5rem;
 	display: grid;

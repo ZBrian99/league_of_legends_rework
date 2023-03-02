@@ -5,7 +5,7 @@ export const ChampionOtherHeader = ({ title, src }) => {
 	return (
 		<ChampionsHeaderContainer>
 			<ChampionsHeaderLine line={`${baseUrl}assets/line.png`} rotate={180} />
-			<HeaderIconText icon={src}>{title}</HeaderIconText>
+			<HeaderIconText as='span' icon={src}>{title}</HeaderIconText>
 			<ChampionsHeaderLine line={`${baseUrl}assets/line.png`} />
 		</ChampionsHeaderContainer>
 	);

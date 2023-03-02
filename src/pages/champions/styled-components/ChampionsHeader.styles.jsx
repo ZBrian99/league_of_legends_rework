@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-export const ChampionsHeaderContainer = styled.div`
+export const ChampionsHeaderContainer = styled.header`
 	margin: 10rem 0 2rem;
 	display: flex;
 	justify-content: center;

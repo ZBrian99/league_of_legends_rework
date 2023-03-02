@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-export const ChampionCardTitle = styled.div`
+export const ChampionCardTitle = styled.h2`
 	text-transform: uppercase;
 	font-size: 0.85em;
 	font-weight: 500;
@@ -18,7 +18,7 @@ export const ChampionCardTitle = styled.div`
 	transition: all 0.3s ease-out;
 `;
 
-export const ChampionCardDescription = styled.p`
+export const ChampionCardDescription = styled.h3`
 	background-color: rgba(12 12 15 / 0.9);
 	border-top: 1px solid #927345;
 	bottom: 0;
