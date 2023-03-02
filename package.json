@@ -3,15 +3,18 @@
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",
+	"homepage": "https://ZBrian99.github.io/League-of-Legends",
 	"scripts": {
 		"dev": "vite",
 		"build": "vite build",
-		"preview": "vite preview"
+		"preview": "yarn vite build && yarn vite preview ",
+		"deploy": "yarn vite build && gh-pages -d dist"
 	},
 	"dependencies": {
 		"@emotion/react": "^11.10.5",
 		"@emotion/styled": "^11.10.5",
 		"axios": "^1.2.1",
+		"gh-pages": "^5.0.0",
 		"modern-normalize": "^1.1.0",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
