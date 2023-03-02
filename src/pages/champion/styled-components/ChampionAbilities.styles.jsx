@@ -254,9 +254,6 @@ export const ChamAbilityVideo = styled.video`
 `;
 
 export const ChamAbilityVideoContainer = styled.div`
-	/* width: 100%; */
-	/* width: 50%; */
-
 	margin: auto;
 	position: relative;
 	width: 100%;
@@ -264,11 +261,9 @@ export const ChamAbilityVideoContainer = styled.div`
 	@media (max-width: 64rem) {
 		width: 80%;
 		order: -1;
-		/* padding-bottom: 3rem; */
 	}
 	@media (max-width: 30rem) {
 		width: 90%;
-		/* padding-bottom: 3rem; */
 	}
 `;
 export const ChamAbilityInfoContainer = styled.div`

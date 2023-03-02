@@ -9,9 +9,6 @@ hacer que los texto e imagenes aparescan con opacidad  estilo desvanecerse
 añadir filtros de busqueda
 video splash screen
 
-hacer un marco y effecto bueno para las habilidades
-añadir efecto de respiracion las habilidades con base
-animacion a las habilidades
 arreglas video fondo y transiciones
 
 cambiar div por action section h p span
