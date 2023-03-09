@@ -19,11 +19,11 @@ export const App = () => {
 					<NavBar />
 					<DataProvider>
 						<Routes>
-							<Route path='*' element={<Navigate to='/champions/' />} />
 							<Route path='/champion/:id/' element={<Champion />} />
 							<Route path='/champions/' element={<Champions />} />
 							<Route path='/regions/' element={<Regiones />} />
 							<Route path='/universe/' element={<Universo />} />
+							<Route path='*' element={<Navigate to='/champions/' />} />
 						</Routes>
 					</DataProvider>
 					<Footer />

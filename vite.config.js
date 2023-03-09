@@ -14,8 +14,4 @@ export default defineConfig({
 	build: {
 		assetsDir: 'public',
 	},
-	server: {
-		// habilitar fallback para history API
-		historyApiFallback: true,
-	},
 });
