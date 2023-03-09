@@ -3,11 +3,11 @@ import { ChampionsHeaderContainer, ChampionsHeaderLine } from '../styled-compone
 export const ChampionsHeader = () => {
 	return (
 		<ChampionsHeaderContainer>
-			<ChampionsHeaderLine  line={`${baseUrl}assets/line.png`} rotate={180} />
-			<HeaderIconText icon={`${baseUrl}assets/header_icon.png`} size={'1.4em'} width={'1.125rem'}>
+			<ChampionsHeaderLine  line={`/league-of-legends/assets/line.png`} rotate={180} />
+			<HeaderIconText icon={`/league-of-legends/assets/header_icon.png`} size={'1.4em'} width={'1.125rem'}>
 				Champions
 			</HeaderIconText>
-			<ChampionsHeaderLine line={`${baseUrl}assets/line.png`} />
+			<ChampionsHeaderLine line={`/league-of-legends/assets/line.png`} />
 		</ChampionsHeaderContainer>
 	);
 };

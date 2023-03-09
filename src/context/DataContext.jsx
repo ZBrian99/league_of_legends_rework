@@ -1,6 +1,6 @@
 import { createContext } from 'react';
 // import { useChampionsExtra } from '../hooks';
-import { data as extraChamInfo } from '@/data/extra-cham-info.json';
+import { data as extraChamInfo } from '../data/extra-cham-info.json';
 
 export const DataContext = createContext();
 

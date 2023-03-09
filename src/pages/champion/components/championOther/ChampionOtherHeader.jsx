@@ -4,9 +4,9 @@ import { ChampionsHeaderContainer, ChampionsHeaderLine } from '../../../champion
 export const ChampionOtherHeader = ({ title, src }) => {
 	return (
 		<ChampionsHeaderContainer>
-			<ChampionsHeaderLine line={`${baseUrl}assets/line.png`} rotate={180} />
+			<ChampionsHeaderLine line={`/league-of-legends/assets/line.png`} rotate={180} />
 			<HeaderIconText as='span' icon={src}>{title}</HeaderIconText>
-			<ChampionsHeaderLine line={`${baseUrl}assets/line.png`} />
+			<ChampionsHeaderLine line={`/league-of-legends/assets/line.png`} />
 		</ChampionsHeaderContainer>
 	);
 };

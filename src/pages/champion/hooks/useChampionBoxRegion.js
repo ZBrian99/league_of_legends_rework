@@ -10,7 +10,7 @@ export const useChampionBoxRegion = () => {
 	const RegionVoid = region?.includes('The Void');
 	const RegionRuneterra = region?.includes('Runeterra');
 
-	const base = `${baseUrl}assets/${region?.split(' ').join('_').toLowerCase()}`;
+	const base = `/league-of-legends/assets/${region?.split(' ').join('_').toLowerCase()}`;
 
 	const regionEmblemUrl = `${base}_emblem.png`;
 	const regionIconUrl = `${base}_crest_icon.png`;

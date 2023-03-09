@@ -1,3 +1,10 @@
 export { default as Champion } from './Champion';
+export * from './components/championAbilities';
+export * from './components/championInfo/championBox';
+export * from './components/championInfo/championRelated';
+export * from './components/championInfo';
+export * from './components/championOther';
+export * from './components/championSkins';
 export * from './components';
+export * from './hooks';
 export * from './styled-components';
