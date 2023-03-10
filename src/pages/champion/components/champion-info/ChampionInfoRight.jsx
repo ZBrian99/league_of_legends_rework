@@ -1,5 +1,5 @@
 import { ChamRightContainer } from '../../styled-components';
-import { ChampionBoxRegion, ChampionBoxRol } from './championBox';
+import { ChampionBoxRegion, ChampionBoxRol } from './champion-box';
 
 export const ChampionInfoRight = () => {
 	return (

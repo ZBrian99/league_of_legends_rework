@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import { ChamAbilitiesImageContainer } from '../../styled-components';
 import { ChampionContext } from '../../Champion';
-import { ChampionAbilityButton, ChampionAbilitySelectorCircle } from './';
+import { ChampionAbilityButton, ChampionAbilitySelectorCircle } from '.';
 
 export const ChampionAbilitySelector = ({ fn, ability, abilities }) => {
 	const { spells, passive } = useContext(ChampionContext);

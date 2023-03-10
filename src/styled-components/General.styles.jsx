@@ -31,4 +31,3 @@ export const HeaderIconText = styled.h1`
 		height: 2rem;
 	}
 `;
-

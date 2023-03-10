@@ -1,8 +1,7 @@
+import { ChampionAbilities, ChampionOther, ChampionSkins } from '.';
 import { ChamContainer } from '../styled-components';
-import { ChampionAbilities } from './championAbilities';
-import { ChampionInfo } from './championInfo/ChampionInfo';
-import { ChampionOther } from './championOther/ChampionOther';
-import { ChampionSkins } from './ChampionSkins';
+import { ChampionInfo } from './champion-info';
+
 
 export const ChampionDetails = () => {
 	return (

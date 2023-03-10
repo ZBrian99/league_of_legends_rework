@@ -19,19 +19,18 @@ const AnimLoader = keyframes`
 `;
 export const Loader = styled.div`
 	width: 100%;
-	height: .3rem;
+	height: 0.3rem;
 	display: inline-block;
 	position: relative;
 	overflow: hidden;
 	grid-column: 1/6;
-	min-height: 100vh;
+	min-height: calc(100vh - 0.3rem);
 	&::after {
 		content: '';
 		width: 100%;
-		height: .3rem;
+		height: 0.3rem;
 		background: #292929;
 		position: absolute;
 		animation: ${AnimLoader} 1s linear infinite;
 	}
 `;
-

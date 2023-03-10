@@ -7,5 +7,5 @@ export * from './ChampionLogo';
 export * from './ChampionLore';
 export * from './ChampionQuote';
 export * from './ChampionRace';
-export * from './championBox';
-export * from './championRelated';
+export * from './champion-box';
+export * from './champion-related';
