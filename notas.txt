@@ -5,8 +5,6 @@ hacer que las skins aparezcan gradualmente
 hacer que los texto e imagenes aparezcan con opacidad estilo desvanecerse
 arreglas video fondo y transiciones
 
-añadir filtros de busqueda
-
 region:
   cambiar el fondo de region a la imagen correspondiente
   seccion de region:
@@ -21,5 +19,3 @@ region:
 
 
 
-
-champion + key recent
