@@ -1,11 +1,12 @@
 import styled from '@emotion/styled';
 
 export const ChampionsHeaderContainer = styled.header`
-	margin: 10rem 0 2rem;
+	margin: 7rem 0 2rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	width: 100%;
+	
 `;
 
 export const ChampionsHeaderLine = styled.span`

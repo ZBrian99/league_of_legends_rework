@@ -80,7 +80,6 @@ export const FooterText = styled.p`
 `;
 
 export const FooterContainer = styled.footer`
-	margin-top: 5rem;
 	width: 100%;
 	background-color: red;
 	background-color: #111;

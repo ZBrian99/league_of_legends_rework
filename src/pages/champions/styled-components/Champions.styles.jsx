@@ -4,7 +4,7 @@ import { fadeIn } from '../../../styled-components';
 export const Container = styled.section`
 	width: 100%;
 	max-width: 80rem;
-	margin: 0 auto 2rem;
+	margin: 0 auto;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-evenly;
@@ -17,22 +17,25 @@ export const Container = styled.section`
 export const ChampionsContainer = styled.div`
 	width: 100%;
 	display: grid;
-	grid-auto-flow: dense;
 	gap: 2rem 1rem;
-	margin-bottom: 2rem;
 	justify-content: center;
 	grid-auto-rows: 26.4375rem;
-	grid-template-columns: repeat(auto-fill, 14.5625rem);
+	grid-template-columns: repeat(auto-fit, 14.5625rem);
 	@media (max-width: 80rem) {
 		grid-auto-rows: 20.1875rem;
-		grid-template-columns: repeat(auto-fill, 13.9375rem);
+		grid-template-columns: repeat(auto-fit, 13.9375rem);
 	}
 	@media (max-width: 48rem) {
 		grid-auto-rows: 17.5rem;
-		grid-template-columns: repeat(auto-fill, 11.25rem);
+		grid-template-columns: repeat(auto-fit, 11.25rem);
 	}
 `;
-
+export const ChampionsMainContainer = styled.div`
+	padding-top: 3rem;
+	padding-bottom: 15rem;
+	width: 100%;
+	min-height: 100vh;
+`;
 export const ChampionsContainerBackground = styled.div`
 	position: absolute;
 	top: 0;

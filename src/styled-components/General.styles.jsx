@@ -30,4 +30,7 @@ export const HeaderIconText = styled.h1`
 		width: ${({ width }) => (width ? width : '2rem')};
 		height: 2rem;
 	}
+	@media (max-width: 50rem) {
+		margin: 0 2rem;
+	}
 `;

@@ -1,5 +1,5 @@
-export { default as Regiones } from './Regiones';
-export { default as Universo } from './Universo';
+export * from './Regiones';
+export * from './Universo';
 export * from './champion/components/champion-abilities';
 export * from './champion/components/champion-info/champion-box';
 export * from './champion/components/champion-info/champion-related';

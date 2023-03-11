@@ -5,7 +5,12 @@ export const NavBarCenter = ({ onClick }) => {
 	return (
 		<NavCenterContent>
 			{links.map((link, i) => (
-				<NavLink key={i} to={`${link.toLowerCase().replace(/ /g, '_')}/`} onClick={onClick}>
+				<NavLink
+					key={i}
+					// to={`${link.toLowerCase()}/`}
+					to={`${links.find((link) => link === 'Champions').toLowerCase()}/`}
+					onClick={onClick}
+				>
 					<NavText>{link}</NavText>
 				</NavLink>
 			))}

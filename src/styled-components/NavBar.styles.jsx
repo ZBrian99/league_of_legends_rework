@@ -176,7 +176,8 @@ export const Nav = styled.nav`
 	align-items: center;
 	font-size: 0.9em;
 	font-weight: 500;
-	letter-spacing: .125rem;
+	letter-spacing: 0.125rem;
 	text-transform: uppercase;
 	position: relative;
+	border-bottom: 2px solid rgba(51, 51, 51, 0.25);
 `;
