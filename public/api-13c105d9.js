@@ -1,0 +1,1 @@
+const o=async()=>{const a=await fetch("https://ddragon.leagueoflegends.com/cdn/12.23.1/data/en_US/champion.json"),{data:n}=await a.json();return n},s=async a=>{const n=await fetch(`https://ddragon.leagueoflegends.com/cdn/12.23.1/data/en_US/champion/${a}.json`),{data:t}=await n.json();return t};export{o as a,s as g};
