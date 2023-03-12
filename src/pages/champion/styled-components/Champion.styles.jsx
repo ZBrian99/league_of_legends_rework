@@ -12,7 +12,7 @@ export const ChamName = styled.h1`
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
 
-	filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
+	filter: drop-shadow(.3125rem .3125rem .3125rem rgba(0, 0, 0, 0.5));
 `;
 export const ChamTitle = styled.h2`
 	text-transform: uppercase;

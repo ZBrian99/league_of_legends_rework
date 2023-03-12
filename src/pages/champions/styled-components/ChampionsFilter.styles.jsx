@@ -8,7 +8,7 @@ export const ChampionsFilterSortText = styled.p`
 	font-weight: 600;
 	font-size: 0.8em;
 
-	letter-spacing: 4px;
+	letter-spacing: .25rem;
 `;
 export const ChampionsFilterSortImage = styled.img`
 	width: 1.25rem;
@@ -125,7 +125,7 @@ export const ChampionsFilterRolesText = styled.span`
 	text-transform: uppercase;
 	font-weight: 600;
 	font-size: 0.8em;
-	letter-spacing: 4px;
+	letter-spacing: .25rem;
 	margin-left: 0.5rem;
 	color: rgb(147, 115, 65);
 `;

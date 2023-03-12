@@ -179,5 +179,5 @@ export const Nav = styled.nav`
 	letter-spacing: 0.125rem;
 	text-transform: uppercase;
 	position: relative;
-	border-bottom: 2px solid rgba(51, 51, 51, 0.25);
+	border-bottom: .125rem solid rgba(51, 51, 51, 0.25);
 `;
