@@ -3,14 +3,14 @@ import { ChampionsFilterContainer } from '../styled-components';
 import { ChampionsFilterRoleSelector, ChampionsFilterSearch, ChampionsFilterSort } from './champions-filter';
 
 export const ChampionsFilter = ({ champions, filteredChampions }) => {
-	const [searchName, handleSearch, handleRol, searchRole, handleSort, searchSort] = useChampionsFilter(
+	const [searchName, handleSearch, handleRol, handleSort, searchSort] = useChampionsFilter(
 		champions,
 		filteredChampions
 	);
 	return (
 		<ChampionsFilterContainer>
 			<ChampionsFilterSearch searchName={searchName} handleSearch={handleSearch} />
-			<ChampionsFilterRoleSelector handleRol={handleRol} searchRole={searchRole} />
+			<ChampionsFilterRoleSelector handleRol={handleRol} />
 			<ChampionsFilterSort handleSort={handleSort} searchSort={searchSort} />
 		</ChampionsFilterContainer>
 	);

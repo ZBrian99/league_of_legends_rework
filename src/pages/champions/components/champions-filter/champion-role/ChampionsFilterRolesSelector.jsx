@@ -8,7 +8,6 @@ export const ChampionsFilterRolesSelector = ({
 	roleVisibility,
 	roles,
 	idRoles,
-	searchRole,
 	handleRolAndRoleVisibility,
 }) => {
 	return (
@@ -17,7 +16,6 @@ export const ChampionsFilterRolesSelector = ({
 				<ChampionsFilterRol key={role}>
 					<ChampionsFilterRolButton
 						onClick={() => handleRolAndRoleVisibility(idRoles[i])}
-						variant={idRoles[i] === searchRole}
 					>
 						{role}
 					</ChampionsFilterRolButton>

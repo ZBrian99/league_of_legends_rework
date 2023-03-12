@@ -29,11 +29,11 @@ export const useChampionsFilter = (champions, filteredChampions) => {
 			  ));
 		reverse && filterChamp.reverse();
 		return filterChamp;
-  };
-  
+	};
+
 	useEffect(() => {
 		filteredChampions(filterChampions(champions, searchName, searchRole, searchSort));
-  }, [searchName, searchRole, searchSort]);
-  
-	return [searchName, handleSearch, handleRol, searchRole, handleSort, searchSort];
+	}, [searchName, searchRole, searchSort]);
+
+	return [searchName, handleSearch, handleRol, handleSort, searchSort];
 };
