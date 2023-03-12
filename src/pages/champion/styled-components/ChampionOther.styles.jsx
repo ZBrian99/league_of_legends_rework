@@ -76,8 +76,10 @@ export const OtherChampionContainer = styled.section`
 	display: grid;
 	grid-auto-flow: dense;
 	grid-template-columns: repeat(3, 1fr);
+	padding-bottom: 5rem;
 	gap: 1rem;
 	@media (max-width: 64rem) {
-		grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
+    gap: 3rem;
 	}
 `;

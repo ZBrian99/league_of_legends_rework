@@ -5,6 +5,7 @@ export const useChampions = () => {
 	const [isLoading, setIsLoading] = useState(true);
 
 	useEffect(() => {
+		document.title = `Champions - League of Legends`;
 		const getAllChampions = async () => {
 			const championsData = await getChampions();
 			const championsInfo = Object.values(championsData).map((champion) => champion);
@@ -21,5 +22,5 @@ export const useChampions = () => {
 
 		getAllChampions();
 	}, []);
-  return { champions, isLoading };
+	return { champions, isLoading };
 };

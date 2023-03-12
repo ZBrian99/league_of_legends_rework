@@ -25,6 +25,7 @@ export const useChampion = () => {
 	useEffect(() => {
 		if (!isLoading) {
 			setChampionData(champion.filter((e) => e.id === id)[0]);
+			document.title = `${champion[0].name} - League of Legends`;
 		}
 	}, [id, isLoading, champion]);
 

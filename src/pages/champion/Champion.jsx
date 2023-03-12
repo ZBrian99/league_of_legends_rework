@@ -8,7 +8,6 @@ export const ChampionContext = createContext();
 
 export const Champion = () => {
 	const { championData, isLoading } = useChampion();
-
 	return (
 		<>
 			{isLoading || !championData ? (

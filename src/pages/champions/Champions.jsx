@@ -7,7 +7,7 @@ import { ChampionsContainerBackground, ChampionsMainContainer } from './styled-c
 export const Champions = () => {
 	const { champions, isLoading } = useChampions();
 	const [filteredChampions, setFilteredChampions] = useState([]);
-
+	
 	return (
 		<>
 			{isLoading ? (
