@@ -1,2 +1,3 @@
 export * from './footer';
-export * from './navbar';
+export * from './index';
+export * from './navBar';

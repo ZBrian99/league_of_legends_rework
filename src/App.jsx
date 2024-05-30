@@ -2,7 +2,6 @@ import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import { GlobalReset, Loader } from './styled-components';
 import { DataProvider } from './context';
 import { lazy, Suspense } from 'react';
-import { Footer, NavBar } from './components';
 import { Champion, Champions } from './pages';
 // import { Champion, Champions, Universo, Regiones } from './pages';
 
@@ -17,7 +16,7 @@ export const App = () => {
 			<GlobalReset />
 			<Suspense fallback={<Loader />}>
 				<BrowserRouter basename='/league-of-legends'>
-					<NavBar />
+					{/* <NavBar /> */}
 					<DataProvider>
 						<Routes>
 							<Route path='/champion/:id/' element={<Champion />} />
@@ -27,7 +26,7 @@ export const App = () => {
 							<Route path='*' element={<Navigate to='/champions/' />} />
 						</Routes>
 					</DataProvider>
-					<Footer />
+					{/* <Footer /> */}
 				</BrowserRouter>
 			</Suspense>
 		</>
