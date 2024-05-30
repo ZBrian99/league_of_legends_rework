@@ -30,5 +30,3 @@ export const Champion = () => {
 		</>
 	);
 };
-
-export default Champion;

@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { useChampions } from '../../hooks';
 import { Loader } from '../../styled-components';
 import { ChampionsFilter, ChampionSelector, ChampionsHeader } from './components';
@@ -7,7 +7,7 @@ import { ChampionsContainerBackground, ChampionsMainContainer } from './styled-c
 export const Champions = () => {
 	const { champions, isLoading } = useChampions();
 	const [filteredChampions, setFilteredChampions] = useState([]);
-	
+
 	return (
 		<>
 			{isLoading ? (
@@ -23,5 +23,3 @@ export const Champions = () => {
 		</>
 	);
 };
-
-export default Champions;
