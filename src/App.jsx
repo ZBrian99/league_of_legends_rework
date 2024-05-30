@@ -6,10 +6,10 @@ import { Footer, NavBar } from './components';
 
 // import { Champion, Champions, Universo, Regiones } from './pages';
 
-const Champion = lazy(() => import('./pages/Champion/Champion'));
-const Champions = lazy(() => import('./pages/Champions/Champions'));
-const Regiones = lazy(() => import('./pages/Regiones'));
-const Universo = lazy(() => import('./pages/Universo'));
+const Champion = lazy(() => import('./pages/Champion/Champion.jsx'));
+const Champions = lazy(() => import('./pages/Champions/Champions.jsx'));
+const Regiones = lazy(() => import('./pages/Regiones.jsx'));
+const Universo = lazy(() => import('./pages/Universo.jsx'));
 
 export const App = () => {
 	return (
