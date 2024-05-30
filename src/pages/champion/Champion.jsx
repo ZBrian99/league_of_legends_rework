@@ -6,7 +6,7 @@ import { useChampion } from './hooks/useChampion';
 
 export const ChampionContext = createContext();
 
-export const Champion = () => {
+ const Champion = () => {
 	const { championData, isLoading } = useChampion();
 	return (
 		<>
@@ -30,3 +30,5 @@ export const Champion = () => {
 		</>
 	);
 };
+
+export default Champion;

@@ -2,9 +2,9 @@ import { useState } from 'react';
 import { useChampions } from '../../hooks';
 import { Loader } from '../../styled-components';
 import { ChampionsFilter, ChampionSelector, ChampionsHeader } from './components';
-import { ChampionsContainerBackground, ChampionsMainContainer } from './styled-components';
+import { ChampionsContainerBackground, ChampionsMainContainer } from './styled-components/Champions.styles';
 
-export const Champions = () => {
+ const Champions = () => {
 	const { champions, isLoading } = useChampions();
 	const [filteredChampions, setFilteredChampions] = useState([]);
 
@@ -23,3 +23,5 @@ export const Champions = () => {
 		</>
 	);
 };
+
+export default Champions;
