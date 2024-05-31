@@ -2,7 +2,7 @@ import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import { GlobalReset, Loader } from './styled-components';
 import { DataProvider } from './context';
 import { Champions } from './pages/champions/Champions';
-import { Champion } from './pages/champion';
+import { Champion } from './pages/champion/Champion';
 // import { lazy, Suspense } from 'react';
 // import { Champion, Champions } from './pages';
 // import { Champion, Champions, Universo, Regiones } from './pages';
