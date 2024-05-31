@@ -1,4 +1,4 @@
-import { MobileTopContent, NavMobileButton, Svg } from '../../styled-components';
+import { MobileTopContent, NavMobileButton, Svg } from '../../styled-components/NavBar.styles';
 
 export const NavBarTop = ({ mobileMenu, onClick }) => {
 	return (

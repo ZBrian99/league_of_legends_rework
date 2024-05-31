@@ -1,4 +1,4 @@
-import { NavCenterContent, NavText, NavLink } from '../../styled-components';
+import { NavCenterContent, NavText, NavLink } from '../../styled-components/NavBar.styles';
 
 export const NavBarCenter = ({ onClick }) => {
 	const links = ['Universe', 'Champions', 'Regions'];

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { NavLeftContent, Svg } from '../../styled-components';
+import { NavLeftContent, Svg } from '../../styled-components/NavBar.styles';
 
 export const NavBarLeft = ({ onClick }) => {
 	return (

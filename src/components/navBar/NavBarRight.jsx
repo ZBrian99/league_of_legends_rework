@@ -1,4 +1,4 @@
-import { NavButton, NavRightContent } from '../../styled-components';
+import { NavButton, NavRightContent } from '../../styled-components/NavBar.styles';
 
 export const NavBarRight = ({ onClick }) => {
 	return (

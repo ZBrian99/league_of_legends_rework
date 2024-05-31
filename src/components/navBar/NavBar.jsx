@@ -1,6 +1,7 @@
 import { useNavBar } from '../../hooks';
-import { Nav, NavMobileButton, Svg } from '../../styled-components';
-import { NavBarLeft, NavBarMobile } from './';
+import { Nav, NavMobileButton, Svg } from '../../styled-components/NavBar.styles';
+import { NavBarLeft } from './NavBarLeft';
+import { NavBarMobile } from './NavBarMobile';
 
 export const NavBar = () => {
 	const { mobileMenu, menuRef, NavMenuOpen, NavMenuClose } = useNavBar();
