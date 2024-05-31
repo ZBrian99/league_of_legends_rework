@@ -27,7 +27,7 @@ export const App = () => {
 						<Route path='/champions/' element={<Champions />} />
 						{/* <Route path='/regions/' element={<Regiones />} /> */}
 						{/* <Route path='/universe/' element={<Universo />} /> */}
-						<Route path='*' element={<Navigate to='/champions/' />} />
+						{/* <Route path='*' element={<Navigate to='/champions/' />} /> */}
 					</Routes>
 				</DataProvider>
 				{/* <Footer /> */}
