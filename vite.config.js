@@ -10,10 +10,10 @@ export default defineConfig({
 		}),
 	],
 	// base: '/league-of-legends/',
-	// build: {
+	build: {
 	// 	assetsDir: 'public',
-	// 	rollupOptions: {
-	// 		input: ['./index.html', './404.html'],
-	// 	},
-	// },
+		rollupOptions: {
+			input: ['./index.html', './404.html'],
+		},
+	},
 });

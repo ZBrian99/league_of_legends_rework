@@ -3,7 +3,9 @@ import { GlobalReset, Loader } from './styled-components';
 import { DataProvider } from './context';
 import { Champions } from './pages/champions/Champions';
 import { Champion } from './pages/champion/Champion';
-// import { lazy, Suspense } from 'react';
+import { lazy, Suspense } from 'react';
+import { NavBar } from './components/navbar';
+import { Footer } from './components/footer';
 // import { Champion, Champions } from './pages';
 // import { Champion, Champions, Universo, Regiones } from './pages';
 
@@ -19,7 +21,7 @@ export const App = () => {
 			{/* <Suspense fallback={<Loader />}> */}
 			<BrowserRouter>
 				{/* <BrowserRouter basename='/league-of-legends'> */}
-				{/* <NavBar /> */}
+				<NavBar />
 				<DataProvider>
 					{/* <Champions/> */}
 					<Routes>
@@ -31,7 +33,7 @@ export const App = () => {
 						{/* <Route path='*' element={<Navigate to='/champions/' />} /> */}
 					</Routes>
 				</DataProvider>
-				{/* <Footer /> */}
+				<Footer />
 			</BrowserRouter>
 			{/* </Suspense> */}
 		</>
