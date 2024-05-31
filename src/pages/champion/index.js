@@ -1,4 +1,3 @@
-export { default as Champion } from './Champion';
 export * from './components/champion-abilities';
 export * from './components/champion-info/champion-box';
 export * from './components/champion-info/champion-related';
