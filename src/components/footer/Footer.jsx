@@ -1,5 +1,6 @@
-import { FooterContainer } from '../../styled-components';
-import { FooterESRBInfo, FooterLinks } from './';
+import { FooterContainer } from '../../styled-components/Footer.styles';
+import { FooterESRBInfo } from './FooterESRBInfo';
+import { FooterLinks } from './FooterLinks';
 
 export const Footer = () => {
 	const ESRB = [

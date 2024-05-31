@@ -1,4 +1,4 @@
-import { FooterLink, FooterLinksContainer } from "../../styled-components";
+import { FooterLink, FooterLinksContainer } from '../../styled-components/Footer.styles';
 
 export const FooterLinksList = ({ variant = false, links }) => {
 	return (

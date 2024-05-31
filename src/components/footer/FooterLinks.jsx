@@ -1,5 +1,5 @@
-import { FooterLogo, FooterText } from '../../styled-components';
-import { FooterLinksList } from './';
+import { FooterLogo, FooterText } from '../../styled-components/Footer.styles';
+import { FooterLinksList } from './FooterLinksList';
 
 export const FooterLinks = () => {
 	const otherLinks = [

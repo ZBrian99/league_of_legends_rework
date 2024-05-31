@@ -33,7 +33,7 @@ export const App = () => {
 						{/* <Route path='*' element={<Navigate to='/champions/' />} /> */}
 					</Routes>
 				</DataProvider>
-				{/* <Footer /> */}
+				<Footer />
 			</BrowserRouter>
 			{/* </Suspense> */}
 		</>

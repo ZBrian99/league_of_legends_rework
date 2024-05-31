@@ -1,4 +1,4 @@
-import { FooterESRB, FooterESRBImage, FooterESRBText } from '../../styled-components';
+import { FooterESRB, FooterESRBImage, FooterESRBText } from '../../styled-components/Footer.styles';
 
 export const FooterESRBInfo = ({ ESRB }) => {
 	return (
