@@ -6,7 +6,7 @@ export const ChampionAbilityVideo = ({ ability }) => {
 
 	return (
 		<ChamAbilityVideoContainer>
-			<ChamAbilityVideo poster={`/league-of-legends/assets/no-ability.jpg`} src={src} muted autoPlay loop />
+			<ChamAbilityVideo poster={`/assets/no-ability.jpg`} src={src} muted autoPlay loop />
 		</ChamAbilityVideoContainer>
 	);
 };

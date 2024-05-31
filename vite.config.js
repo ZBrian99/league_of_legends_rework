@@ -9,11 +9,11 @@ export default defineConfig({
 			},
 		}),
 	],
-	base: '/league-of-legends/',
-	build: {
-		assetsDir: 'public',
-		rollupOptions: {
-			input: ['./index.html', './404.html'],
-		},
-	},
+	// base: '/league-of-legends/',
+	// build: {
+	// 	assetsDir: 'public',
+	// 	rollupOptions: {
+	// 		input: ['./index.html', './404.html'],
+	// 	},
+	// },
 });

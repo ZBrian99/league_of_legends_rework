@@ -5,7 +5,7 @@ export const ChampionLogo = ({ id }) => {
 	return (
 		<ChamLogoContainer>
 			<ChampionIcon id={id} />
-			<ChamIconFrame src={`/league-of-legends/assets/ChampionIconFrame.png`} alt='champion border' />
+			<ChamIconFrame src={`/assets/ChampionIconFrame.png`} alt='champion border' />
 		</ChamLogoContainer>
 	);
 };

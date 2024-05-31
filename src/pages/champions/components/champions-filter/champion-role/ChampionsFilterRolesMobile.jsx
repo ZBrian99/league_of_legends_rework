@@ -7,7 +7,7 @@ import {
 export const ChampionsFilterRolesMobile = ({ handleRoleVisibility }) => {
 	return (
 		<ChampionsFilterRolesMobileContainer onClick={handleRoleVisibility}>
-			<ChampionsFilterRolesIcon src='/league-of-legends/assets/runeterra_emblem.png' alt='search icon' />
+			<ChampionsFilterRolesIcon src='/assets/runeterra_emblem.png' alt='search icon' />
 			<ChampionsFilterRolesText>Roles</ChampionsFilterRolesText>
 		</ChampionsFilterRolesMobileContainer>
 	);

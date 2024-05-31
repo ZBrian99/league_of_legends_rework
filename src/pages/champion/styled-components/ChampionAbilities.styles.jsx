@@ -269,10 +269,10 @@ export const ChampionAbilityContainer = styled.section`
 
 	background-color: #111318;
 	border: 1px solid #31271e;
-	/* background-image: url(/league-of-legends/assets/regionbg.png); */
-	/* background-image: url(/league-of-legends/assets/${({ tag }) => tag}.svg); */
+	/* background-image: url(/assets/regionbg.png); */
+	/* background-image: url(/assets/${({ tag }) => tag}.svg); */
 	/* background-image: url(${import.meta.env.BASE_URL}assets/${({ tag }) => tag}.svg); */
-	background-image: url(/league-of-legends/assets/${({ tag }) => tag}.svg);
+	background-image: url(/assets/${({ tag }) => tag}.svg);
 
 	background-repeat: no-repeat;
 	background-size: contain;

@@ -12,7 +12,7 @@ export const ChampionHeader = () => {
 		<ChamHeaderContainer visible={visible}>
 			<ChamName>{name}</ChamName>
 			<ChamSeparator
-				src={`/league-of-legends/assets/t1HeaderDivider.png`}
+				src={`/assets/t1HeaderDivider.png`}
 				alt='Header Divider'
 				onLoad={handleLoadImage}
 			/>

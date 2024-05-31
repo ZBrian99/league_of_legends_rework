@@ -4,7 +4,7 @@ import { Loader } from '../../styled-components';
 import { ChampionsFilter, ChampionSelector, ChampionsHeader } from './components';
 import { ChampionsContainerBackground, ChampionsMainContainer } from './styled-components/Champions.styles';
 
- const Champions = () => {
+ export const Champions = () => {
 	const { champions, isLoading } = useChampions();
 	const [filteredChampions, setFilteredChampions] = useState([]);
 
@@ -23,5 +23,3 @@ import { ChampionsContainerBackground, ChampionsMainContainer } from './styled-c
 		</>
 	);
 };
-
-export default Champions;

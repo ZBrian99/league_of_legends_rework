@@ -1,8 +1,10 @@
-import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
+// import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import { GlobalReset, Loader } from './styled-components';
 import { DataProvider } from './context';
-import { lazy, Suspense } from 'react';
-import { Champion, Champions } from './pages';
+import { Champions } from './pages/champions/Champions';
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
+// import { lazy, Suspense } from 'react';
+// import { Champion, Champions } from './pages';
 // import { Champion, Champions, Universo, Regiones } from './pages';
 
 // const Champion = lazy(() => import('./pages/Champion/Champion'));
@@ -14,21 +16,23 @@ export const App = () => {
 	return (
 		<>
 			<GlobalReset />
-			<Suspense fallback={<Loader />}>
-				<BrowserRouter basename='/league-of-legends'>
-					{/* <NavBar /> */}
-					<DataProvider>
-						<Routes>
-							<Route path='/champion/:id/' element={<Champion />} />
-							<Route path='/champions/' element={<Champions />} />
-							{/* <Route path='/regions/' element={<Regiones />} /> */}
-							{/* <Route path='/universe/' element={<Universo />} /> */}
-							<Route path='*' element={<Navigate to='/champions/' />} />
-						</Routes>
-					</DataProvider>
-					{/* <Footer /> */}
-				</BrowserRouter>
-			</Suspense>
+			{/* <Suspense fallback={<Loader />}> */}
+			<BrowserRouter>
+				{/* <BrowserRouter basename='/league-of-legends'> */}
+				{/* <NavBar /> */}
+				<DataProvider>
+					{/* <Champions/> */}
+					<Routes>
+						{/* <Route path='/champion/:id/' element={<Champion />} /> */}
+						<Route path='/champions/' element={<Champions />} />
+						{/* <Route path='/regions/' element={<Regiones />} /> */}
+						{/* <Route path='/universe/' element={<Universo />} /> */}
+						<Route path='*' element={<Navigate to='/champions/' />} />
+					</Routes>
+				</DataProvider>
+				{/* <Footer /> */}
+			</BrowserRouter>
+			{/* </Suspense> */}
 		</>
 	);
 };

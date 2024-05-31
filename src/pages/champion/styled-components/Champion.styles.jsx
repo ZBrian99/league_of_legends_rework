@@ -341,7 +341,7 @@ export const LargeBoxContainer = styled.div`
 	border-top: 1px solid #31271e;
 	border-right: 1px solid #31271e;
 	background-color: #111318;
-	background-image: url(/league-of-legends/assets/regionbg.png);
+	background-image: url(/assets/regionbg.png);
 	background-position: center;
 	background-size: cover;
 	@media (max-width: 64rem) {

@@ -7,7 +7,7 @@ import {
 export const ChampionsFilterSearch = ({ searchName, handleSearch }) => {
 	return (
 		<ChampionsFilterInputContainer>
-			<ChampionsFilterInputIcon src='/league-of-legends/assets/header_icon.png' alt='search icon' />
+			<ChampionsFilterInputIcon src='/assets/header_icon.png' alt='search icon' />
 			<ChampionsFilterInput
 				type='text'
 				placeholder='Find a Champion'
