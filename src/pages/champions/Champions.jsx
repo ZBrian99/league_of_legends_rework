@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { useChampions } from '../../hooks';
-import { Loader } from '../../styled-components';
+import { useChampions } from '../../hooks/useChampions';
+import { Loader } from '../../styled-components/Loader.styles';
 import { ChampionsFilter, ChampionSelector, ChampionsHeader } from './components';
 import { ChampionsContainerBackground, ChampionsMainContainer } from './styled-components/Champions.styles';
 

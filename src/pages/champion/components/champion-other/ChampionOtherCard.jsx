@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import { Link } from 'react-router-dom';
-import { DataContext } from '../../../../context';
+import { DataContext } from '../../../../context/DataContext';
 import { OtherChampionBox, OtherChampionDescription, OtherChampionName } from '../../styled-components';
 
 export const ChampionOtherCard = ({ num }) => {

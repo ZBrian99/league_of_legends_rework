@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { DataContext } from '../../../context';
+import { DataContext } from '../../../context/DataContext';
 import { ChampionContext } from '../Champion';
 
 export const useChampionBoxRegion = () => {

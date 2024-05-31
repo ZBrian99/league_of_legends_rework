@@ -1,4 +1,4 @@
-import { useChampionAbilityVideo } from '../../hooks';
+import { useChampionAbilityVideo } from '../../hooks/useChampionAbilityVideo';
 import { ChamAbilityVideo, ChamAbilityVideoContainer } from '../../styled-components';
 
 export const ChampionAbilityVideo = ({ ability }) => {

@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { getChampions } from '../services';
+import { getChampions } from '../services/api';
 export const useChampions = () => {
 	const [champions, setChampions] = useState();
 	const [isLoading, setIsLoading] = useState(true);

@@ -5,7 +5,7 @@ import {
 	ChampionAbilityContainer,
 } from '../../styled-components';
 import { ChampionAbilityInfo, ChampionAbilitySelector, ChampionAbilityVideo } from '..';
-import { useChampionAbilities } from '../../hooks';
+import { useChampionAbilities } from '../../hooks/useChampionAbilities';
 
 export const ChampionAbilities = () => {
 	const { tags, handleClick, ability, abilities } = useChampionAbilities();

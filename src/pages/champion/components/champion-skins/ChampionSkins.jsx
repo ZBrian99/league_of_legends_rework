@@ -1,6 +1,6 @@
 import { ChamSkinImage, ChamSkinsContainer, ChamSkinSidePanelTitle } from '../../styled-components';
 import { ChampionSkinSelector } from './';
-import { useChampionSkins } from '../../hooks';
+import { useChampionSkins } from '../../hooks/useChampionSkins';
 
 export const ChampionSkins = () => {
 	const { id, skins, skinNumber, selector, handleClick } = useChampionSkins();

@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { fadeIn } from '../../../styled-components';
+import { fadeIn } from '../../../styled-components/General.styles';
 
 export const ChamName = styled.h1`
 	text-transform: uppercase;

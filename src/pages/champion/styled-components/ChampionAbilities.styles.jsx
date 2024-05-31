@@ -32,7 +32,7 @@ export const ChamAbilityDescription = styled.p`
 		background: #555;
 	}
 
-	scrollbar-width: thin;
+	/* scrollbar-width: thin; */
 `;
 
 export const ChamAbilityInfo = styled.div`

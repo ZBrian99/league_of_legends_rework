@@ -80,7 +80,7 @@ export const ChamRelatedSelectorContainer = styled.div`
 		background: #555;
 	}
 
-	scrollbar-width: thin;
+	/* scrollbar-width: thin; */
 `;
 
 export const ChamRelatedTopContainer = styled.div`

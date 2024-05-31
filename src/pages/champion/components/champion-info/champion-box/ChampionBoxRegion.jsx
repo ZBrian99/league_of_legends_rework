@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import { ChampionBox } from './ChampionBox';
 import { LargeBoxContainer, LargeBoxImage } from '../../../styled-components';
-import { useChampionBoxRegion } from '../../../hooks';
+import { useChampionBoxRegion } from '../../../hooks/useChampionBoxRegion';
 
 export const ChampionBoxRegion = () => {
 	const { regionEmblemUrl, ShowregionIcon, regionIconUrl, region } = useChampionBoxRegion();

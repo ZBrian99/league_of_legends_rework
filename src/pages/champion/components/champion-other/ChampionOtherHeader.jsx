@@ -1,5 +1,5 @@
-import { HeaderIconText } from '../../../../styled-components';
-import { ChampionsHeaderContainer, ChampionsHeaderLine } from '../../../champions/styled-components';
+import { HeaderIconText } from '../../../../styled-components/General.styles';
+import { ChampionsHeaderContainer, ChampionsHeaderLine } from '../../../champions/styled-components/ChampionsHeader.styles';
 
 export const ChampionOtherHeader = ({ title, src }) => {
 	return (

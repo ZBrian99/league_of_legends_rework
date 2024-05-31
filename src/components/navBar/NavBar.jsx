@@ -1,4 +1,4 @@
-import { useNavBar } from '../../hooks';
+import { useNavBar } from '../../hooks/useNavBar';
 import { Nav, NavMobileButton, Svg } from '../../styled-components/NavBar.styles';
 import { NavBarLeft } from './NavBarLeft';
 import { NavBarMobile } from './NavBarMobile';

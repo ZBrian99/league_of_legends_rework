@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { getChampionById } from '../../../services';
+import { getChampionById } from '../../../services/api';
 
 export const useChampion = () => {
 	const { id } = useParams();

@@ -151,7 +151,7 @@ export const ChamSkinSidePanelSelector = styled.div`
 		background: #555;
 	}
 
-	scrollbar-width: thin;
+	/* scrollbar-width: thin; */
 
 	@media (max-width: 85rem) {
 		overflow-y: hidden;

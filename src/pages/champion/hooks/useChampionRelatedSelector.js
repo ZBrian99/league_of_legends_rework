@@ -1,6 +1,6 @@
 import { useContext, useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { DataContext } from '../../../context';
+import { DataContext } from '../../../context/DataContext';
 
 export const useChampionRelatedSelector = () => {
 	const { id } = useParams();

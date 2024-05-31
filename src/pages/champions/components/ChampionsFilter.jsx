@@ -1,4 +1,4 @@
-import { useChampionsFilter } from '../hooks';
+import { useChampionsFilter } from '../hooks/useChampionsFilter';
 import { ChampionsFilterContainer } from '../styled-components';
 import { ChampionsFilterRoleSelector, ChampionsFilterSearch, ChampionsFilterSort } from './champions-filter';
 

@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { fadeIn } from '../../../styled-components';
+import { fadeIn } from '../../../styled-components/General.styles';
 
 export const Container = styled.section`
 	width: 100%;

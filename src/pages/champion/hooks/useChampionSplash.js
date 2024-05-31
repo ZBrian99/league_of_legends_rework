@@ -1,6 +1,6 @@
 import { useContext, useEffect, useState } from 'react';
 import { ChampionContext } from '../Champion';
-import { DataContext } from '../../../context';
+import { DataContext } from '../../../context/DataContext';
 
 export const useChampionSplash = () => {
 	const { id } = useContext(ChampionContext);

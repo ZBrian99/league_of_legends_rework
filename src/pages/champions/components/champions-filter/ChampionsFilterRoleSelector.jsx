@@ -1,4 +1,4 @@
-import { useChampionsFilterRoleSelector } from '../../hooks';
+import { useChampionsFilterRoleSelector } from '../../hooks/useChampionsFilterRoleSelector';
 import { ChampionsFilterRolesContainer } from '../../styled-components';
 import { ChampionsFilterRolesMobile, ChampionsFilterRolesSelector } from './champion-role';
 
