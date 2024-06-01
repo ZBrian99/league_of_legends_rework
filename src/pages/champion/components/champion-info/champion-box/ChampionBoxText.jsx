@@ -1,4 +1,4 @@
-import { SimpleBoxText, SimpleBoxTextContainer } from "../../../styled-components";
+import { SimpleBoxText, SimpleBoxTextContainer } from "../../../styled-components/Champion.styles";
 
 export const ChampionTextBox = ({ title, description }) => {
 	return (

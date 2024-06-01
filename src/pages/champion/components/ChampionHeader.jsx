@@ -1,5 +1,10 @@
 import { useContext, useState } from 'react';
-import { ChamHeaderContainer, ChamName, ChamSeparator, ChamTitle } from '../styled-components';
+import {
+	ChamHeaderContainer,
+	ChamName,
+	ChamSeparator,
+	ChamTitle,
+} from '../styled-components/Champion.styles';
 import { ChampionContext } from '../Champion';
 
 export const ChampionHeader = () => {
@@ -11,11 +16,7 @@ export const ChampionHeader = () => {
 	return (
 		<ChamHeaderContainer visible={visible}>
 			<ChamName>{name}</ChamName>
-			<ChamSeparator
-				src={`/assets/t1HeaderDivider.png`}
-				alt='Header Divider'
-				onLoad={handleLoadImage}
-			/>
+			<ChamSeparator src={`/assets/t1HeaderDivider.png`} alt='Header Divider' onLoad={handleLoadImage} />
 			<ChamTitle>{title}</ChamTitle>
 		</ChamHeaderContainer>
 	);

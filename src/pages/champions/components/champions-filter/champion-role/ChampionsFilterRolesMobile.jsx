@@ -2,7 +2,7 @@ import {
 	ChampionsFilterRolesText,
 	ChampionsFilterRolesMobileContainer,
 	ChampionsFilterRolesIcon,
-} from '../../../styled-components';
+} from '../../../styled-components/ChampionsFilter.styles';
 
 export const ChampionsFilterRolesMobile = ({ handleRoleVisibility }) => {
 	return (

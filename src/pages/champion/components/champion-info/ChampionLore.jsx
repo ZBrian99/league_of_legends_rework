@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { ChamLargeLore, LoreText } from '../../styled-components';
+import { ChamLargeLore, LoreText } from '../../styled-components/Champion.styles';
 import { ChampionContext } from '../../Champion';
 
 export const ChampionLore = () => {

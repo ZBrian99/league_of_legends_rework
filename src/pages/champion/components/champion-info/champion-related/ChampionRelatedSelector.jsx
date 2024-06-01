@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
-import { ChamRelatedSelectorContainer } from '../../../styled-components';
-import { ChampionLogoWithName } from './';
+import { ChamRelatedSelectorContainer } from '../../../styled-components/ChampionRelated.styles';
 import { useChampionRelatedSelector } from '../../../hooks/useChampionRelatedSelector';
+import { ChampionLogoWithName } from './ChampionLogoWithName';
 export const ChampionRelatedSelector = () => {
 	const { related } = useChampionRelatedSelector();
 

@@ -1,7 +1,8 @@
 import { useChampionsFilter } from '../hooks/useChampionsFilter';
-import { ChampionsFilterContainer } from '../styled-components';
-import { ChampionsFilterRoleSelector, ChampionsFilterSearch, ChampionsFilterSort } from './champions-filter';
-
+import { ChampionsFilterContainer } from '../styled-components/ChampionsFilter.styles';
+import { ChampionsFilterSearch } from './champions-filter/ChampionsFilterSearch';
+import { ChampionsFilterSort } from './champions-filter/ChampionsFilterSort';
+import { ChampionsFilterRoleSelector } from './champions-filter/ChampionsFilterRoleSelector';
 export const ChampionsFilter = ({ champions, filteredChampions }) => {
 	const [searchName, handleSearch, handleRol, handleSort, searchSort] = useChampionsFilter(
 		champions,

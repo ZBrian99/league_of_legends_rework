@@ -4,7 +4,7 @@ import {
 	ChamAbilityImageContainer,
 	ChamAbilityLine,
 	ChamAbilityLineCircle,
-} from '../../styled-components';
+} from '../../styled-components/ChampionAbilities.styles';
 
 export const ChampionAbilityButton = ({ id, onClick, variant, src, alt }) => {
 	return (

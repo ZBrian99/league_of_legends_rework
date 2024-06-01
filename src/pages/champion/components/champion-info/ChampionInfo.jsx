@@ -1,5 +1,7 @@
-import { ChamInfoContainer } from '../../styled-components';
-import { ChampionInfoLeft, ChampionInfoMid, ChampionInfoRight } from '..';
+import { ChamInfoContainer } from '../../styled-components/Champion.styles';
+import { ChampionInfoLeft } from './ChampionInfoLeft';
+import { ChampionInfoMid } from './ChampionInfoMid';
+import { ChampionInfoRight } from './ChampionInfoRight';
 
 export const ChampionInfo = () => {
 	return (

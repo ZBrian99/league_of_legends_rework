@@ -1,4 +1,4 @@
-import { ChamAbilityCircle, ChamAbilityLineCircle } from '../../styled-components';
+import { ChamAbilityCircle, ChamAbilityLineCircle } from '../../styled-components/ChampionAbilities.styles';
 
 export const ChampionAbilitySelectorCircle = ({ id }) => {
 	return (

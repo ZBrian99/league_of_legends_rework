@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ChamIconBorder, ChamIconContainer, ChamIconImage } from '../../styled-components';
+import { ChamIconBorder, ChamIconContainer, ChamIconImage } from '../../styled-components/Champion.styles';
 
 export const ChampionIcon = ({ id, scale }) => {
 	const [isVisible, SetIsVisible] = useState(false);

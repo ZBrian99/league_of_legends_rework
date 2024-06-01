@@ -1,6 +1,5 @@
-import { useContext } from 'react';
 import { ChampionBox } from './ChampionBox';
-import { LargeBoxContainer, LargeBoxImage } from '../../../styled-components';
+import { LargeBoxContainer, LargeBoxImage } from '../../../styled-components/Champion.styles';
 import { useChampionBoxRegion } from '../../../hooks/useChampionBoxRegion';
 
 export const ChampionBoxRegion = () => {

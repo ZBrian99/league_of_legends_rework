@@ -2,7 +2,7 @@ import {
 	ChampionsFilterRol,
 	ChampionsFilterRolButton,
 	ChampionsFilterRoles,
-} from '../../../styled-components';
+} from '../../../styled-components/ChampionsFilter.styles.jsx';
 
 export const ChampionsFilterRolesSelector = ({
 	roleVisibility,
@@ -10,6 +10,7 @@ export const ChampionsFilterRolesSelector = ({
 	idRoles,
 	handleRolAndRoleVisibility,
 }) => {
+
 	return (
 		<ChampionsFilterRoles isVisible={roleVisibility}>
 			{roles.map((role, i) => (

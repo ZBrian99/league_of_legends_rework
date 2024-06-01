@@ -1,6 +1,6 @@
-import { ChamLeftContainer } from '../../styled-components';
-import { ChampionRace, ChampionRelated } from './';
-
+import { ChamLeftContainer } from '../../styled-components/Champion.styles';
+import { ChampionRace } from './ChampionRace';
+import { ChampionRelated } from './champion-related/ChampionRelated';
 export const ChampionInfoLeft = () => {
 	return (
 		<ChamLeftContainer>

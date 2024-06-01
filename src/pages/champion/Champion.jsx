@@ -1,8 +1,10 @@
-import { ChampionDetails, ChampionHeaderContainer } from './';
+// import { ChampionDetails, ChampionHeaderContainer } from './';
 import { createContext } from 'react';
 import { ChampionContainer } from './styled-components/Champion.styles';
 import { Loader } from '../../styled-components/Loader.styles';
 import { useChampion } from './hooks/useChampion';
+import { ChampionHeaderContainer } from './components/ChampionHeaderContainer';
+import { ChampionDetails } from './components/ChampionDetails';
 
 export const ChampionContext = createContext();
 

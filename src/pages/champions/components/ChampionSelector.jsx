@@ -1,4 +1,4 @@
-import { ChampionsContainer, Container } from '../styled-components';
+import { ChampionsContainer, Container } from '../styled-components/Champions.styles';
 import { ChampionsCard } from './ChampionsCard';
 
 export const ChampionSelector = ({ champions }) => {

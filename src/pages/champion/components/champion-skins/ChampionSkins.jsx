@@ -1,5 +1,5 @@
-import { ChamSkinImage, ChamSkinsContainer, ChamSkinSidePanelTitle } from '../../styled-components';
-import { ChampionSkinSelector } from './';
+import { ChamSkinImage, ChamSkinsContainer, ChamSkinSidePanelTitle } from '../../styled-components/ChampionSkins.styles';
+import { ChampionSkinSelector } from './ChampionSkinSelector';
 import { useChampionSkins } from '../../hooks/useChampionSkins';
 
 export const ChampionSkins = () => {

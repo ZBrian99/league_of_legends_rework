@@ -1,4 +1,4 @@
-import { SimpleBoxImage, SimpleBoxImageContainer } from "../../../styled-components";
+import { SimpleBoxImage, SimpleBoxImageContainer } from "../../../styled-components/Champion.styles";
 
 export const ChampionImageBox = ({ src, alt, reverse = false, none=false }) => {
 	return (

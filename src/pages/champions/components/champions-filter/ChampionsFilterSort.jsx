@@ -2,7 +2,7 @@ import {
 	ChampionsFilterSortContainer,
 	ChampionsFilterSortImage,
 	ChampionsFilterSortText,
-} from '../../styled-components';
+} from '../../styled-components/ChampionsFilter.styles';
 
 export const ChampionsFilterSort = ({ handleSort, searchSort }) => {
 	return (

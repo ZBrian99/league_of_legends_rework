@@ -2,7 +2,7 @@ import {
 	ChampionsFilterInput,
 	ChampionsFilterInputContainer,
 	ChampionsFilterInputIcon,
-} from '../../styled-components';
+} from '../../styled-components/ChampionsFilter.styles';
 
 export const ChampionsFilterSearch = ({ searchName, handleSearch }) => {
 	return (

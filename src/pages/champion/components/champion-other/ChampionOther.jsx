@@ -1,4 +1,5 @@
-import { ChampionOtherContainer, ChampionOtherHeader } from '..';
+import { ChampionOtherContainer } from './ChampionOtherContainer';
+import { ChampionOtherHeader } from './ChampionOtherHeader';
 
 export const ChampionOther = () => {
 	return (

@@ -1,4 +1,4 @@
-import { ChamLargeLogoContainer, ChamRelatedName } from '../../../styled-components';
+import { ChamLargeLogoContainer, ChamRelatedName } from '../../../styled-components/ChampionRelated.styles';
 import { ChampionIcon } from '../ChampionIcon';
 
 export const ChampionLogoWithName = ({ id, name, scale }) => {

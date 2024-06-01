@@ -3,7 +3,7 @@ import {
 	ChamAbilityDescription,
 	ChamAbilityInfo,
 	ChamAbilityName,
-} from '../../styled-components';
+} from '../../styled-components/ChampionAbilities.styles';
 
 export const ChampionAbilityInfo = ({ ability }) => {
 	return (

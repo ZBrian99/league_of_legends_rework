@@ -2,8 +2,8 @@ import { useContext } from 'react';
 import { DataContext } from '../../../../context/DataContext';
 import { ChampionContext } from '../../Champion';
 
-import { ChamQuote, QuoteAutor, QuoteText } from '../../styled-components';
-import { ChampionLogo } from './';
+import { ChamQuote, QuoteAutor, QuoteText } from '../../styled-components/Champion.styles';
+import { ChampionLogo } from './ChampionLogo';
 
 export const ChampionQuote = () => {
 	const { extraChamInfo } = useContext(DataContext);

@@ -1,6 +1,6 @@
-import { ChampionOtherCard } from '..';
+import { ChampionOtherCard } from './ChampionOtherCard';
 import { useRandomChampion } from '../../hooks/useRandomChampion';
-import { OtherChampionContainer } from '../../styled-components';
+import { OtherChampionContainer } from '../../styled-components/ChampionOther.styles';
 
 export const ChampionOtherContainer = () => {
 	const { random, extraChamInfo } = useRandomChampion();

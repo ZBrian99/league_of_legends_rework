@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import { ChampionContext } from '../../../Champion';
-import { SimpleRolContainer } from '../../../styled-components';
+import { SimpleRolContainer } from '../../../styled-components/Champion.styles';
 import { ChampionBox } from './ChampionBox';
 
 export const ChampionBoxRol = () => {

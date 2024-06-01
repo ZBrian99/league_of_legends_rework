@@ -4,7 +4,7 @@ import {
 	ChamSkinSidePanelImage,
 	ChamSkinSidePanelImageContainer,
 	ChamSkinSidePanelText,
-} from '../../styled-components';
+} from '../../styled-components/ChampionSkins.styles';
 import { ChampionContext } from '../../Champion';
 
 export const ChampionSkinPanel = ({ active, name, num, fn }) => {

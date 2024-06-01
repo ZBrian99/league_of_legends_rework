@@ -1,4 +1,4 @@
-import { ChamSplash, ChamSplashContainer, ChamSplashVideo } from '../styled-components';
+import { ChamSplash, ChamSplashContainer, ChamSplashVideo } from '../styled-components/Champion.styles';
 import { useChampionSplash } from '../hooks/useChampionSplash';
 
 export const ChampionSplash = () => {

@@ -1,4 +1,4 @@
-import { ChamHeader } from '../styled-components';
+import { ChamHeader } from '../styled-components/Champion.styles';
 import { ChampionHeader } from './ChampionHeader';
 import { ChampionSplash } from './ChampionSplash';
 

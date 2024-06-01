@@ -1,5 +1,5 @@
 import { useChampionAbilityVideo } from '../../hooks/useChampionAbilityVideo';
-import { ChamAbilityVideo, ChamAbilityVideoContainer } from '../../styled-components';
+import { ChamAbilityVideo, ChamAbilityVideoContainer } from '../../styled-components/ChampionAbilities.styles';
 
 export const ChampionAbilityVideo = ({ ability }) => {
 	const { src } = useChampionAbilityVideo(ability);
