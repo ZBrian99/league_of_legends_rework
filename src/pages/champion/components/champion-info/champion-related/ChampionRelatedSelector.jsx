@@ -9,7 +9,7 @@ export const ChampionRelatedSelector = () => {
 		<ChamRelatedSelectorContainer>
 			{!!related &&
 				related.map(({ id, name }) => (
-					<Link key={id} to={`/champion/${id}/`} title={id}>
+					<Link key={id} to={`/champion/${id}`} title={id}>
 						<ChampionLogoWithName id={id} scale={1.1} name={name} />
 					</Link>
 				))}
