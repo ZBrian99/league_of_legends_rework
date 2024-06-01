@@ -7,7 +7,22 @@ export const NavBar = () => {
 	const { mobileMenu, menuRef, NavMenuOpen, NavMenuClose } = useNavBar();
 
 	return (
-    <div>Hola</div>
+		<div
+			style={{
+				display: 'flex',
+				flexDirection: 'column',
+				width: '30rem',
+				height: '100vh',
+				position: 'fixed',
+				top: 0,
+				right: 0,
+				padding: 0,
+				backgroundColor: 'rgba(31, 31, 31)',
+				zIndex: 1000,
+			}}
+		>
+			hola
+		</div>
 		// <Nav ref={menuRef}>
 		// 	<NavBarLeft onClick={NavMenuClose} />
 		// 	<NavBarMobile mobileMenu={mobileMenu} NavMenuClose={NavMenuClose} />
