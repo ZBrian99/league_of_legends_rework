@@ -9,7 +9,8 @@ import { GlobalReset } from './styled-components/GlobalReset.styles';
 import { Loader } from './styled-components/Loader.styles';
 // import { NavBar } from './components/navbar/NavBar';
 import { Footer } from './components/footer/Footer';
-import { NavBar } from './components/navbar/NavBar';
+import { NavBarTest } from './components/navbar/NavBarTest';
+// import { NavBar } from './components/navbar/NavBar';
 // import { Champion, Champions } from './pages';
 // import { Champion, Champions, Universo, Regiones } from './pages';
 
@@ -25,7 +26,8 @@ export const App = () => {
 			{/* <Suspense fallback={<Loader />}> */}
 			<BrowserRouter>
 				{/* <BrowserRouter basename='/league-of-legends'> */}
-				<NavBar />
+				{/* <NavBar /> */}
+				<NavBarTest />
 				<DataProvider>
 					{/* <Champions/> */}
 					<Routes>
