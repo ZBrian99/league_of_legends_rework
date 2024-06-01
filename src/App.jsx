@@ -3,10 +3,12 @@ import { DataProvider } from './context/DataContext';
 import { Champions } from './pages/champions/Champions';
 import { Champion } from './pages/champion/Champion';
 import { lazy, Suspense } from 'react';
-import { NavBar } from './components/navbar/NavBar';
-import { Footer } from './components/footer/Footer';
+// import { NavBar } from './components/navbar/NavBar';
+// import { Footer } from './components/footer/Footer';
 import { GlobalReset } from './styled-components/GlobalReset.styles';
 import { Loader } from './styled-components/Loader.styles';
+import { NavBar } from './components/navbar/NavBar';
+import { Footer } from './components/footer/Footer';
 // import { Champion, Champions } from './pages';
 // import { Champion, Champions, Universo, Regiones } from './pages';
 

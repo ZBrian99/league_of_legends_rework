@@ -3,7 +3,6 @@ import { NavBarCenter } from './NavBarCenter';
 import { NavBarRight } from './NavBarRight';
 import { NavBarTop } from './NavBarTop';
 
-// import { NavBarCenter, NavBarRight, NavBarTop } from './';
 export const NavBarMobile = ({ mobileMenu, NavMenuClose }) => {
 	return (
 		<MobileMenuContent visible={mobileMenu}>
