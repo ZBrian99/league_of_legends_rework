@@ -1,10 +1,10 @@
 # Página de Campeones de League of Legends
 
-Este proyecto es una página web que permite al usuario buscar y seleccionar campeones de League of Legends, al hacerlo podra acceder a información detallada sobre cada uno de ellos.
+Este proyecto es un rework de la página de campeones de League of Legends que permite al usuario buscar y seleccionar campeones, al hacerlo podra acceder a información detallada sobre cada uno de ellos.
 
 La página está hecha con React, utiliza la API de League of Legends para obtener información sobre los campeones. También se utiliza Emotion Styles para aplicar estilos a toda la pagina.
 
-[https://zbrian99.github.io/league-of-legends/champions/](https://zbrian99.github.io/league-of-legends/champions/)
+## [League of Legends Rework 👉](https://leagueoflegendsrework.vercel.app/champions/)
 
 ## Funcionalidades
 
@@ -21,3 +21,12 @@ La página incluye las siguientes funcionalidades:
 - Skins: se muestra una lista de todas las skins disponibles del campeón, con una miniatura y el nombre de la skin. La lista de skins va rotando automáticamente entre todas las skins. La rotación automática se detiene cuando el usuario selecciona una skin.
 
 - Campeones aleatorios: al final de la página se muestran más campeones generados aleatoriamente, para que el usuario pueda seguir explorando.
+
+## Contacto
+
+- **Correo electrónico:** brian.zelada99@gmail.com
+- **Web:** [Portfolio](https://brianzelada.vercel.app/)
+- **LinkedIn:** [Perfil de LinkedIn](https://www.linkedin.com/in/brianzelada/)
+- **GitHub:** [Perfil de GitHub](https://github.com/ZBrian99)
+
+¡Gracias por visitar mi proyecto! 🚀
