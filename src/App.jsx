@@ -26,12 +26,12 @@ export const App = () => {
 				<DataProvider>
 					{/* <Champions/> */}
 					<Routes>
-						<Route path='/' element={<Champions />} />
-						<Route path='/champion/:id/' element={<Champion />} />
+						<Route path='/champions/' element={<Champions />} />
+						<Route path='/champion/:id' element={<Champion />} />
 						{/* <Route path='/champions/' element={<Champions />} /> */}
 						{/* <Route path='/regions/' element={<Regiones />} /> */}
 						{/* <Route path='/universe/' element={<Universo />} /> */}
-						{/* <Route path='*' element={<Navigate to='/champions/' />} /> */}
+						<Route path='*' element={<Navigate to='/champions/' />} />
 					</Routes>
 				</DataProvider>
 				<Footer />
