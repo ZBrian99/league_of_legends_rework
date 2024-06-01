@@ -1,10 +1,10 @@
-import { useNavBar } from '../../hooks/useNavBar';
+// import { useNavBar } from '../../hooks/useNavBar';
 // import { Nav, NavMobileButton, Svg } from '../../styled-components/NavBar.styles';
 // import { NavBarLeft } from './NavBarLeft';
 // import { NavBarMobile } from './NavBarMobile';
 
 export const NavBar = () => {
-	const { mobileMenu, menuRef, NavMenuOpen, NavMenuClose } = useNavBar();
+	// const { mobileMenu, menuRef, NavMenuOpen, NavMenuClose } = useNavBar();
 
 	return (
 		<div
