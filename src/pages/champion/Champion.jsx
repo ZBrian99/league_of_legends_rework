@@ -1,4 +1,3 @@
-// import { ChampionDetails, ChampionHeaderContainer } from './';
 import { createContext } from 'react';
 import { ChampionContainer } from './styled-components/Champion.styles';
 import { Loader } from '../../styled-components/Loader.styles';
@@ -32,3 +31,5 @@ export const Champion = () => {
 		</>
 	);
 };
+
+export default Champion;

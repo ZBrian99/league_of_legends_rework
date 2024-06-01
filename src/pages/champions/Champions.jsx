@@ -25,3 +25,5 @@ export const Champions = () => {
 		</>
 	);
 };
+
+export default Champions;
