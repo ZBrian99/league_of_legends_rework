@@ -27,7 +27,7 @@ export const ChampionsContainer = styled.div`
 	}
 	@media (max-width: 48rem) {
 		grid-auto-rows: 17.5rem;
-		grid-template-columns: repeat(auto-fit, 11.25rem);
+		grid-template-columns: repeat(auto-fit, 10rem);
 	}
 `;
 export const ChampionsMainContainer = styled.div`
