@@ -1,15 +1,15 @@
-import { ChamSplash, ChamSplashContainer, ChamSplashVideo } from '../styled-components/Champion.styles';
-import { useChampionSplash } from '../hooks/useChampionSplash';
+import { ChamSplash, ChamSplashContainer, ChamSplashVideo } from '../styled-components';
+import { useChampionSplash } from '../hooks';
 
 export const ChampionSplash = () => {
-	const { isVideo, Url } = useChampionSplash();
+  const { isVideo, Url } = useChampionSplash();
 	return (
 		<ChamSplashContainer>
-			{isVideo ? (
-				<ChamSplashVideo src={Url} muted autoPlay loop />
-			) : (
+			{/* {isVideo ? ( */}
+				{/* <ChamSplashVideo src={Url} muted autoPlay loop /> */}
+			{/* ) : ( */}
 				<ChamSplash src={Url} alt='champion splash'></ChamSplash>
-			)}
+			{/* )} */}
 		</ChamSplashContainer>
 	);
 };
