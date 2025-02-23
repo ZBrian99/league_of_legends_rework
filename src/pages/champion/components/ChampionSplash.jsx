@@ -1,5 +1,8 @@
-import { ChamSplash, ChamSplashContainer, ChamSplashVideo } from '../styled-components';
-import { useChampionSplash } from '../hooks';
+import { ChamSplash, ChamSplashContainer } from '../styled-components/Champion.styles';
+import { useChampionSplash } from '../hooks/useChampionSplash';
+
+
+
 
 export const ChampionSplash = () => {
   const { isVideo, Url } = useChampionSplash();
